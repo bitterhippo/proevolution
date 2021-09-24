@@ -1,6 +1,8 @@
 import ReactDOM from "react-dom";
 import React from "react";
+import Landing from "./Landing";
+
 const App = () => {
-  return <h1>This is my React app!</h1>;
+  return <Landing />;
 }
 ReactDOM.render(<App />, document.getElementById("app"));
