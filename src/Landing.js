@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from "./Screens/Home";
 import About from "./Screens/About";
+import NavBar from "./Components/NavBar/NavBar";
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,8 +11,8 @@ import {
 const Landing = () => {
   return (
     <div style={styles.wrapper}>
-      <h1 style={styles.title}>Noah's Portfolio</h1>
       <Router>
+        <NavBar />
         <Switch>
           <Route exact component={Home} path="/" />
           <Route exact component={About} path="/about" />
@@ -22,10 +23,6 @@ const Landing = () => {
 };
 
 const styles = {
-  title: {
-    paddingTop: '5vh',
-    textAlign: 'center'
-  },
   wrapper: {
     backgroundColor: 'black',
     color: 'white',
