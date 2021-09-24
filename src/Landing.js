@@ -2,6 +2,7 @@ import React from 'react';
 import Home from "./Screens/Home";
 import About from "./Screens/About";
 import NavBar from "./Components/NavBar/NavBar";
+import FooterNav from "./Components/FooterNav/FootNav";
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,6 +18,7 @@ const Landing = () => {
           <Route exact component={Home} path="/" />
           <Route exact component={About} path="/about" />
         </Switch>
+        <FooterNav />
       </Router>
     </div>
   )
@@ -24,12 +26,9 @@ const Landing = () => {
 
 const styles = {
   wrapper: {
-    backgroundColor: 'black',
     color: 'white',
     opacity: 0.9,
-    width: '90%',
-    marginLeft: 'auto',
-    marginRight: 'auto',
+    width: '100%',
     paddingTop: 0,
     minHeight: '100vh',
     paddingBottom: '5vh'
