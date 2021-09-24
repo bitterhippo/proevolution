@@ -23,7 +23,7 @@ const NavBar = () => {
 
 const styles = {
   navBarWrapper : {
-    backgroundColor: 'green',
+    backgroundColor: '#206620',
     height: '5vh'
   },
   navLinks: {

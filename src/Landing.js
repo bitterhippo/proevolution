@@ -27,7 +27,6 @@ const Landing = () => {
 const styles = {
   wrapper: {
     color: 'white',
-    opacity: 0.9,
     width: '100%',
     paddingTop: 0,
     minHeight: '100vh',
