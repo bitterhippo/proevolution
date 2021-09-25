@@ -2,7 +2,7 @@ import React from 'react';
 import Home from "./Screens/Home";
 import About from "./Screens/About";
 import NavBar from "./Components/NavBar/NavBar";
-import BannerImg from './Components/ImgContainer/BannerImg';
+import StaffView from './Screens/StaffView';
 import FooterNav from "./Components/FooterNav/FootNav";
 import {
   BrowserRouter as Router,

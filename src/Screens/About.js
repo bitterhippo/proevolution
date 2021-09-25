@@ -32,6 +32,9 @@ const About = () => {
 
   return (
     <div>
+      <BannerImg 
+        message="About us"
+      />
       <ContentBlock
         header={aboutContentBlock[0].header}
         content={aboutContentBlock[0].contentBlock}
