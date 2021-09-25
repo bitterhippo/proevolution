@@ -1,12 +1,12 @@
 import React from 'react';
 
-const ContentBlock = () => {
+const ContentBlock = ({ header, content}) => {
   return (
     <div style={styles.contentBlockWrapper}>
       <div>
-        <h2 style={styles.bannerText}>Some Text</h2>
+        <h2 style={styles.bannerText}>{header}</h2>
         <div style={styles.mainContent}>
-          Some other text Some other text Some other text Some other text Some other text Some other text Some other text Some other text
+          {content}
         </div>
       </div>
       <div style={styles.secondaryContent}>
