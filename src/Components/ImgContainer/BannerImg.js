@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const BannerImg = () => {
   return (
     <div style={styles.bannerImgWrapper}>
