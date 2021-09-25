@@ -15,7 +15,6 @@ const Landing = () => {
     <div style={styles.wrapper}>
       <Router>
         <NavBar />
-        <BannerImg />
         <Switch>
           <Route exact component={Home} path="/" />
           <Route exact component={About} path="/about" />

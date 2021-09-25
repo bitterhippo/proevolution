@@ -1,5 +1,6 @@
 import React from 'react';
 import ContentBlock from '../Components/Content/ContentBlock';
+import BannerImg from '../Components/ImgContainer/BannerImg';
 
 const Home = () => {
   return (

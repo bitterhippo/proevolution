@@ -1,9 +1,9 @@
 import React from 'react';
 
-const BannerImg = () => {
+const BannerImg = ({ image, message }) => {
   return (
     <div style={styles.bannerImgWrapper}>
-      <h1 style={styles.bannerText}> Pro Evolution </h1>
+      <h1 style={styles.bannerText}> {message} </h1>
     </div>
   )
 };

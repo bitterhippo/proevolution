@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ContentBlock = ({ header, content}) => {
+const ContentBlock = ({ header, content }) => {
   return (
     <div style={styles.contentBlockWrapper}>
       <div>
-        <h2 style={styles.bannerText}>{header}</h2>
         <div style={styles.mainContent}>
+          <h2 style={styles.bannerText}>{header}</h2>
           {content}
         </div>
       </div>
@@ -25,7 +25,7 @@ const styles = {
     marginRight: 20
   },
   bannerText: {
-    textAlign: 'center'
+    textAlign: 'center',
   },
   mainContent: {
     width: '70%',
