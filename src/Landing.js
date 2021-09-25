@@ -2,6 +2,7 @@ import React from 'react';
 import Home from "./Screens/Home";
 import About from "./Screens/About";
 import NavBar from "./Components/NavBar/NavBar";
+import BannerImg from './Components/ImgContainer/BannerImg';
 import FooterNav from "./Components/FooterNav/FootNav";
 import {
   BrowserRouter as Router,
@@ -14,6 +15,7 @@ const Landing = () => {
     <div style={styles.wrapper}>
       <Router>
         <NavBar />
+        <BannerImg />
         <Switch>
           <Route exact component={Home} path="/" />
           <Route exact component={About} path="/about" />
@@ -26,7 +28,6 @@ const Landing = () => {
 
 const styles = {
   wrapper: {
-    color: 'white',
     width: '100%',
     paddingTop: 0,
     minHeight: '100vh',
