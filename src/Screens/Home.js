@@ -1,9 +1,10 @@
 import React from 'react';
+import ContentBlock from '../Components/Content/ContentBlock';
 
 const Home = () => {
   return (
     <div>
-      LOL LOL LOL
+      <ContentBlock />
     </div>
   )
 };
