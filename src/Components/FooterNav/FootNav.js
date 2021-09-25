@@ -54,6 +54,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     gap: 5,
+    color: 'white'
   },
   footerNavItem: {
     color: 'white',
