@@ -1,9 +1,11 @@
 import React from 'react';
+import CeaserTeam from "../../Images/CeaserTeam.jpg";
 
 const BannerImg = ({ image, message }) => {
   return (
     <div style={styles.bannerImgWrapper}>
       <h1 style={styles.bannerText}> {message} </h1>
+      <img src={CeaserTeam} />
     </div>
   )
 };
