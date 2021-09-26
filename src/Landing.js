@@ -15,11 +15,11 @@ const Landing = () => {
     <div style={styles.wrapper}>
       <Router>
         <NavBar />
-        <Switch>
-          <Route exact component={Home} path="/" />
-          <Route exact component={About} path="/About" />
-          <Route exact component={StaffView} path="/staffView" />
-        </Switch>
+          <Switch>
+            <Route exact component={Home} path="/" />
+            <Route exact component={About} path="/About" />
+            <Route exact component={StaffView} path="/staffView" />
+          </Switch>
         <FooterNav />
       </Router>
     </div>
@@ -32,7 +32,7 @@ const styles = {
     paddingTop: 0,
     minHeight: '100vh',
     paddingBottom: '5vh'
-  }
+  },
 }
 
 export default Landing;
