@@ -30,6 +30,8 @@ const Home = () => {
           servicesData.map(currentItem => <div
             style={styles.rowItem}
           >
+            <div style={styles.rowItemImg}>
+              </div>
             {currentItem}
           </div>)
         }
@@ -46,6 +48,17 @@ const styles = {
   },
   rowItem: {
     flex: '1 0 25%',
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'center',
+    gap: 10,
+    marginTop: 30
+  },
+  rowItemImg: {
+    height: 100,
+    width: 100,
+    backgroundColor: 'gray',
+    alignSelf: 'center'
   }
 }
 
