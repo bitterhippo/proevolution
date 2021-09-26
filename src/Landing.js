@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Home from "./Screens/Home";
 import About from "./Screens/About";
 import NavBar from "./Components/NavBar/NavBar";
@@ -16,8 +17,8 @@ const Landing = () => {
       <Router>
         <NavBar />
           <Switch>
-            <Route exact component={Home} path="/" />
-            <Route exact component={About} path="/About" />
+            <Route path = "/" component={Home} />
+            <Route path = "/about" component={About} />
             <Route exact component={StaffView} path="/staffView" />
           </Switch>
         <FooterNav />
