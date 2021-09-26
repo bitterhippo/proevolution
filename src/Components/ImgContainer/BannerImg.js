@@ -1,13 +1,24 @@
 import React from 'react';
+//IMGFILES
 import CeaserTeam from "../../Images/CeaserTeam.jpg";
 
 const BannerImg = ({ image, message }) => {
+
+  const imgConnector = {
+    CeaserTeam: CeaserTeam
+  }
+
+  console.log(image);
+
+
   return (
     <div style={styles.bannerImgWrapper}>
-      <h1 style={styles.bannerText}> {message} </h1>
+      <div style={styles.bannerText}>
+        {message}
+      </div>
       <img
         style={styles.img}
-        src={CeaserTeam} />
+        src={imgConnector[image]} />
     </div>
   )
 };
@@ -21,7 +32,10 @@ const styles = {
     fontSize: '3vh',
     position: 'absolute',
     zIndex: 5,
-    Left: '50'
+    left: '50%',
+    top: '25%',
+    textAlign: 'center',
+    transform: 'translate(-50%, -50%)'
   },
   img: {
     width: '100%',

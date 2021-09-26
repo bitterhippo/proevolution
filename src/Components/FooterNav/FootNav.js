@@ -46,7 +46,6 @@ const styles = {
     width: '100%',
     backgroundColor: '#206620',
     height: '20vh',
-    position: 'absolute',
     bottom: '0%',
   },
   footerNavList: {

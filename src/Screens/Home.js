@@ -14,7 +14,8 @@ const Home = () => {
   return (
     <div style={styles.screen}>
       <BannerImg
-        message={'Proevolution Wellness'}
+        image={'CeaserTeam'}
+        message={'Pro Evolution Wellness'}
       />
       <ContentBlock
         header='WHO ARE WE'
@@ -33,9 +34,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'inline-row',
     justifyContent: 'space-evenly'
-  },
-  screen: {
-    minHeight: '70%'
   }
 }
 
