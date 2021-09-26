@@ -45,14 +45,14 @@ const styles = {
     justifyContent: 'space-evenly',
     width: '100%',
     backgroundColor: '#206620',
-    height: '20vh',
+    marginTop: 30,
     bottom: '0%',
   },
   footerNavList: {
     marginTop: 15,
     display: 'flex',
     flexDirection: 'column',
-    gap: 5,
+    gap: 10,
     color: 'white'
   },
   footerNavItem: {

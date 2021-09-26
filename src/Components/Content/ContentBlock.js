@@ -26,6 +26,7 @@ const styles = {
   },
   bannerText: {
     textAlign: 'center',
+    color: "#206620"
   },
   mainContent: {
     width: '70%',
