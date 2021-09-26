@@ -45,8 +45,10 @@ const styles = {
     justifyContent: 'space-evenly',
     width: '100%',
     backgroundColor: '#206620',
-    marginTop: 30,
-    bottom: '0%',
+    marginTop: 50,
+    paddingTop: 30,
+    paddingBottom: 30,
+    bottom: '100%',
   },
   footerNavList: {
     marginTop: 15,
@@ -58,5 +60,6 @@ const styles = {
   footerNavItem: {
     color: 'white',
   }
-}
+};
+
 export default FooterNav;
