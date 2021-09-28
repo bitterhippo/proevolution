@@ -34,6 +34,15 @@ const FooterNav = () => {
           }
         </div>)
       }
+      <div style={styles.footerNavList}>
+        <span style={styles.footerText}>905-303-0337</span>
+        <br></br>
+        <span>info@proevolutionwellness.ca</span>
+        <br></br>
+        <span style={styles.footerText}>3905 Major Mackenzie Drive</span>
+        <span style={styles.footerText}>West, Unit 116</span>
+        <span style={styles.footerText}>Vaughan, ON L4H 4J9</span>
+      </div>
     </div>
   )
 };
@@ -53,11 +62,18 @@ const styles = {
     marginTop: 15,
     display: 'flex',
     flexDirection: 'column',
-    gap: 10,
+    gap: 5,
     color: 'white'
   },
   footerNavItem: {
     color: 'white',
+  },
+  contactInfoWrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  footerText: {
+    fontSize: 14
   }
 };
 

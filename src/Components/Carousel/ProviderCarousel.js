@@ -14,7 +14,7 @@ const ProviderCarousel = () => {
       <div style={styles.carouselMainWrapper}>
         <div style={styles.carouselSlider}>
           {
-            carouselData.map(currentProvider => )
+            
           }
         </div>
       </div>
