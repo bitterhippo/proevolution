@@ -1,6 +1,7 @@
 import React from 'react';
 import ContentBlock from '../Components/Content/ContentBlock';
 import BannerImg from '../Components/ImgContainer/BannerImg';
+import ProviderCarousel from '../Components/Carousel/ProviderCarousel';
 
 const Home = () => {
 
@@ -39,6 +40,8 @@ const Home = () => {
           </div>)
         }
       </div>
+      <h2 style={styles.bannerText}>Our Providers</h2>
+      <ProviderCarousel />
     </div>
   )
 };

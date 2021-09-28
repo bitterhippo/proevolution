@@ -5,7 +5,7 @@ const ProviderCarousel = () => {
   const [carouselCounter, setCarouselCounter] = useState(0);
 
   let carouselData = [
-
+    'Guardian', 'Allstate', 'HSBC'
   ];
 
   return (
@@ -14,7 +14,7 @@ const ProviderCarousel = () => {
       <div style={styles.carouselMainWrapper}>
         <div style={styles.carouselSlider}>
           {
-
+            carouselData.map(currentProvider => )
           }
         </div>
       </div>
