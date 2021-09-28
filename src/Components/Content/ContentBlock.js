@@ -5,12 +5,13 @@ const ContentBlock = ({ header, content }) => {
     <div style={styles.contentBlockWrapper}>
       <div>
         <div style={styles.mainContent}>
-          <h2 style={styles.bannerText}>{header}</h2>
+          <span style={styles.bannerText}>{header}</span>
+          <br></br>
           {content}
         </div>
       </div>
       <div style={styles.secondaryContent}>
-        One piece of content
+        Associated Content Image
       </div>
     </div>
   )
@@ -20,20 +21,23 @@ const styles = {
   contentBlockWrapper: {
     display: 'flex',
     flexDirection: 'inline-row',
-    justifyContent: 'space-evenly',
     marginLeft: 20,
     marginRight: 20
   },
   bannerText: {
     textAlign: 'center',
-    color: "#206620"
+    color: "#206620",
+    fontSize: '2.5vh',
+    fontWeight: 'bold'
   },
   mainContent: {
-    width: '70%',
-    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    width: '90%',
   },
   secondaryContent: {
-    width: '30%'
+    minWidth: '30%',
+    backgroundColor: 'gray'
   }
 };
 

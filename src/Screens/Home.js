@@ -70,7 +70,10 @@ const styles = {
     color: '#206620'
   },
   contentBlock: {
-    marginTop: '5vh'
+    display: 'flex',
+    flexDirection: 'column',
+    marginTop: '5vh',
+    gap: '7.5vh'
   }
 }
 
