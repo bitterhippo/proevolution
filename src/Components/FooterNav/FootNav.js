@@ -48,7 +48,6 @@ const styles = {
     marginTop: 50,
     paddingTop: 30,
     paddingBottom: 30,
-    bottom: '100%',
   },
   footerNavList: {
     marginTop: 15,

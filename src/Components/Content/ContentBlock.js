@@ -21,8 +21,8 @@ const styles = {
   contentBlockWrapper: {
     display: 'flex',
     flexDirection: 'inline-row',
-    marginLeft: 20,
-    marginRight: 20
+    marginLeft: 35,
+    marginRight: 35
   },
   bannerText: {
     textAlign: 'center',

@@ -64,7 +64,7 @@ const styles = {
     alignSelf: 'center'
   },
   bannerText: {
-    marginTop: '10vh',
+    marginTop: '15vh',
     fontSize: 32,
     textAlign: 'center',
     color: '#206620'
