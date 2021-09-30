@@ -6,21 +6,32 @@ const FooterNav = () => {
 
   const footNavLinks = [
     {
-      name: 'About', Links: ['Our Story', 'Our Staff', 'Our Facilities', 'Our Providers', 'Our Locations', 'FAQS']
+      name: 'About', Links: [
+        `Services`,
+        `FAQ`,
+        `About`
+      ]
     },
     {
       name: 'Operating Hours', Links: [
-        `Mon: 7 AM - 5 PM`,
+        `Mon:     7 AM - 5 PM`,
         'Tues: 7 AM - 5 PM',
         'Weds: 7 AM - 5 PM',
         'Thurs: 7 AM - 5 PM',
         'Fri: 7 AM - 5 PM',
         'Sat: 7 AM - 5 PM',
-        `Sunday:     Closed`
+        `Sunday:     Closed`,
       ]
     },
     {
-      name: 'Services', Links: ['Registered Massage Therapy', 'Accupuncture', 'Orthotics', 'Nutrition']
+      name: 'Contact', Links: [
+        'Pro Evolution Wellness',
+        '3905 Major Mackenzie Drive',
+        'West, Unit 116',
+        'Vaughan, Ontario',
+        'L4H 4J9',
+        <button style={styles.footButton}>Get Directions</button>
+      ]
     },
   ];
 
@@ -31,13 +42,13 @@ const FooterNav = () => {
           key={currentFootNavLink.name}
           style={styles.footerNavList}
         >
-          <span style={{ textDecoration: 'underline' }}>{currentFootNavLink.name}</span>
+          <span style={{ fontWeight: 'bold' }}>{currentFootNavLink.name}</span>
           {
             currentFootNavLink.Links.map(currentLink => <div
               key={currentLink}
               style={styles.footerNavItem}
             >
-              {currentLink}
+              <span style={styles.footerText}>{currentLink}</span>
             </div>)
           }
         </div>)
@@ -64,13 +75,13 @@ const styles = {
     backgroundColor: '#206620',
     position: 'relative',
     bottom: '0',
+    paddingTop: 20,
     paddingBottom: 20
   },
   footerNavList: {
     marginTop: 15,
     display: 'flex',
     flexDirection: 'column',
-    gap: 5,
     color: 'white'
   },
   footerNavItem: {
@@ -81,7 +92,14 @@ const styles = {
     flexDirection: 'column',
   },
   footerText: {
-    fontSize: 14
+    fontSize: 12
+  },
+  footButton: {
+    marginTop: 10,
+    borderRadius: 5,
+    border: '2px solid white',
+    color: 'white',
+    backgroundColor: '#206620'
   }
 };
 
