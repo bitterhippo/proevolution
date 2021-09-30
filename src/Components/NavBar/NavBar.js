@@ -7,7 +7,7 @@ const NavBar = () => {
 
   return (
     <div style={styles.navBarWrapper}>
-      <div style={styles.navBarItem}>
+      <div style={{...styles.navBarItem, marginLeft: '5vw'}}>
         LOGO
       </div>
       <div style={styles.navLinks}>
