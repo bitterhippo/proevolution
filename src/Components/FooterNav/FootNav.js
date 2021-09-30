@@ -54,9 +54,9 @@ const styles = {
     justifyContent: 'space-evenly',
     width: '100%',
     backgroundColor: '#206620',
-    marginTop: 50,
-    paddingTop: 30,
-    paddingBottom: 30,
+    position: 'relative',
+    bottom: '0',
+    paddingBottom: 20
   },
   footerNavList: {
     marginTop: 15,
