@@ -50,8 +50,8 @@ const styles = {
     marginTop: 20,
     backgroundColor: '#206620',
     color: 'white',
-    paddingLeft: 15,
-    paddingRight: 15,
+    paddingLeft: 25,
+    paddingRight: 25,
     height: '3vh',
     borderRadius: 5
   }
