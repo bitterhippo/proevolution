@@ -12,6 +12,12 @@ const Services = () => {
     'Therapuetic Ultrasound',
     'Functional Rehab',
     'Nutritional Consulting',
+  ];
+
+  const tabs = [
+    'How it works',
+    'How it helps',
+    'What it treats',
   ]
 
   return (
@@ -24,10 +30,15 @@ const Services = () => {
         <div style={styles.whiteSpaceContent}>
           <div style={styles.currentServiceWrapper}>
             <div>
-              {selectedService}
+              <span style={styles.fancyText}>Services</span> > <span style={styles.fancyText}>{selectedService}</span>
             </div>
           </div>
-          <button>Book Appointment</button>
+          <div style={{...styles.currentServiceWrapper, justifyContent: 'space-between'}}>
+            <div style={styles.accentuatedText}>
+              { selectedService }
+            </div>
+            <button style={styles.styledButton}>Book Appointment</button>
+          </div>
         </div>
       </div>
     </div>
@@ -57,6 +68,8 @@ const styles = {
   currentServiceWrapper: {
     display: 'flex',
     flexDirection: 'inline-row',
+    marginTop: 10,
+    width: '70%',
   },
   buttonList: {
     display: 'flex',
@@ -67,6 +80,10 @@ const styles = {
     display: 'flex',
     flexDirection: 'inline-row',
     gap: 5
+  },
+  accentuatedText: {
+    fontSize: 22,
+    fontWeight: 'bold'
   }
 };
 
