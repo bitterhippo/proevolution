@@ -46,7 +46,8 @@ const styles = {
     color: 'white',
     fontWeight: 'bold',
     marginTop: 'auto',
-    marginBottom: 'auto'
+    marginBottom: 'auto',
+    fontSize: 14
   },
   navBarButton: {
     border: '2px solid white',
@@ -54,7 +55,8 @@ const styles = {
     height: '50%',
     marginTop: 'auto',
     marginBottom: 'auto',
-    color: 'white'
+    color: 'white',
+    borderRadius: 5
   }
 }
 

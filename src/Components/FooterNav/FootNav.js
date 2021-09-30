@@ -9,7 +9,15 @@ const FooterNav = () => {
       name: 'About', Links: ['Our Story', 'Our Staff', 'Our Facilities', 'Our Providers', 'Our Locations', 'FAQS']
     },
     {
-      name: 'Health Concerns', Links: ['Spinal Injuries', 'Knee Injuries', 'Ankle and Foot Injuries', 'Upper Limb Injuries', 'Head and Jaw Pain', 'Post-Surgical']
+      name: 'Operating Hours', Links: [
+        `Mon: 7 AM - 5 PM`,
+        'Tues: 7 AM - 5 PM',
+        'Weds: 7 AM - 5 PM',
+        'Thurs: 7 AM - 5 PM',
+        'Fri: 7 AM - 5 PM',
+        'Sat: 7 AM - 5 PM',
+        `Sunday:     Closed`
+      ]
     },
     {
       name: 'Services', Links: ['Registered Massage Therapy', 'Accupuncture', 'Orthotics', 'Nutrition']
