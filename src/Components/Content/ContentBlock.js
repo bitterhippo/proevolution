@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContentBlock = ({ header, content }) => {
+const ContentBlock = ({ header, content, button }) => {
   return (
     <div style={styles.contentBlockWrapper}>
       <div>
@@ -8,6 +8,10 @@ const ContentBlock = ({ header, content }) => {
           <span style={styles.bannerText}>{header}</span>
           <br></br>
           {content}
+          <div style={styles.buttonWrapper}>
+            {button !== "" ?
+              <button style={styles.styledButton}>{button}</button> : null}
+          </div>
         </div>
       </div>
       <div style={styles.secondaryContent}>
@@ -22,7 +26,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'inline-row',
     marginLeft: 35,
-    marginRight: 35
+    marginRight: 35,
   },
   bannerText: {
     textAlign: 'center',
@@ -38,6 +42,18 @@ const styles = {
   secondaryContent: {
     minWidth: '30%',
     backgroundColor: 'gray'
+  },
+  buttonWrapper: {
+    textAlign: 'center',
+  },
+  styledButton: {
+    marginTop: 20,
+    backgroundColor: '#206620',
+    color: 'white',
+    paddingLeft: 15,
+    paddingRight: 15,
+    height: '3vh',
+    borderRadius: 5
   }
 };
 
