@@ -8,9 +8,6 @@ const BannerImg = ({ image, message }) => {
     CeaserTeam: CeaserTeam
   }
 
-  console.log(image);
-
-
   return (
     <div style={styles.bannerImgWrapper}>
       <div style={styles.bannerText}>

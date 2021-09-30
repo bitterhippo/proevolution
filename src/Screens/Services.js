@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import BannerImg from '../Components/ImgContainer/BannerImg';
 
 const Services = () => {
 
-  const [selectedService, setSelectedService] = useState('');
-  const [selectedTab, setSelectedTab] = useState('');
+  const [selectedService, setSelectedService] = useState('Test');
+  const [selectedTab, setSelectedTab] = useState('Test');
 
   const buttonValues = [
     'Chiropractic',
@@ -15,26 +16,18 @@ const Services = () => {
 
   return (
     <div>
+      <BannerImg
+        image={'CeaserTeam'}
+        message={'Pro Evolution Wellness'}
+      />
       <div style={styles.whiteSpace}>
-        <span style={styles.styledText}>Services - {selectedService}</span>
-        <div style={styles.currentServiceWrapper}>
-          <div style={{color: 'black', size: '22'}}>
-            {
-              selectedService
-            }
+        <div style={styles.whiteSpaceContent}>
+          <div style={styles.currentServiceWrapper}>
+            <div>
+              {selectedService}
+            </div>
           </div>
           <button>Book Appointment</button>
-        </div>
-      </div>
-      <div styles={style.mainContent}>
-        <div style={styles.buttonList}>
-            {
-              buttonValues.map(currentValue => <button
-              style={styles.styledButton}
-              >
-                {currentValue}
-              </button>)
-            }
         </div>
       </div>
     </div>
@@ -43,12 +36,14 @@ const Services = () => {
 
 const styles = {
   whiteSpace: {
-    height: '20%',
-    opacity: 0.1,
-    backgroundColor: '#206620',
-    marginLeft: '30%'
+    minHeight: '12vh',
+    backgroundColor: 'gray',
   },
-  styledText: {
+  whiteSpaceContent: {
+    marginLeft: '35%',
+    paddingTop: 25
+  },
+  fancyText: {
     color: 'green',
     textDecoration: 'underline',
   },
@@ -57,7 +52,7 @@ const styles = {
     color: 'white',
     borderRaidus: 5,
     paddingLeft: 10,
-    paddingRight: 10
+    paddingRight: 10,
   },
   currentServiceWrapper: {
     display: 'flex',

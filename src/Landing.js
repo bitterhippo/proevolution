@@ -4,6 +4,7 @@ import Home from "./Screens/Home";
 import About from "./Screens/About";
 import NavBar from "./Components/NavBar/NavBar";
 import StaffView from './Screens/StaffView';
+import Services from './Screens/Services';
 import FooterNav from "./Components/FooterNav/FootNav";
 import {
   BrowserRouter as Router,
@@ -17,9 +18,7 @@ const Landing = () => {
       <Router>
         <NavBar />
           <Switch>
-            <Route path = "/" component={Home} />
-            <Route path = "/about" component={About} />
-            <Route exact component={StaffView} path="/staffView" />
+            <Route path = "/" component={Services} />
           </Switch>
         <FooterNav />
       </Router>
