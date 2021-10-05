@@ -4,7 +4,7 @@ import BannerImg from '../Components/ImgContainer/BannerImg';
 const Services = () => {
 
   const [selectedService, setSelectedService] = useState('Test');
-  const [selectedTab, setSelectedTab] = useState('Test');
+  const [selectedTab, setSelectedTab] = useState('How it works');
 
   const buttonValues = [
     'Chiropractic',
@@ -26,6 +26,7 @@ const Services = () => {
         image={'CeaserTeam'}
         message={'Pro Evolution Wellness'}
       />
+      {/*  White Space Screen with selectors  */}
       <div style={styles.whiteSpace}>
         <div style={styles.whiteSpaceContent}>
           <div style={styles.currentServiceWrapper}>
@@ -33,20 +34,26 @@ const Services = () => {
               <span style={styles.fancyText}>Services</span> > <span style={styles.fancyText}>{selectedService}</span>
             </div>
           </div>
-          <div style={{...styles.currentServiceWrapper, justifyContent: 'space-between'}}>
+          <div style={{ ...styles.currentServiceWrapper, justifyContent: 'space-between' }}>
             <div style={styles.accentuatedText}>
-              { selectedService }
+              {selectedService}
             </div>
             <button style={styles.styledButton}>Book Appointment</button>
           </div>
           <div style={styles.tabSelectors}>
             {
               tabs.map(tab => <div
-                style={styles.tabText}
+                style={selectedTab === tab ? styles.tabText : styles.tabTextUnselected}
+                key={tab}
+                onClick={() => setSelectedTab(tab)}
               >{tab}</div>)
             }
           </div>
         </div>
+      </div>
+      {/*  Secondary Screen  */}
+      <div>
+        LOL
       </div>
     </div>
   )
@@ -108,6 +115,15 @@ const styles = {
     paddingRight: 5,
     fontSize: 16,
     backgroundColor: 'white'
+  },
+  tabTextUnselected: {
+    fontWeight: 'bold',
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
+    paddingTop: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    fontSize: 16,
   }
 };
 
