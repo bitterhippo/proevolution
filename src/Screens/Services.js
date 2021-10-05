@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 
+
 const Services = () => {
 
   const [selectedService, setSelectedService] = useState('Test');
@@ -19,6 +20,21 @@ const Services = () => {
     'How it helps',
     'What it treats',
   ];
+
+  const practionerList = [
+    {
+      name: 'Jeremy Johnson, RMT',
+      img: ''
+    },
+    {
+      name: 'VanessaHuges, RMT',
+      img: ''
+    },
+    {
+      name: 'Lisa Andrews, PT',
+      img: ''
+    }
+  ]
 
   return (
     <div>
@@ -54,15 +70,27 @@ const Services = () => {
       {/*  Secondary Screen  */}
       <div style={styles.mainContentSplit}>
         <div style={styles.buttonList}>
-            {
-              buttonValues.map(currentButton => <button
+          {
+            buttonValues.map(currentButton => <button
               key={currentButton}
               style={styles.styledButton}
-              >{currentButton}</button>)
-            }
+            >{currentButton}</button>)
+          }
         </div>
         <div>
+          <div>
+            This is dummy text.
+          </div>
+          <div style={{ backgroundColor: 'gray', height: 250, width: 500 }}>
+          </div>
+        </div>
+      </div>
+      <div style={styles.practionerWrapper}>
+        Our Chiropractors:
+        <div style={styles.practionerList}>
+          {
 
+          }
         </div>
       </div>
     </div>
@@ -136,13 +164,24 @@ const styles = {
     display: 'flex',
     flexDirection: 'inline-flex',
     marginTop: 20,
-    marginBottom: 20
+    marginBottom: 20,
+    gap: 50
   },
   buttonList: {
     display: 'flex',
     flexDirection: 'column',
     marginLeft: 50,
     gap: 5
+  },
+  practionerWrapper: {
+    width: '80%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  },
+  practionerList: {
+    display: 'flex',
+    flexDirection: 'inline-row',
+    justifyContent: 'space-evenly'
   }
 };
 
