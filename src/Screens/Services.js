@@ -52,8 +52,18 @@ const Services = () => {
         </div>
       </div>
       {/*  Secondary Screen  */}
-      <div>
-        LOL
+      <div style={styles.mainContentSplit}>
+        <div style={styles.buttonList}>
+            {
+              buttonValues.map(currentButton => <button
+              key={currentButton}
+              style={styles.styledButton}
+              >{currentButton}</button>)
+            }
+        </div>
+        <div>
+
+        </div>
       </div>
     </div>
   )
@@ -75,20 +85,17 @@ const styles = {
   styledButton: {
     backgroundColor: '#206620',
     color: 'white',
-    borderRaidus: 5,
+    borderRadius: 5,
     paddingLeft: 10,
     paddingRight: 10,
+    paddingTop: 5,
+    paddingBottom: 5
   },
   currentServiceWrapper: {
     display: 'flex',
     flexDirection: 'inline-row',
     marginTop: 10,
     width: '70%',
-  },
-  buttonList: {
-    display: 'flex',
-    flexDirection: 'inline-row',
-    marginLeft: 20
   },
   mainContent: {
     display: 'flex',
@@ -124,6 +131,18 @@ const styles = {
     paddingLeft: 5,
     paddingRight: 5,
     fontSize: 16,
+  },
+  mainContentSplit: {
+    display: 'flex',
+    flexDirection: 'inline-flex',
+    marginTop: 20,
+    marginBottom: 20
+  },
+  buttonList: {
+    display: 'flex',
+    flexDirection: 'column',
+    marginLeft: 50,
+    gap: 5
   }
 };
 
