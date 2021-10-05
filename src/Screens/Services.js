@@ -18,7 +18,7 @@ const Services = () => {
     'How it works',
     'How it helps',
     'What it treats',
-  ]
+  ];
 
   return (
     <div>
@@ -38,6 +38,13 @@ const Services = () => {
               { selectedService }
             </div>
             <button style={styles.styledButton}>Book Appointment</button>
+          </div>
+          <div style={styles.tabSelectors}>
+            {
+              tabs.map(tab => <div
+                style={styles.tabText}
+              >{tab}</div>)
+            }
           </div>
         </div>
       </div>
@@ -84,6 +91,23 @@ const styles = {
   accentuatedText: {
     fontSize: 22,
     fontWeight: 'bold'
+  },
+  tabSelectors: {
+    marginTop: 20,
+    display: 'flex',
+    flexDirection: 'inline',
+    gap: 20
+  },
+  tabText: {
+    fontWeight: 'bold',
+    textDecoration: 'underline',
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
+    paddingTop: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    fontSize: 16,
+    backgroundColor: 'white'
   }
 };
 
