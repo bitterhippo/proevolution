@@ -74,6 +74,7 @@ const Services = () => {
             buttonValues.map(currentButton => <button
               key={currentButton}
               style={styles.styledButton}
+              onClick={() => console.log(currentButton)}
             >{currentButton}</button>)
           }
         </div>
@@ -89,7 +90,22 @@ const Services = () => {
         Our Chiropractors:
         <div style={styles.practionerList}>
           {
-
+            practionerList.map(currentPractioner => <div>
+              <div
+                key={currentPractioner}
+              >
+                <div style={{
+                  backgroundColor: 'gray', height: 100,
+                  width: 100
+                }}></div>
+                <div style={styles.practionerText}>
+                  {currentPractioner.name}
+                </div>
+                <div style={{justifyItems: 'center'}}>
+                  <button style={styles.styledButton}>Learn More</button>
+                </div>
+              </div>
+            </div>)
           }
         </div>
       </div>
@@ -143,6 +159,7 @@ const styles = {
   tabText: {
     fontWeight: 'bold',
     textDecoration: 'underline',
+    textDecorationThickness: 2,
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
     paddingTop: 5,
@@ -177,11 +194,16 @@ const styles = {
     width: '80%',
     marginLeft: 'auto',
     marginRight: 'auto',
+    marginBottom: '10vh'
   },
   practionerList: {
     display: 'flex',
     flexDirection: 'inline-row',
-    justifyContent: 'space-evenly'
+    justifyContent: 'space-evenly',
+  },
+  practionerText: {
+    color: 'green',
+    fontWeight: 'bold',
   }
 };
 
