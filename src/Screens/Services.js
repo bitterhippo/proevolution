@@ -126,6 +126,7 @@ const styles = {
   fancyText: {
     color: 'green',
     textDecoration: 'underline',
+    fontWeight: 'bold'
   },
   styledButton: {
     backgroundColor: '#206620',
