@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import BannerImg from '../Components/ImgContainer/BannerImg';
+import DummyData from '../Components/DummyData';
 
 
 const Services = () => {
+
+  console.log(DummyData);
 
   const [selectedService, setSelectedService] = useState('Chiropractic');
   const [selectedTab, setSelectedTab] = useState('How it works');
