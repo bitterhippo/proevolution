@@ -1,59 +1,57 @@
 let DummyData = {
   Chiropractic: {
-    1: {
+    Howitworks: {
       text: "This is Chiropractic how it works data"
     },
-    2: {
+    Howithelps: {
       text: "This is Chiropractic how it helps data"
     },
-    3: {
+    Whatittreats: {
       text: "This is Chiropractic what it treats data"
     }
   },
   Physiotherapy: {
-    1: {
-
+    Howitworks: {
+      text: "This is Chiropractic how it works data"
     },
-    2: {
-
+    Howithelps: {
+      text: "This is Chiropractic how it helps data"
     },
-    3: {
-
+    Whatittreats: {
+      text: "This is Chiropractic what it treats data"
     }
   },
   TherapueticUltrasound: {
-    1: {
-
+    Howitworks: {
+      text: "This is Chiropractic how it works data"
     },
-    2: {
-
+    Howithelps: {
+      text: "This is Chiropractic how it helps data"
     },
-    3: {
-
+    Whatittreats: {
+      text: "This is Chiropractic what it treats data"
     }
-
   },
-  FunctionRehab: {
-    1: {
-
+  FunctionalRehab: {
+    Howitworks: {
+      text: "This is Chiropractic how it works data"
     },
-    2: {
-
+    Howithelps: {
+      text: "This is Chiropractic how it helps data"
     },
-    3: {
-
+    Whatittreats: {
+      text: "This is Chiropractic what it treats data"
     }
-
   },
   NutritionalConsulting: {
-    1: {
-
+    Howitworks: {
+      text: "This is Chiropractic how it works data"
     },
-    2: {
-
+    Howithelps: {
+      text: "This is Chiropractic how it helps data"
     },
-    3: {
-
+    Whatittreats: {
+      text: "This is Chiropractic what it treats data"
     }
   }
 };

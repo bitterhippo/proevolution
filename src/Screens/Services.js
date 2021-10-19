@@ -5,8 +5,6 @@ import DummyData from '../Components/DummyData';
 
 const Services = () => {
 
-  console.log(DummyData);
-
   const [selectedService, setSelectedService] = useState('Chiropractic');
   const [selectedTab, setSelectedTab] = useState('How it works');
 
@@ -83,7 +81,7 @@ const Services = () => {
         </div>
         <div>
           <div>
-            This is dummy text.
+            {DummyData[selectedService.split(' ').join('')][selectedTab.split(' ').join('')].text}
           </div>
           <div style={{ backgroundColor: 'gray', height: 250, width: 500 }}>
           </div>
