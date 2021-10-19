@@ -54,7 +54,7 @@ const Services = () => {
             <div style={styles.accentuatedText}>
               {selectedService}
             </div>
-            <button style={styles.styledButton}>Book Appointment</button>
+            <button style={styles.styledButton}>Book an Appointment</button>
           </div>
           <div style={styles.tabSelectors}>
             {
@@ -86,22 +86,23 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div style={styles.practionerWrapper}>
-        Our Chiropractors:
+      <div style={styles.practionersWrapper}>
+        <span style={styles.practionerText}>Our Chiropractors :</span>
         <div style={styles.practionerList}>
           {
             practionerList.map(currentPractioner => <div>
               <div
                 key={currentPractioner}
+                style={styles.practionerWrapper}
               >
                 <div style={{
-                  backgroundColor: 'gray', height: 100,
-                  width: 100
+                  backgroundColor: 'gray', height: 150,
+                  width: 150
                 }}></div>
                 <div style={styles.practionerText}>
                   {currentPractioner.name}
                 </div>
-                <div style={{justifyItems: 'center'}}>
+                <div style={{textAlign: 'center', marginTop: 10}}>
                   <button style={styles.styledButton}>Learn More</button>
                 </div>
               </div>
@@ -133,7 +134,7 @@ const styles = {
     paddingLeft: 10,
     paddingRight: 10,
     paddingTop: 5,
-    paddingBottom: 5
+    paddingBottom: 5,
   },
   currentServiceWrapper: {
     display: 'flex',
@@ -190,20 +191,27 @@ const styles = {
     marginLeft: 50,
     gap: 5
   },
-  practionerWrapper: {
-    width: '80%',
+  practionersWrapper: {
+    width: '70%',
+    marginTop: '10vh',
     marginLeft: 'auto',
     marginRight: 'auto',
     marginBottom: '10vh'
   },
+  practionerWrapper: {
+
+  },
   practionerList: {
     display: 'flex',
+    marginTop: 20,
     flexDirection: 'inline-row',
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-between',
   },
   practionerText: {
     color: 'green',
     fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 10
   }
 };
 
