@@ -4,7 +4,7 @@ import BannerImg from '../Components/ImgContainer/BannerImg';
 
 const Services = () => {
 
-  const [selectedService, setSelectedService] = useState('Test');
+  const [selectedService, setSelectedService] = useState('Chiropractic');
   const [selectedTab, setSelectedTab] = useState('How it works');
 
   const buttonValues = [
@@ -73,8 +73,8 @@ const Services = () => {
           {
             buttonValues.map(currentButton => <button
               key={currentButton}
-              style={styles.styledButton}
-              onClick={() => console.log(currentButton)}
+              style={selectedService === currentButton ? {...styles.styledButton, backgroundColor: '#003400'} : styles.styledButton}
+              onClick={() => setSelectedService(currentButton)}
             >{currentButton}</button>)
           }
         </div>
