@@ -41,9 +41,11 @@ const styles = {
   },
   secondaryContent: {
     minWidth: '30%',
-    backgroundColor: 'gray'
+    minHeight: 300,
+    backgroundColor: 'gray',
   },
   buttonWrapper: {
+    marginTop: 25,
     textAlign: 'center',
   },
   styledButton: {

@@ -18,7 +18,7 @@ const Landing = () => {
       <Router>
         <NavBar />
           <Switch>
-            <Route path = "/" component={Services} />
+            <Route path = "/" component={Home} />
           </Switch>
         <FooterNav />
       </Router>

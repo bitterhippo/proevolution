@@ -42,7 +42,6 @@ const styles = {
     objectFit: 'cover',
     overflow: 'hidden',
     filter: 'brightness(50%)',
-    zIndex: -1
   }
 };
 

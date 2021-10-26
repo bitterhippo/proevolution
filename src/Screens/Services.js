@@ -121,7 +121,7 @@ const styles = {
     backgroundColor: 'gray',
   },
   whiteSpaceContent: {
-    marginLeft: '35%',
+    marginLeft: '14%',
     paddingTop: 25
   },
   fancyText: {
