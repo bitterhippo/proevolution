@@ -29,6 +29,10 @@ const Home = () => {
           content="An Informed Examination will take place on your first visit, so that we can make or confirm a diagnosis, and understand the state and stage of your injury. We'll check your medical history, find out about your level of physical activity and any relevant lifestyle factors."
           button="Our Process"
         />
+        <div style={styles.clipPathItem2}>
+        </div>
+        <div style={styles.clipPathItem1}>
+        </div>
       </div>
       <h2 style={styles.bannerText}>Our Services</h2>
       <div style={styles.servicesList}>
@@ -79,6 +83,22 @@ const styles = {
     flexDirection: 'column',
     marginTop: '5vh',
     gap: '7.5vh'
+  },
+  clipPathItem1: {
+    backgroundColor: 'green',
+    zIndex: -1,
+    height: '100%',
+    width: '100%',
+    clipPath: "polygon(0 0, 100% 39%, 100% 81%, 0 45%)",
+    minHeight: '300px'
+  },
+  clipPathItem2: {
+    backgroundColor: 'gray',
+    zIndex: -1,
+    height: '100%',
+    width: '100%',
+    clipPath: "polygon(0 41%, 100% 0, 100% 45%, 0 84%)",
+    minHeight: '300px'
   }
 }
 
