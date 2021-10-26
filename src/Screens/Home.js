@@ -85,19 +85,21 @@ const styles = {
     gap: '7.5vh'
   },
   clipPathItem1: {
+    position: 'absolute',
     backgroundColor: 'green',
     zIndex: -1,
     height: '100%',
     width: '100%',
-    clipPath: "polygon(0 0, 100% 39%, 100% 81%, 0 45%)",
+    clipPath: "polygon(0 18%, 100% 0, 100% 83%, 0 100%)",
     minHeight: '300px'
   },
   clipPathItem2: {
+    position: 'absolute',
     backgroundColor: 'gray',
-    zIndex: -1,
+    zIndex: -2,
     height: '100%',
     width: '100%',
-    clipPath: "polygon(0 41%, 100% 0, 100% 45%, 0 84%)",
+    clipPath: "polygon(0 0, 100% 19%, 100% 100%, 0 79%)",
     minHeight: '300px'
   }
 }
