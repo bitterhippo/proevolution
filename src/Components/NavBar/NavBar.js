@@ -1,22 +1,30 @@
-import React from 'react';
+import React, { useState} from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
   const navHeaders = ['Services', 'FAQ', 'About'];
-
+  const [selectedNavHeader, setNavHeader] = useState('');
 
   return (
     <div style={styles.navBarWrapper}>
-      <div style={{...styles.navBarItem, marginLeft: '5vw'}}>
+      <div style={{ ...styles.navBarItem, marginLeft: '5vw' }}>
         LOGO
       </div>
       <div style={styles.navLinks}>
         {
           navHeaders.map(currentNavHeader => <div
+            onMouseEnter={() => setNavHeader(currentNavHeader)}
+            onMouseLeave={() => setNavHeader("")}
             key={currentNavHeader}
             style={styles.navBarItem}
           >
-            {currentNavHeader}
+            <Link
+              style={selectedNavHeader === currentNavHeader
+                ? styles.selectedNavBarItem
+                : styles.navBarItem}
+              to={currentNavHeader}>{currentNavHeader}
+            </Link>
           </div>)
         }
       </div>
@@ -42,12 +50,22 @@ const styles = {
     marginLeft: '25%',
     gap: '5vw'
   },
+  selectedNavBarItem: {
+    color: 'white',
+    fontWeight: 'bold',
+    marginTop: 'auto',
+    marginBottom: 'auto',
+    fontSize: 14,
+    textDecoration: 'none',
+    borderBottom: '2px solid white',
+  },
   navBarItem: {
     color: 'white',
     fontWeight: 'bold',
     marginTop: 'auto',
     marginBottom: 'auto',
-    fontSize: 14
+    fontSize: 14,
+    textDecoration: 'none'
   },
   navBarButton: {
     border: '2px solid white',
