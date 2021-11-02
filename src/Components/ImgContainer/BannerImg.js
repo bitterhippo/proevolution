@@ -33,8 +33,6 @@ const styles = {
     top: '25%',
     textAlign: 'center',
     transform: 'translate(-50%, -50%)',
-    marginBottom: 0,
-    paddingBottom: 0
   },
   img: {
     width: '100%',
@@ -42,6 +40,8 @@ const styles = {
     objectFit: 'cover',
     overflow: 'hidden',
     filter: 'brightness(50%)',
+    marginBottom: 0,
+    paddingBottom: 0
   }
 };
 

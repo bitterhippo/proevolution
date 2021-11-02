@@ -45,6 +45,8 @@ const Services = () => {
       />
       {/*  White Space Screen with selectors  */}
       <div style={styles.whiteSpace}>
+        <div style={styles.whiteSpaceSpacer}>
+        </div>
         <div style={styles.whiteSpaceContent}>
           <div style={styles.currentServiceWrapper}>
             <div>
@@ -117,12 +119,17 @@ const Services = () => {
 
 const styles = {
   whiteSpace: {
+    display: 'flex',
+    flexDirection: 'inline-row',
     minHeight: '12vh',
     backgroundColor: 'gray',
   },
+  whiteSpaceSpacer: {
+    minWidth: "30%",
+  },
   whiteSpaceContent: {
-    marginLeft: '14%',
-    paddingTop: 25
+    marginTop: 25,
+    width: '100%',
   },
   fancyText: {
     color: 'green',
@@ -133,8 +140,8 @@ const styles = {
     backgroundColor: '#206620',
     color: 'white',
     borderRadius: 5,
-    paddingLeft: 10,
-    paddingRight: 10,
+    paddingLeft: 30,
+    paddingRight: 30,
     paddingTop: 5,
     paddingBottom: 5,
   },
@@ -199,9 +206,6 @@ const styles = {
     marginLeft: 'auto',
     marginRight: 'auto',
     marginBottom: '10vh'
-  },
-  practionerWrapper: {
-
   },
   practionerList: {
     display: 'flex',
