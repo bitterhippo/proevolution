@@ -17,13 +17,15 @@ const Landing = () => {
     <div style={styles.wrapper}>
       <Router>
         <NavBar />
-          <Switch>
-            <Route exact path = "/" component={Home} />
-            <Route exact path = "/services" component={Services} />
-            <Route exact path = "/about" component={About} />
-            <Route exact path = "/staffview" component={StaffView} />
-          </Switch>
-        <FooterNav />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/services" component={Services} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/staffview" component={StaffView} />
+        </Switch>
+        <div style={styles.navWrapper}>
+          <FooterNav />
+        </div>
       </Router>
     </div>
   )
@@ -31,11 +33,15 @@ const Landing = () => {
 
 const styles = {
   wrapper: {
-    width: '100%',
     paddingTop: 0,
     minHeight: '100vh',
     paddingBottom: '5vh'
   },
+  navWrapper: {
+    position: "absolute",
+    width: "100%",
+    height: "2.5rem"
+  }
 }
 
 export default Landing;

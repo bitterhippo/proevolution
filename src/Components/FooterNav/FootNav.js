@@ -73,8 +73,8 @@ const styles = {
     backgroundColor: '#206620',
     position: 'relative',
     bottom: '0',
-    paddingTop: 20,
-    paddingBottom: 20
+    paddingTop: 40,
+    paddingBottom: 40
   },
   footerNavList: {
     marginTop: 15,

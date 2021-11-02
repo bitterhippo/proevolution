@@ -38,7 +38,7 @@ const NavBar = () => {
 const styles = {
   navBarWrapper: {
     backgroundColor: '#206620',
-    height: '5vh',
+    height: '6vh',
     display: 'flex',
     flexDirection: 'inline-row'
   },
