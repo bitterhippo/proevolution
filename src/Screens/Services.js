@@ -81,7 +81,7 @@ const Services = () => {
             >{currentButton}</button>)
           }
         </div>
-        <div>
+        <div style={styles.serviceDataWrapper}>
           <div>
             {DummyData[selectedService.split(' ').join('')][selectedTab.split(' ').join('')].text}
           </div>
@@ -123,9 +123,10 @@ const styles = {
     flexDirection: 'inline-row',
     minHeight: '12vh',
     backgroundColor: 'gray',
+    gap: "10vw"
   },
   whiteSpaceSpacer: {
-    minWidth: "30%",
+    minWidth: "10vw",
   },
   whiteSpaceContent: {
     marginTop: 25,
@@ -192,13 +193,14 @@ const styles = {
     flexDirection: 'inline-flex',
     marginTop: 20,
     marginBottom: 20,
-    gap: 50
+    gap: '10vw',
   },
   buttonList: {
     display: 'flex',
     flexDirection: 'column',
     marginLeft: 50,
-    gap: 5
+    gap: 5,
+    backgroundColor: 'red'
   },
   practionersWrapper: {
     width: '70%',
