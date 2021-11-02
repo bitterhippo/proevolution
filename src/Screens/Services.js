@@ -123,10 +123,12 @@ const styles = {
     flexDirection: 'inline-row',
     minHeight: '12vh',
     backgroundColor: 'gray',
-    gap: "10vw"
+    gap: "5vw"
   },
   whiteSpaceSpacer: {
     minWidth: "10vw",
+    marginLeft: 50,
+    minWidth: 210
   },
   whiteSpaceContent: {
     marginTop: 25,
@@ -193,14 +195,14 @@ const styles = {
     flexDirection: 'inline-flex',
     marginTop: 20,
     marginBottom: 20,
-    gap: '10vw',
+    gap: '5vw',
   },
   buttonList: {
     display: 'flex',
     flexDirection: 'column',
     marginLeft: 50,
     gap: 5,
-    backgroundColor: 'red'
+    maxWidth: 210
   },
   practionersWrapper: {
     width: '70%',
