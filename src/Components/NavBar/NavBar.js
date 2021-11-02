@@ -9,7 +9,9 @@ const NavBar = () => {
   return (
     <div style={styles.navBarWrapper}>
       <div style={{ ...styles.navBarItem, marginLeft: '5vw' }}>
-        LOGO
+        <Link 
+        style={styles.navBarItem}
+        to={"/"}>LOGO</Link>
       </div>
       <div style={styles.navLinks}>
         {
