@@ -205,7 +205,7 @@ const styles = {
     maxWidth: 210
   },
   practionersWrapper: {
-    width: '70%',
+    maxWidth: '40%',
     marginTop: '10vh',
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -213,6 +213,7 @@ const styles = {
   },
   practionerList: {
     display: 'flex',
+    gap: '4vw',
     marginTop: 20,
     flexDirection: 'inline-row',
     justifyContent: 'space-between',

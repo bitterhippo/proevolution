@@ -1,4 +1,4 @@
-import React from 'reactt';
+import React from 'react';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 
 const HealthConcerns = () => {
