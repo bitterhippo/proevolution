@@ -55,13 +55,13 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div style={StyleSheet.staffList}>
+      <div style={styles.staffList}>
         {
           staffList.map(currentMember => <div 
             style={styles.staffContainer}
           >
             {currentMember.name}
-            <button style={StyleSheet.staffListButton}></button>
+            <button style={styles.staffListButton}>Learn More</button>
           </div>)
         }
       </div>
