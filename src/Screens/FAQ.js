@@ -29,7 +29,8 @@ const styles = {
     borderRadius: '10px',
     border: '2px solid green',
     width: '300px',
-    height: '30px'
+    height: '30px',
+    marginLeft: '20%'
   }
 };
 
