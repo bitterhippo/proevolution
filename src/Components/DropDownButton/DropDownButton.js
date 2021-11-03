@@ -19,7 +19,8 @@ const DropDownButton = ({ title, content }) => {
 
 const styles = {
   dropDownContainer: {
-    border: '1px solid black'
+    border: '1px solid black',
+    width: '100%'
   }
 };
 

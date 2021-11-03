@@ -1,11 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Home from "./Screens/Home";
-import About from "./Screens/About";
-import NavBar from "./Components/NavBar/NavBar";
+
+//Screens
 import StaffView from './Screens/StaffView';
 import Services from './Screens/Services';
 import FooterNav from "./Components/FooterNav/FootNav";
+import Home from "./Screens/Home";
+import About from "./Screens/About";
+import FAQ from './Screens/FAQ';
+
+//Components
+import NavBar from "./Components/NavBar/NavBar";
+
+//Router
+import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,6 +27,7 @@ const Landing = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/services" component={Services} />
+          <Route exact path="/FAQ" component={FAQ} />
           <Route exact path="/about" component={About} />
           <Route exact path="/staffview" component={StaffView} />
         </Switch>

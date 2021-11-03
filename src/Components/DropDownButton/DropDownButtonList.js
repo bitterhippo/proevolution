@@ -22,4 +22,4 @@ const styles = {
   }
 };
 
-return DropDownButtonList;
+export default DropDownButtonList;

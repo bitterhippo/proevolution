@@ -85,8 +85,6 @@ const Services = () => {
           <div>
             {DummyData[selectedService.split(' ').join('')][selectedTab.split(' ').join('')].text}
           </div>
-          <div style={{ backgroundColor: 'gray', height: 250, width: 500 }}>
-          </div>
         </div>
       </div>
       <div style={styles.practionersWrapper}>

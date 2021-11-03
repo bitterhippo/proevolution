@@ -41,6 +41,7 @@ const Home = () => {
       <div style={styles.servicesList}>
         {
           servicesData.map(currentItem => <div
+            key={currentItem}
             style={styles.rowItem}
           >
             <div style={styles.rowItemImg}>

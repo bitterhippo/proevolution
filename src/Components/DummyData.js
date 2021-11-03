@@ -1,13 +1,21 @@
+import React from 'react';
+
+//Components Import
+import BannerImg from '../Components/ImgContainer/BannerImg';
+import DropDownButtonList from '../Components/DropDownButton/DropDownButtonList';
+
 let DummyData = {
   Chiropractic: {
     Howitworks: {
-      text: "This is Chiropractic how it works data"
+      text: <div>
+        This is the data for Chiropractic how it works.
+      </div>
     },
     Howithelps: {
       text: "This is Chiropractic how it helps data"
     },
     Whatittreats: {
-      text: "This is Chiropractic what it treats data"
+      text: "This the Chiropractic what it treats data"
     }
   },
   Physiotherapy: {
