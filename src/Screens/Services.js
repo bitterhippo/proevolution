@@ -222,6 +222,7 @@ const styles = {
     color: 'green',
     fontWeight: 'bold',
     textAlign: 'center',
+    minHeight: 40,
     marginTop: 10
   }
 };

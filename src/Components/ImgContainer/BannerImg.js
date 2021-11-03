@@ -40,8 +40,6 @@ const styles = {
     objectFit: 'cover',
     overflow: 'hidden',
     filter: 'brightness(50%)',
-    marginBottom: 0,
-    paddingBottom: 0
   }
 };
 
