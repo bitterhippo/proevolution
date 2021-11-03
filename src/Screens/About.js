@@ -75,6 +75,7 @@ const About = () => {
 const styles = {
   staffList: {
     display: 'flex',
+    justifyContent: 'space-evenly',
     flexDirection: 'inline-row',
   },
   staffListButton: {
