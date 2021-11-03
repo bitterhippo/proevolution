@@ -74,6 +74,7 @@ const About = () => {
 
 const styles = {
   staffList: {
+    marginTop: '20vh',
     display: 'flex',
     justifyContent: 'space-evenly',
     flexDirection: 'inline-row',
@@ -92,7 +93,7 @@ const styles = {
   },
   button: {
     marginTop: '20px',
-    backgroundColor: 'green',
+    backgroundColor: '#206620',
     color: 'white',
     borderRadius: '5px',
     padding: '5px 20px 5px 20px',
