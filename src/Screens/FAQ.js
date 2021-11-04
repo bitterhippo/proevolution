@@ -4,15 +4,28 @@ import React from 'react';
 import DropDownButtonList from '../Components/DropDownButton/DropDownButtonList';
 
 const FAQ = () => {
+
+  const questions = [
+    {
+      title: 'test', content: 'test'
+    },
+  ];
+
+
+
+
   return (
     <div style={styles.contentWrapper}>
       <div style={styles.primaryContent}>
         <input
           style={styles.input}
           placeholder="Search Frequently Asked Questions"></input>
-        <div style={styles.FAQtext}>
+        <div style={styles.faqHeader}>
           Frequently Asked Questions
         </div>
+        <DropDownButtonList 
+          listData={questions}
+        />
       </div>
     </div>
   )
@@ -34,7 +47,14 @@ const styles = {
     width: '100%',
     height: '30px',
     boxShadow: '0 5px 10px rgb(0 0 0 / 0.2)'
-  }
+  },
+  faqHeader: {
+    marginTop: '10%',
+    fontSize: 28,
+    fontWeight: 'bold',
+    textDecoration: 'underline',
+    marginBottom: 20
+  },
 };
 
 export default FAQ;
