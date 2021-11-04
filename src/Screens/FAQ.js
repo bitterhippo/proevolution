@@ -6,10 +6,13 @@ import DropDownButtonList from '../Components/DropDownButton/DropDownButtonList'
 const FAQ = () => {
   return (
     <div style={styles.contentWrapper}>
-      <div style={styles.primaryContent}> 
-      <input 
-      style={styles.input}
-      placeholder="Frequently Asked Questions"></input>
+      <div style={styles.primaryContent}>
+        <input
+          style={styles.input}
+          placeholder="Search Frequently Asked Questions"></input>
+        <div style={styles.FAQtext}>
+          Frequently Asked Questions
+        </div>
       </div>
     </div>
   )
@@ -20,17 +23,17 @@ const styles = {
     height: '80vh'
   },
   primaryContent: {
-    width: '60%',
+    width: '65%',
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: '20%',
+    marginTop: '10%',
   },
   input: {
     borderRadius: '10px',
     border: '2px solid green',
-    width: '300px',
+    width: '100%',
     height: '30px',
-    marginLeft: '20%'
+    boxShadow: '0 5px 10px rgb(0 0 0 / 0.2)'
   }
 };
 
