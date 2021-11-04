@@ -20,10 +20,10 @@ const styles = {
     height: '80vh'
   },
   primaryContent: {
-    backgroundColor: 'red',
     width: '60%',
     marginLeft: 'auto',
     marginRight: 'auto',
+    marginTop: '20%',
   },
   input: {
     borderRadius: '10px',

@@ -31,7 +31,7 @@ const About = () => {
       <div style={styles.splitView}>
         {/* First Screen */}
         <div style={styles.screen}>
-          <div>
+          <div style={{marginBottom: 30}}>
             <span style={styles.bigText}>Our Process</span>
           </div>
           <div>
@@ -92,7 +92,7 @@ const styles = {
     fontWeight: "bold",
   },
   button: {
-    marginTop: '20px',
+    marginTop: 40,
     backgroundColor: '#206620',
     color: 'white',
     borderRadius: '5px',
@@ -110,10 +110,11 @@ const styles = {
     marginLeft: '20px',
   },
   imgHolder: {
-    marginTop: '70px',
+    marginTop: '100px',
+    marginLeft: 40,
     height: '300px',
     width: '300px',
-    backgroundColor: 'gray'
+    backgroundColor: 'gray',
   },
   staffContainer: {
     display: 'flex',
