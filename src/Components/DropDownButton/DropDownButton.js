@@ -5,14 +5,14 @@ const DropDownButton = ({ title, content }) => {
   const [drawer, toggleDrawer] = useState(false);
 
   return (
-    <div style={drawer
-      ? styles.dropDownWrapper
-      : styles.dropDownWrapperOpen}>
-      <div
-        style={drawer
-          ? { ...styles.dropDownContainer, backgroundColor: 'gray' }
-          : { ...styles.dropDownWrapperOpen, backgroundColor: 'white' }
+    <div style={
+      drawer
+        ? { ...styles.dropDownContainer, backgroundColor: 'gray' }
+        : { ...styles.dropDownWrapperOpen, backgroundColor: 'white' }
         }
+        onClick={() => toggleDrawer(!drawer)}
+        >
+      <div
         onClick={() => toggleDrawer(!drawer)}
       >
         <div style={styles.titleText}>{title} An Arrow</div>
@@ -45,10 +45,8 @@ const styles = {
     marginTop: 5
   },
   hiddenContent: {
-    border: '1px solid black',
-    borderRadius: 5,
-    height: 20,
-    padingTop: 10,
+    marginLeft: 30,
+    paddingTop: 10,
     paddingBottom: 10,
   }
 };
