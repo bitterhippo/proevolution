@@ -9,6 +9,9 @@ const FAQ = () => {
     {
       title: 'test', content: 'test'
     },
+    {
+      title: 'test', content: 'test'
+    },
   ];
 
 
