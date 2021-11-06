@@ -7,6 +7,7 @@ const DropDownButton = ({ title, content }) => {
   return (
     <div style={styles.dropDownWrapper}>
       <div
+        style={styles.dropDownTitle}
         onClick = {() => toggleDrawer(!drawer)}
       >
         <div style={styles.titleText}>{title} An Arrow</div>
@@ -20,6 +21,9 @@ const styles = {
   dropDownWrapper: {
     border: '1px solid black',
     borderRadius: 5,
+  },
+  dropDownTitle: {
+    borderBottom: '1px solid black'
   }
 };
 
