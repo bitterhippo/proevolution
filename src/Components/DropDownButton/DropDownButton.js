@@ -9,10 +9,10 @@ const DropDownButton = ({ title, content }) => {
       ? styles.dropDownWrapper
       : styles.dropDownWrapperOpen}>
       <div
-        style={ drawer 
-          ? {...styles.dropDownContainer, backgroundColor: 'gray'}
-          : {...styles.dropDownWrapperOpen, backgroundColor: 'white'}
-      }
+        style={drawer
+          ? { ...styles.dropDownContainer, backgroundColor: 'gray' }
+          : { ...styles.dropDownWrapperOpen, backgroundColor: 'white' }
+        }
         onClick={() => toggleDrawer(!drawer)}
       >
         <div style={styles.titleText}>{title} An Arrow</div>
@@ -43,6 +43,13 @@ const styles = {
   titleText: {
     marginLeft: 30,
     marginTop: 5
+  },
+  hiddenContent: {
+    border: '1px solid black',
+    borderRadius: 5,
+    height: 20,
+    padingTop: 10,
+    paddingBottom: 10,
   }
 };
 

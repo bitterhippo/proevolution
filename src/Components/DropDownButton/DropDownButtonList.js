@@ -7,6 +7,7 @@ const DropDownButtonList = ({ listData }) => {
       <span></span>
       {
         listData.map(currentItem => <DropDownButton 
+          key={currentItem.title}
           title={currentItem.title}
           content={currentItem.content}
         />)

@@ -10,7 +10,7 @@ const FAQ = () => {
       title: 'test', content: 'test'
     },
     {
-      title: 'test', content: 'test'
+      title: 'test1', content: 'test'
     },
   ];
 
