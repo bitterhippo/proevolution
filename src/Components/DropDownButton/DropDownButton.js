@@ -5,15 +5,9 @@ const DropDownButton = ({ title, content }) => {
   const [drawer, toggleDrawer] = useState(false);
 
   return (
-    <div style={
-      drawer
-        ? { ...styles.dropDownContainer, backgroundColor: 'gray' }
-        : { ...styles.dropDownWrapperOpen, backgroundColor: 'white' }
-        }
-        onClick={() => toggleDrawer(!drawer)}
-        >
+    <div style={styles.dropDownWrapper}>
       <div
-        onClick={() => toggleDrawer(!drawer)}
+        onClick = {() => toggleDrawer(!drawer)}
       >
         <div style={styles.titleText}>{title} An Arrow</div>
       </div>
@@ -23,31 +17,9 @@ const DropDownButton = ({ title, content }) => {
 };
 
 const styles = {
-  dropDownContainer: {
-    border: '1px solid black',
-    borderRadius: 5,
-    height: 20,
-    padingTop: 10,
-    paddingBottom: 10,
-  },
   dropDownWrapper: {
-    width: '100%'
-  },
-  dropDownWrapperOpen: {
     border: '1px solid black',
     borderRadius: 5,
-    height: 20,
-    padingTop: 10,
-    paddingBottom: 10,
-  },
-  titleText: {
-    marginLeft: 30,
-    marginTop: 5
-  },
-  hiddenContent: {
-    marginLeft: 30,
-    paddingTop: 10,
-    paddingBottom: 10,
   }
 };
 
