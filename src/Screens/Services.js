@@ -76,7 +76,7 @@ const Services = () => {
           {
             buttonValues.map(currentButton => <button
               key={currentButton}
-              style={selectedService === currentButton ? {...styles.styledButton, backgroundColor: '#003400'} : styles.styledButton}
+              style={selectedService === currentButton ? { ...styles.styledButton, backgroundColor: '#003400' } : styles.styledButton}
               onClick={() => setSelectedService(currentButton)}
             >{currentButton}</button>)
           }
@@ -103,9 +103,8 @@ const Services = () => {
                 <div style={styles.practionerText}>
                   {currentPractioner.name}
                 </div>
-                <div style={{textAlign: 'center', marginTop: 10}}>
-                  <button style={styles.styledButton}>Learn More</button>
-                </div>
+                <button style={{...styles.styledButton,
+                marginLeft: 'auto', marginRight: 'auto'}}>Learn More</button>
               </div>
             </div>)
           }
@@ -144,8 +143,8 @@ const styles = {
     borderRadius: 5,
     paddingLeft: 25,
     paddingRight: 25,
-    paddingTop: 5,
-    paddingBottom: 5,
+    paddingTop: 6,
+    paddingBottom: 6,
     fontWeight: 'bold',
   },
   currentServiceWrapper: {
@@ -210,7 +209,7 @@ const styles = {
     marginTop: '10vh',
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginBottom: '10vh'
+    marginBottom: '10vh',
   },
   practionerList: {
     display: 'flex',
