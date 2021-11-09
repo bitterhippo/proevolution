@@ -7,7 +7,7 @@ const FAQ = () => {
 
   const questions = [
     {
-      title: 'test', content: 'test'
+      title: 'test', content: 'is this really capable of handling content that goes on for more than a single line?! I mean that im not sure if this will actuall be able to handle multiline content without formatting it in a really strange way.'
     },
     {
       title: 'test1', content: 'test'

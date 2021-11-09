@@ -35,7 +35,7 @@ const styles = {
     paddingBottom: 5
   },
   dropDownTitleOpen : {
-    backgroundColor: 'gray',
+    background: 'rgba(32, 102, 32, 0.1)',
     borderBottom: '1px solid black',
     borderTop: '1px solid black',
     borderBottomLeftRadius: 0,
