@@ -4,7 +4,6 @@ import DropDownButton from './DropDownButton';
 const DropDownButtonList = ({ listData }) => {
   return (
     <div style={styles.dropDownListContainer}>
-      <span></span>
       {
         listData.map(currentItem => <DropDownButton 
           key={currentItem.title}
@@ -18,12 +17,11 @@ const DropDownButtonList = ({ listData }) => {
 
 const styles = {
   dropDownListContainer: {
-    top: '100%',
-    backgroundColor: 'red',
+    justifyContent: 'start',
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    gap: 10,
+    gap: 5,
   }
 };
 

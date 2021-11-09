@@ -141,11 +141,11 @@ const styles = {
     backgroundColor: '#206620',
     color: 'white',
     borderRadius: 5,
-    paddingLeft: 30,
-    paddingRight: 30,
+    paddingLeft: 25,
+    paddingRight: 25,
     paddingTop: 5,
     paddingBottom: 5,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   currentServiceWrapper: {
     display: 'flex',
