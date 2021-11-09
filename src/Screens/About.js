@@ -1,5 +1,6 @@
 import React from 'react';
 import BannerImg from '../Components/ImgContainer/BannerImg';
+import ProfileList from '../Components/Profiles/ProfileList';
 
 const About = () => {
 
@@ -55,15 +56,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div style={styles.staffList}>
-        {
-          staffList.map(currentMember => <div 
-            style={styles.staffContainer}
-          >
-            {currentMember.name}
-            <button style={styles.staffListButton}>Learn More</button>
-          </div>)
-        }
+      <div style={styles.practionerWrapper}>
+      <ProfileList listData={staffList} />
       </div>
       <div>
         A carousel should go here.
@@ -119,6 +113,10 @@ const styles = {
   staffContainer: {
     display: 'flex',
     flexDirection: 'column',
+  },
+  practionerWrapper: {
+    marginTop: 50,
+    width: '100%',
   }
 };
 
