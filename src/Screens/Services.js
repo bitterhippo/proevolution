@@ -120,7 +120,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'inline-row',
     minHeight: '12vh',
-    backgroundColor: 'gray',
+    backgroundColor: 'rgba(32, 102, 32, 0.1)',
     gap: "5vw"
   },
   whiteSpaceSpacer: {
