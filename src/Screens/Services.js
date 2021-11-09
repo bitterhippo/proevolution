@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import DummyData from '../Components/DummyData';
-
+import ProfileList from '../Components/Profiles/ProfileList';
 
 const Services = () => {
 
@@ -89,26 +89,7 @@ const Services = () => {
       </div>
       <div style={styles.practionersWrapper}>
         <span style={styles.practionerText}>Our Chiropractors :</span>
-        <div style={styles.practionerList}>
-          {
-            practionerList.map(currentPractioner => <div>
-              <div
-                key={currentPractioner}
-                style={styles.practionerWrapper}
-              >
-                <div style={{
-                  backgroundColor: 'gray', height: 150,
-                  width: 150
-                }}></div>
-                <div style={styles.practionerText}>
-                  {currentPractioner.name}
-                </div>
-                <button style={{...styles.styledButton,
-                marginLeft: 'auto', marginRight: 'auto'}}>Learn More</button>
-              </div>
-            </div>)
-          }
-        </div>
+        <ProfileList listData={practionerList} />
       </div>
     </div>
   )
@@ -205,7 +186,7 @@ const styles = {
     maxWidth: 210
   },
   practionersWrapper: {
-    maxWidth: '40%',
+    maxWidth: '60%',
     marginTop: '10vh',
     marginLeft: 'auto',
     marginRight: 'auto',
