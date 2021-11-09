@@ -18,9 +18,12 @@ const DropDownButtonList = ({ listData }) => {
 
 const styles = {
   dropDownListContainer: {
+    top: '100%',
+    backgroundColor: 'red',
+    width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    gap: 10
+    gap: 10,
   }
 };
 

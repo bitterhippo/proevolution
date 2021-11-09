@@ -15,7 +15,8 @@ let DummyData = {
       text: "This is Chiropractic how it helps data"
     },
     Whatittreats: {
-      text: <DropDownButtonList listData={[
+      text: <DropDownButtonList 
+      listData={[
         {title: "testaronies", content: 'cheese'}
       ]} />
     }

@@ -145,6 +145,7 @@ const styles = {
     paddingRight: 30,
     paddingTop: 5,
     paddingBottom: 5,
+    fontWeight: 'bold'
   },
   currentServiceWrapper: {
     display: 'flex',
@@ -222,6 +223,9 @@ const styles = {
     textAlign: 'center',
     minHeight: 40,
     marginTop: 10
+  },
+  serviceDataWrapper: {
+    width: '60%'
   }
 };
 
