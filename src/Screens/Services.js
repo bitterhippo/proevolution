@@ -117,6 +117,7 @@ const Services = () => {
 
 const styles = {
   whiteSpace: {
+    marginTop: '-5px',
     display: 'flex',
     flexDirection: 'inline-row',
     minHeight: '12vh',
@@ -151,7 +152,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'inline-row',
     marginTop: 10,
-    width: '70%',
+    width: '80%',
+    gap: 20
   },
   mainContent: {
     display: 'flex',

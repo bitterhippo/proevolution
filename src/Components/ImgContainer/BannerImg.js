@@ -9,7 +9,7 @@ const BannerImg = ({ image, message }) => {
   }
 
   return (
-    <div style={styles.bannerImgWrapper}>
+    <div style={{...styles.bannerImgWrapper, backgroundImage: imgConnector[image]}}>
       <div style={styles.bannerText}>
         {message}
       </div>
@@ -22,6 +22,9 @@ const BannerImg = ({ image, message }) => {
 
 const styles = {
   bannerImgWrapper: {
+    overflow: 'hidden',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
   },
   bannerText: {
     color: 'white',
