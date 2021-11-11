@@ -18,10 +18,26 @@ import PT from "../../Images/PT.jpg";
 import ShockwaveTherapy from "../../Images/ShockwaveTherapy.jpg";
 import TherapueticUltrasound from "../../Images/TherapueticUltrasound.jpg";
 
-const BannerImg = ({ image, height, width, message }) => {
+const BannerImg = ({ image, message }) => {
 
   const imgConnector = {
     CeaserTeam: CeaserTeam,
+    AboutUs1: AboutUs1,
+    AboutUsBanner: AboutUsBanner,
+    FunctionalRehab: FunctionalRehab,
+    Home1: Home1,
+    Home2: Home2,
+    Lazer: Lazer,
+    Logo: Logo,
+    Massage: Massage,
+    NutritionalCounselling: NutritionalCounselling,
+    Physiotherapy: Physiotherapy,
+    PractList1: PractList1,
+    PractList2: PractList2,
+    PractList3: PractList3,
+    PT: PT,
+    ShockwaveTherapy: ShockwaveTherapy,
+    TherapueticUltrasound: TherapueticUltrasound
   }
 
   return (
