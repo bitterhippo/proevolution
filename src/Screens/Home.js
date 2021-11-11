@@ -17,6 +17,7 @@ const Home = () => {
       <BannerImg
         image={'CeaserTeam'}
         message={'Pro Evolution Wellness'}
+        brightness={"dark"}
       />
       <div style={styles.contentBlock}>
         <ContentBlock

@@ -18,7 +18,7 @@ import PT from "../../Images/PT.jpg";
 import ShockwaveTherapy from "../../Images/ShockwaveTherapy.jpg";
 import TherapueticUltrasound from "../../Images/TherapueticUltrasound.jpg";
 
-const BannerImg = ({ image, message }) => {
+const BannerImg = ({ image, message, brightness }) => {
 
   const imgConnector = {
     CeaserTeam: CeaserTeam,
@@ -46,16 +46,13 @@ const BannerImg = ({ image, message }) => {
         {message}
       </div>
       <img
-        style={styles.img}
+        style={{...styles.img, filter: brightness === "dark" ? "brightness(50%)" : "brightness(80%)"}}
         src={imgConnector[image]} />
     </div>
   )
 };
 
 const styles = {
-  bannerImgWrapper: {
-
-  },
   bannerText: {
     color: 'white',
     fontWeight: 'bold',
@@ -72,7 +69,6 @@ const styles = {
     height: '30vh',
     objectFit: 'cover',
     overflow: 'hidden',
-    filter: 'brightness(50%)',
   }
 };
 

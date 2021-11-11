@@ -26,7 +26,7 @@ const About = () => {
   return (
     <div>
       <BannerImg
-        image={'CeaserTeam'}
+        image={'AboutUsBanner'}
         message="About us"
       />
       <div style={styles.splitView}>
