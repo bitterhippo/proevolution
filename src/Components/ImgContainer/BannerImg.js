@@ -9,7 +9,14 @@ import Home2 from "../../Images/Home2.jpg";
 import Lazer from "../../Images/Lazer.jpg";
 import Logo from "../../Images/Logo.svg";
 import Massage from "../../Images/Massage.jpg";
-
+import NutritionalCounselling from "../../Images/NutritionalCounselling.jpg";
+import Physiotherapy from "../../Images/Physiotherapy.jpg";
+import PractList1 from "../../Images/PractList1.jpg";
+import PractList2 from "../../Images/PractList2.jpg";
+import PractList3 from "../../Images/PractList3.jpg";
+import PT from "../../Images/PT.jpg";
+import ShockwaveTherapy from "../../Images/ShockwaveTherapy.jpg";
+import TherapueticUltrasound from "../../Images/TherapueticUltrasound.jpg";
 
 const BannerImg = ({ image, height, width, message }) => {
 
