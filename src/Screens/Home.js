@@ -8,14 +8,14 @@ import CustomImg from '../Components/ImgContainer/CustomImg';
 const Home = () => {
 
   let servicesData = [
-    {title: 'Physiotherapy', img: 'Physiotherapy'},
-    {title: 'Functional Rehab', img: 'FunctionalRehab'},
-    {title: 'Nutritional Consulting', img: 'NutritionalCounselling'},
-    {title: 'Theraputic Ultrasound', img: 'TherapueticUltrasound'},
-    {title: 'Low Level Laser Therapy (LLLT)', img: 'Lazer'},
-    {title: 'Personal Training', img: "PT"},
-    {title: 'Registered Massage Therapy', img: 'Massage'},
-    {title: 'Shockwave Therapy', img: 'ShockwaveTherapy'},
+    { title: 'Physiotherapy', img: 'Physiotherapy' },
+    { title: 'Functional Rehab', img: 'FunctionalRehab' },
+    { title: 'Nutritional Consulting', img: 'NutritionalCounselling' },
+    { title: 'Theraputic Ultrasound', img: 'TherapueticUltrasound' },
+    { title: 'Low Level Laser Therapy (LLLT)', img: 'Lazer' },
+    { title: 'Personal Training', img: "PT" },
+    { title: 'Registered Massage Therapy', img: 'Massage' },
+    { title: 'Shockwave Therapy', img: 'ShockwaveTherapy' },
   ];
 
 
@@ -39,26 +39,30 @@ const Home = () => {
           background={true}
         />
         <div style={styles.test}>
-        <div style={styles.clipPathItem2}>
-        </div>
-        <div style={styles.clipPathItem1}>
-        </div>
+          <div style={styles.clipPathItem2}>
+          </div>
+          <div style={styles.clipPathItem1}>
+          </div>
         </div>
       </div>
       <h2 style={styles.bannerText}>Our Services</h2>
       <div style={styles.servicesList}>
         {
           servicesData.map(currentItem => {
-          return <div
-            key={currentItem}
-            style={styles.rowItem}
-          >
-            <CustomImg 
-            height={125}
-            width={125}
-            image={`${currentItem.img}`}
-            />
-          </div>})
+            return <div
+              key={currentItem}
+              style={styles.rowItem}
+            >
+              <CustomImg
+                height={125}
+                width={125}
+                image={`${currentItem.img}`}
+              />
+              <div>
+                {currentItem.title}
+              </div>
+            </div>
+          })
         }
       </div>
       <h2 style={styles.bannerText}>Our Providers</h2>
@@ -70,6 +74,7 @@ const Home = () => {
 const styles = {
   servicesList: {
     display: 'flex',
+    justifyContent: 'space-evenly',
     flexWrap: 'wrap',
     marginTop: 10,
   },
