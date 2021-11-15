@@ -2,13 +2,20 @@ import React from 'react';
 import ContentBlock from '../Components/Content/ContentBlock';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import ProviderCarousel from '../Components/Carousel/ProviderCarousel';
+import CustomImg from '../Components/ImgContainer/CustomImg';
+
 
 const Home = () => {
 
   let servicesData = [
-    'Physiotherapy', 'Functional Rehab', 'Nutritional Consulting',
-    'Theraputic Ultrasound', 'Low Level Laser Therapy (LLLT)',
-    'Personal Training', 'Registered Massage Therapy', 'Shockwave Therapy'
+    {title: 'Physiotherapy', img: 'Physiotherapy'},
+    {title: 'Functional Rehab', img: 'FunctionalRehab'},
+    {title: 'Nutritional Consulting', img: 'NutritionalCounselling'},
+    {title: 'Theraputic Ultrasound', img: 'NutritionalCounselling'},
+    {title: 'Low Level Laser Therapy (LLLT)', img: 'Lazer'},
+    {title: 'Personal Training', img: "PT"},
+    {title: 'Registered Massage Therapy', img: 'Massage'},
+    {title: 'Shockwave Therapy', img: 'ShockwaveTherapy'},
   ];
 
 
@@ -45,9 +52,12 @@ const Home = () => {
             key={currentItem}
             style={styles.rowItem}
           >
-            <div style={styles.rowItemImg}>
-            </div>
-            {currentItem}
+            <CustomImg 
+              height={100}
+              width={100}
+              key={currentItem.title}
+              img={currentItem.img}
+            />
           </div>)
         }
       </div>
@@ -72,9 +82,6 @@ const styles = {
     marginTop: 30
   },
   rowItemImg: {
-    height: 100,
-    width: 100,
-    backgroundColor: 'gray',
     alignSelf: 'center'
   },
   bannerText: {

@@ -42,12 +42,17 @@ const CustomImg = ({ height, width, image }) => {
   return (
     <img 
     src={imgConnector[image]}
-    style={{...imgWrapper, height: height, width: width }}>
+    style={{...styles.imgWrapper, height: height, width: width }}>
     </img>
   )
 };
 
 const styles = {
+  imgWrapper: {
+    height: 125,
+    width: 125,
+    zIndex: 1
+  }
 };
 
 export default CustomImg;
