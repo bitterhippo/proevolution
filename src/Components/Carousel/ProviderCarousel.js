@@ -10,7 +10,7 @@ const ProviderCarousel = () => {
 
   return (
     <div>
-      LOL
+      Carousel
       <div style={styles.carouselMainWrapper}>
         <div style={styles.carouselSlider}>
           {
