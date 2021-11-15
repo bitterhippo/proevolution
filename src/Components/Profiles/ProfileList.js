@@ -7,6 +7,7 @@ const ProfileList = ({ listData }) => {
       {
         listData.map(currentItem => <Profile 
           name={currentItem.name}
+          image={currentItem.img}
         />)
       }
     </div>

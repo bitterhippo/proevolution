@@ -1,11 +1,15 @@
 import React from 'react';
+import CustomImg from '../ImgContainer/CustomImg';
 
 const Profile = ({ image, name, link }) => {
   return (
     <div style={styles.profileWrapper}>
       {/* Place holder box for images */}
-      <div style={styles.imgHolder}>
-      </div>
+      <CustomImg 
+        height={200}
+        width={200}
+        image={image}
+      />
       <div style={styles.text}>
         { name }
       </div>

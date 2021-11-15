@@ -3,6 +3,7 @@ import BannerImg from '../Components/ImgContainer/BannerImg';
 import DummyData from '../Components/DummyData';
 import ProfileList from '../Components/Profiles/ProfileList';
 
+
 const Services = () => {
 
   const [selectedService, setSelectedService] = useState('Chiropractic');
@@ -25,15 +26,15 @@ const Services = () => {
   const practionerList = [
     {
       name: 'Jeremy Johnson, RMT',
-      img: ''
+      img: 'PractList1'
     },
     {
       name: 'VanessaHuges, RMT',
-      img: ''
+      img: 'PractList2'
     },
     {
       name: 'Lisa Andrews, PT',
-      img: ''
+      img: 'PractList3'
     }
   ]
 
@@ -42,6 +43,7 @@ const Services = () => {
       <BannerImg
         image={'CeaserTeam'}
         message={'Pro Evolution Wellness'}
+        brightness={'dark'}
       />
       {/*  White Space Screen with selectors  */}
       <div style={styles.whiteSpace}>
