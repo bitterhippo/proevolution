@@ -11,7 +11,7 @@ const Home = () => {
     {title: 'Physiotherapy', img: 'Physiotherapy'},
     {title: 'Functional Rehab', img: 'FunctionalRehab'},
     {title: 'Nutritional Consulting', img: 'NutritionalCounselling'},
-    {title: 'Theraputic Ultrasound', img: 'NutritionalCounselling'},
+    {title: 'Theraputic Ultrasound', img: 'TherapueticUltrasound'},
     {title: 'Low Level Laser Therapy (LLLT)', img: 'Lazer'},
     {title: 'Personal Training', img: "PT"},
     {title: 'Registered Massage Therapy', img: 'Massage'},
@@ -48,17 +48,17 @@ const Home = () => {
       <h2 style={styles.bannerText}>Our Services</h2>
       <div style={styles.servicesList}>
         {
-          servicesData.map(currentItem => <div
+          servicesData.map(currentItem => {
+          return <div
             key={currentItem}
             style={styles.rowItem}
           >
             <CustomImg 
-              height={100}
-              width={100}
-              key={currentItem.title}
-              img={currentItem.img}
+            height={125}
+            width={125}
+            image={`${currentItem.img}`}
             />
-          </div>)
+          </div>})
         }
       </div>
       <h2 style={styles.bannerText}>Our Providers</h2>
@@ -79,10 +79,7 @@ const styles = {
     flexDirection: 'column',
     textAlign: 'center',
     gap: 10,
-    marginTop: 30
-  },
-  rowItemImg: {
-    alignSelf: 'center'
+    marginTop: 30,
   },
   bannerText: {
     marginTop: '15vh',
