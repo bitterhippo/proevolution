@@ -8,11 +8,26 @@ let DummyData = {
   Chiropractic: {
     Howitworks: {
       text: <div>
-        This is the data for Chiropractic how it works.
+        Chiropractic care uses a manual approach that focuses on reducing pain, and getting patients back to their optimal health and functionining. By performing a focused assessment, the doctor will diagnose the patient and create a tailored treatment plan.
       </div>
     },
     Howithelps: {
-      text: "This is Chiropractic how it helps data"
+      text: <div>
+        The goal is to reduce pain and restore proper function, for this various techniques are used including:
+        <ul>
+          <li>Adjustments</li>
+          <li>Mobilizations</li>
+          <li>Ultrasound</li>
+          <li>Acupuncture</li>
+          <li>Muscle release techniques</li>
+          <li>Rehab exercises</li>
+        </ul>
+        Chiropractors focs on all regions of the body including:
+        <ul>
+          <li>spine</li>
+          <li>hips</li>
+        </ul>
+      </div>
     },
     Whatittreats: {
       text: <DropDownButtonList 
