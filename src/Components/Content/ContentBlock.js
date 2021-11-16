@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomImg from '../ImgContainer/CustomImg';
 
-const ContentBlock = ({ header, content, button, background }) => {
+const ContentBlock = ({ header, content, button, background, image }) => {
   return (
     <div style={styles.contentBlockWrapper}>
       { background && <div style={styles.clipPathItem1 }></div> } 
@@ -17,9 +17,11 @@ const ContentBlock = ({ header, content, button, background }) => {
           </div>
         </div>
       </div>
-      <div style={styles.secondaryContent}>
-        Associated Content Image
-      </div>
+      <CustomImg 
+        height={200}
+        width={200}
+        image={image}
+      />  
     </div>
   )
 };
