@@ -7,11 +7,25 @@ const FAQ = () => {
 
   const questions = [
     {
-      title: 'test', content: 'is this really capable of handling content that goes on for more than a single line?! I mean that im not sure if this will actuall be able to handle multiline content without formatting it in a really strange way.'
+      title: 'Do you Offer Virtual Sessions?', 
+      content: 'Although virtual sessions are possible for some services, certain kinds of direct rehabilitation will require in-house visits.'
     },
     {
-      title: 'test1', content: 'test'
+      title: 'As a first-time patient, what should I expect at physiotherapy?', 
+      content: 'Slight pain and discomfort after the session is very possible for many first time patients. Because of this, it is often advised the patients refrain from any kind of strenious activity following a therapy session.'
     },
+    {
+      title: 'How often will I have to attend physiotherapy?',
+      content: 'Until functionality is restored or pain is fully relived. This is a an assessment made not solely on the wishes of a doctor but also on the needs of the patient. Certain types of prologned treatments will often require longer treatments that injury-related damage.'
+    },
+    {
+      title: 'What will be part of the treatment plan?',
+      content: 'Treatment plans are custom tailored to each patient based specifically on what limitations they possess or on their needs. Treatment plans must be agreed on by the patient and approved by a doctor before effective rehabilition can begin.'
+    },
+    {
+      title: 'Will my treatment be coverd by insurance?',
+      content: 'Highly unlikely because they are fiendish bloodsucking chislers, however if by the grace of some heavenly diety you do manage to get it; we will not use it.'
+    }
   ];
 
 
