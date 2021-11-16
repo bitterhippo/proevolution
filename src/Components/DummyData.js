@@ -10,6 +10,13 @@ let DummyData = {
     Howitworks: {
       text: <div>
         Chiropractic care uses a manual approach that focuses on reducing pain, and getting patients back to their optimal health and functionining. By performing a focused assessment, the doctor will diagnose the patient and create a tailored treatment plan.
+        <div style={{marginTop: 30}}>
+        <CustomImg 
+        height={300}
+        width={600}
+        image={'Chiro'}
+        />
+        </div>
       </div>
     },
     Howithelps: {

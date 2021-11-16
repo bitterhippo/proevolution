@@ -77,13 +77,16 @@ const styles = {
     textDecoration: 'none'
   },
   navBarButton: {
+    fontSize: '1.5vh',
     border: '2px solid white',
     backgroundColor: 'green',
     height: '50%',
     marginTop: 'auto',
     marginBottom: 'auto',
+    paddingLeft: 30,
+    paddingRight: 30,
     color: 'white',
-    borderRadius: 5
+    borderRadius: 5,
   }
 }
 

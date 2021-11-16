@@ -17,6 +17,7 @@ import PractList3 from "../../Images/PractList3.jpg";
 import PT from "../../Images/PT.jpg";
 import ShockwaveTherapy from "../../Images/ShockwaveTherapy.jpg";
 import TherapueticUltrasound from "../../Images/TherapueticUltrasound.jpg";
+import Chiro from "../../Images/Chiro.jpg";
 
 const imgConnector = {
   CeaserTeam: CeaserTeam,
@@ -35,7 +36,8 @@ const imgConnector = {
   PractList3: PractList3,
   PT: PT,
   ShockwaveTherapy: ShockwaveTherapy,
-  TherapueticUltrasound: TherapueticUltrasound
+  TherapueticUltrasound: TherapueticUltrasound,
+  Chiro: Chiro
 }
 
 const CustomImg = ({ height, width, image }) => {

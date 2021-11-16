@@ -1,6 +1,7 @@
 import React from 'react';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import ProfileList from '../Components/Profiles/ProfileList';
+import CustomImg from '../Components/ImgContainer/CustomImg';
 
 const About = () => {
 
@@ -32,7 +33,7 @@ const About = () => {
       <div style={styles.splitView}>
         {/* First Screen */}
         <div style={styles.screen}>
-          <div style={{marginBottom: 30}}>
+          <div style={{ marginBottom: 30 }}>
             <span style={styles.bigText}>Our Process</span>
           </div>
           <div>
@@ -50,14 +51,16 @@ const About = () => {
           <button style={styles.button}>Book an Initial Assessment</button>
         </div>
         {/* Second Screen */}
-        <div>
-          <div style={styles.imgHolder}>
-
-          </div>
+        <div style={styles.imgHolder}>
+          <CustomImg 
+            height={300}
+            width={300}
+            image={'Massage'}
+          />
         </div>
       </div>
       <div style={styles.practionerWrapper}>
-      <ProfileList listData={staffList} />
+        <ProfileList listData={staffList} />
       </div>
       <div>
         A carousel should go here.
@@ -106,9 +109,6 @@ const styles = {
   imgHolder: {
     marginTop: '100px',
     marginLeft: 40,
-    height: '300px',
-    width: '300px',
-    backgroundColor: 'gray',
   },
   staffContainer: {
     display: 'flex',
