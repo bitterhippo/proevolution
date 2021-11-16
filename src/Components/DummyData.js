@@ -26,22 +26,51 @@ let DummyData = {
         <ul>
           <li>spine</li>
           <li>hips</li>
+          <li>knees</li>
+          <li>ankes</li>
+          <li>shoulders</li>
+          <li>elbows</li>
+          <li>jaw</li>
+          <li>treating headaches</li>
         </ul>
       </div>
     },
     Whatittreats: {
-      text: <DropDownButtonList 
-      listData={[
-        {title: "testaronies", content: 'cheese'}
-      ]} />
+      text: <DropDownButtonList
+        listData={[
+          { title: "testaronies", content: 'cheese' }
+        ]} />
     }
   },
   Physiotherapy: {
     Howitworks: {
-      text: "This is Physiotherapy how it works data"
+      text: <div>
+        Physiotherapy rehabilitation focuses on restoring proper body function using movements and exercises to retain balance, coordination, gait, posture and strength.
+      </div>
     },
     Howithelps: {
-      text: "This is Physiotherapy how it helps data"
+      text: <div>
+        With a focus on improving quality of life, the physiotherapist will examine, diagnose and lead the patient through education and treatment to improve their health.
+        <ul>
+          <li>Exercise</li>
+          <li>Muscle stimulation</li>
+          <li>Ultrasound</li>
+          <li>Laser</li>
+          <li>Heat/Ice</li>
+          <li>Manual therapy</li>
+        </ul>
+        Physiotherapists focus on all regions of the body including:
+        <ul>
+          <li>The back</li>
+          <li>Hips</li>
+          <li>Knees</li>
+          <li>Ankles</li>
+          <li>Shoulders</li>
+          <li>Elbows</li>
+          <li>Jaw</li>
+          <li>And treating headaches</li>
+        </ul>
+      </div>
     },
     Whatittreats: {
       text: "This is Physiotherapy what it treats data"
@@ -49,10 +78,18 @@ let DummyData = {
   },
   TherapueticUltrasound: {
     Howitworks: {
-      text: "This is TherapueticUltrasound how it works data"
+      text: <div>
+        Massage therapy involves the manipulation of both superficial and deep soft tissues including muscles, tendons, ligaments, and connective tissue.
+      </div>
     },
     Howithelps: {
-      text: "This is TherapueticUltrasound how it helps data"
+      text: <div>
+        <ul>
+          <li>The goal of your treatment is to eliminate pain while targeting muscle tightness, joint mobility, nerves, and increasing circulation.</li>
+          <li>The effects of stress and improper physical functioning can be relieved while restoring the body to optimal health and well being.
+          </li>
+        </ul>
+      </div>
     },
     Whatittreats: {
       text: "This is TherapueticUltrasound what it treats data"
@@ -60,10 +97,14 @@ let DummyData = {
   },
   FunctionalRehab: {
     Howitworks: {
-      text: "This is FunctionalRehab how it works data"
+      text: <div>
+        Work with a practioner who has created a rehab program tailored to your specific goals in order to achieve optimal functioning.
+      </div>
     },
     Howithelps: {
-      text: "This is FunctionalRehab how it helps data"
+      text: <div>
+        With a focus on strength and flexibility, functional rehabilitation integrates proprioceptive and agility training to maximize perfromance.
+      </div>
     },
     Whatittreats: {
       text: "This is FunctionalRehab what it treats data"
@@ -71,10 +112,25 @@ let DummyData = {
   },
   NutritionalConsulting: {
     Howitworks: {
-      text: "This is NutritionalConsulting how it works data"
+      text: <div>
+        <ul>
+          <li>A session with our Holistic Nutritionalist involves an in-depth assessment in order to identify imbalances that contribute to health issues.</li>
+          <li>A customized health plan will be creatd to help you reach your goals.</li>
+          <li>You will be educated about healthy eating habits, supplements, lifestyles changes, exercises, and how to take care of your body.
+          </li>
+        </ul>
+      </div>
     },
     Howithelps: {
-      text: "This is NutritionalConsulting how it helps data"
+      text: <div>
+        A health plan tailored to you can help to achieve goals. This can include:
+        <ul>
+          <li>Lose weight</li>
+          <li>Maintain balance</li>
+          <li>Resolve digestive problems</li>
+          <li>Enhance strength performance and more</li>
+        </ul>
+      </div>
     },
     Whatittreats: {
       text: "This is NutritionalConsulting what it treats data"
