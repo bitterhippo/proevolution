@@ -6,20 +6,20 @@ const About = () => {
 
   let staffList = [
     {
-      name: 'Jeremy Johnson',
-      image: 'none'
+      name: 'Dr. Jeremy Johnson',
+      img: 'PractList1'
     },
     {
-      name: 'Vanessa Huges',
-      image: 'none'
+      name: 'Dr. Vanessa Huges',
+      img: 'PractList2'
     },
     {
-      name: 'Simba Woop',
-      image: 'none'
+      name: 'Dr. Mary Jaczek',
+      img: 'PractList3'
     },
     {
-      name: 'Quincy Jones',
-      image: 'none'
+      name: 'Dr. List Andrews',
+      img: 'Home1'
     }
   ]
 
