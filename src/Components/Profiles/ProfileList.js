@@ -18,7 +18,8 @@ const styles = {
   mainWrapper: {
     display: 'flex',
     flexDirection: 'row',
-    gap: 40,
+    justifyContent: 'center',
+    gap: 100,
     marginTop: 25,
   }
 };

@@ -117,7 +117,7 @@ const styles = {
     flexDirection: 'column',
   },
   practionerWrapper: {
-    marginTop: 50,
+    marginTop: 100,
     width: '100%',
   }
 };
