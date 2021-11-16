@@ -2,6 +2,7 @@ import React from 'react';
 
 //Components
 import DropDownButtonList from '../Components/DropDownButton/DropDownButtonList';
+import BannerImg from '../Components/ImgContainer/BannerImg';
 
 const FAQ = () => {
 
@@ -33,6 +34,10 @@ const FAQ = () => {
 
   return (
     <div style={styles.contentWrapper}>
+      <BannerImg 
+        image={'TherapueticUltrasound'}
+        message={'Frequently Asked Questions'}
+      />
       <div style={styles.primaryContent}>
         <input
           style={styles.input}
@@ -50,7 +55,8 @@ const FAQ = () => {
 
 const styles = {
   contentWrapper: {
-    height: '80vh'
+    minHeight: '80vh',
+    marginBottom: '30vh'
   },
   primaryContent: {
     width: '65%',

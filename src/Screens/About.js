@@ -96,10 +96,12 @@ const styles = {
     padding: '5px 20px 5px 20px',
   },
   splitView: {
+    width: '100%',
     display: 'flex',
     flexDirection: 'inline-row',
     marginTop: '40px',
     gap: '20px',
+    justifyContent: 'center'
   },
   screen: {
     width: '50%',
