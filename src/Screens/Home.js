@@ -32,15 +32,16 @@ const Home = () => {
           header='Initial Assessment'
           content="Pro Evolution Wellness is a clinic created by two ambitious practioners that wanted to provide quality chiropractic services to their local community. Wnating to give back to the community that they grw up in, our goal is to give each member of the community a special, individualized service to promote active healthy lifestyles. We help a variety of patients from nutional consulting to functional rehab to theraputic ultrasound. With years of collective experience, our team provides quality advice and teratments to the Vaughn region."
           button="See More"
-          image={'PractList1'}
+          image={'Home2'}
         />
-        <ContentBlock
-          header='WHO ARE WE'
-          content="An Informed Examination will take place on your first visit, so that we can make or confirm a diagnosis, and understand the state and stage of your injury. We'll check your medical history, find out about your level of physical activity and any relevant lifestyle factors."
-          button="Our Process"
-          background={true}
-          image={'PractList1'}
-        />
+        <ClipBackground>
+          <ContentBlock
+            header='WHO ARE WE'
+            content="An Informed Examination will take place on your first visit, so that we can make or confirm a diagnosis, and understand the state and stage of your injury. We'll check your medical history, find out about your level of physical activity and any relevant lifestyle factors."
+            button="Our Process"
+            image={'Home1'}
+          />
+        </ClipBackground>
         {/* Clip path item */}
         <div style={styles.test}>
           <div style={styles.clipPathItem2}>
