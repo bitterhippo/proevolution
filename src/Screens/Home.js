@@ -2,8 +2,6 @@ import React from 'react';
 import ContentBlock from '../Components/Content/ContentBlock';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import ProviderCarousel from '../Components/Carousel/ProviderCarousel';
-import CustomImg from '../Components/ImgContainer/CustomImg';
-
 
 const Home = () => {
 
@@ -38,6 +36,7 @@ const Home = () => {
           button="Our Process"
           background={true}
         />
+        {/* Clip path item */}
         <div style={styles.test}>
           <div style={styles.clipPathItem2}>
           </div>

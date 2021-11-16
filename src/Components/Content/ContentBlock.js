@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomImg from '../ImgContainer/CustomImg';
 
 const ContentBlock = ({ header, content, button, background }) => {
   return (
