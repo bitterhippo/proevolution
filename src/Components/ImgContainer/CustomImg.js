@@ -18,6 +18,9 @@ import PT from "../../Images/PT.jpg";
 import ShockwaveTherapy from "../../Images/ShockwaveTherapy.jpg";
 import TherapueticUltrasound from "../../Images/TherapueticUltrasound.jpg";
 import Chiro from "../../Images/Chiro.jpg";
+import Allstate from "../../Images/Allstate.jpg";
+import Guardian from "../../Images/Guardian.jpg";
+import HSBC from "../../Images/Guardian.jpg";
 
 const imgConnector = {
   CeaserTeam: CeaserTeam,

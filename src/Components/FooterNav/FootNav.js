@@ -74,7 +74,8 @@ const styles = {
     position: 'relative',
     bottom: '0',
     paddingTop: 40,
-    paddingBottom: 40
+    paddingBottom: 40,
+    marginTop: '12vh'
   },
   footerNavList: {
     marginTop: 15,

@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import CustomImg from '../ImgContainer/CustomImg';
 
 const ProviderCarousel = () => {
 
   const [carouselCounter, setCarouselCounter] = useState(0);
 
   let carouselData = [
-    'Guardian', 'Allstate', 'HSBC'
+    { name: 'Guardian', img: 'Guardian' },
+    { name: 'Allstate', img: 'Allstate' },
+    { name: 'HSBC', img: 'HSBC' }
   ];
 
   return (
@@ -18,7 +21,7 @@ const ProviderCarousel = () => {
             {
               carouselData.map(currentItem =>
                 <div>
-                  {currentItem}
+                  {currentItem.name}
                 </div>
               )
             }
@@ -32,7 +35,8 @@ const ProviderCarousel = () => {
 
 const styles = {
   carouselWrapper: {
-    height: '20vh'
+    height: '20vh',
+    marginTop: '15vh',
   },
   carouselMainWrapper: {
     display: 'flex',
@@ -43,6 +47,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'inline-row',
     justifyContent: 'space-around',
+    marginTop: '6vh',
     width: '100%'
   },
   innerCarousel: {
@@ -58,7 +63,6 @@ const styles = {
     fontWeight: 'bold'
   },
   bannerText: {
-    marginTop: '15vh',
     fontSize: 32,
     textAlign: 'center',
     color: '#206620'
