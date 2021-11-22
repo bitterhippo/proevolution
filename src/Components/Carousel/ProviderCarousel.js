@@ -13,9 +13,9 @@ const ProviderCarousel = () => {
       Carousel
       <div style={styles.carouselMainWrapper}>
         <div style={styles.carouselSlider}>
-          {
-            
-          }
+          <div> left arrow </div>
+          <div> Stuff will go here</div>
+          <div> right arrow </div>
         </div>
       </div>
     </div>
@@ -31,7 +31,9 @@ const styles = {
   carouselSlider: {
     display: 'flex',
     flexDirection: 'inline-row',
-    justifyContent: 'space-evenly'
+    justifyContent: 'space-around',
+    backgroundColor: 'red',
+    width: '100%'
   }
 };
 

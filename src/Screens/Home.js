@@ -71,7 +71,9 @@ const Home = () => {
         }
       </div>
       <h2 style={styles.bannerText}>Our Providers</h2>
-      <ProviderCarousel />
+      <ClipBackground>
+        <ProviderCarousel />
+      </ClipBackground>
     </div>
   )
 };
