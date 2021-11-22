@@ -40,7 +40,10 @@ const imgConnector = {
   PT: PT,
   ShockwaveTherapy: ShockwaveTherapy,
   TherapueticUltrasound: TherapueticUltrasound,
-  Chiro: Chiro
+  Chiro: Chiro,
+  Allstate: Allstate,
+  Guardian: Guardian,
+  HSBC: HSBC,
 }
 
 const CustomImg = ({ height, width, image }) => {

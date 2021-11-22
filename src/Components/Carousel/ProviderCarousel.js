@@ -21,7 +21,11 @@ const ProviderCarousel = () => {
             {
               carouselData.map(currentItem =>
                 <div>
-                  {currentItem.name}
+                  <CustomImg 
+                    height={50}
+                    width={150}
+                    image={currentItem.img}
+                  />
                 </div>
               )
             }
