@@ -13,9 +13,17 @@ const ProviderCarousel = () => {
       Carousel
       <div style={styles.carouselMainWrapper}>
         <div style={styles.carouselSlider}>
-          <div> left arrow </div>
-          <div> Stuff will go here</div>
-          <div> right arrow </div>
+          <div style={{...styles.arrowBar, marginLeft: '5vw'}}>{"<"}</div>
+          <div style={styles.innerCarousel}>
+            {
+              carouselData.map(currentItem =>
+                <div>
+                  { currentItem }
+                </div>
+              )
+            }
+          </div>
+          <div style={{...styles.arrowBar, textAlign: 'right', marginRight: '5vw'}}>{">"}</div>
         </div>
       </div>
     </div>
@@ -34,6 +42,16 @@ const styles = {
     justifyContent: 'space-around',
     backgroundColor: 'red',
     width: '100%'
+  },
+  innerCarousel: {
+    display: 'flex',
+    flex: 4,
+    flexDirection: 'inline-row',
+    justifyContent: 'space-between',
+    backgroundColor: 'green'
+  },
+  arrowBar: {
+    flex: 1,
   }
 };
 
