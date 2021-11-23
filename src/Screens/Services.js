@@ -188,7 +188,6 @@ const styles = {
     maxWidth: 210
   },
   practionersWrapper: {
-    maxWidth: '60%',
     marginTop: '10vh',
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -206,7 +205,8 @@ const styles = {
     fontWeight: 'bold',
     textAlign: 'center',
     minHeight: 40,
-    marginTop: 10
+    marginTop: 10,
+    marginLeft: '10vw'
   },
   serviceDataWrapper: {
     width: '60%'

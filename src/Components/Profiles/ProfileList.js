@@ -19,9 +19,10 @@ const styles = {
   mainWrapper: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'center',
-    gap: 100,
+    justifyContent: 'space-between',
     marginTop: 25,
+    marginLeft: '10vw',
+    marginRight: '10vw',
   }
 };
 
