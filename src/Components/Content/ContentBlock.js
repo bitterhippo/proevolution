@@ -8,18 +8,22 @@ const ContentBlock = ({ header, content, button, background, image }) => {
         <div style={styles.mainContent}>
           <span style={styles.bannerText}>{header}</span>
           <br></br>
-          {content}
+          <div style={styles.content}>
+            {content}
+          </div>
         </div>
         <div style={styles.buttonWrapper}>
           {button !== "" ?
             <button style={styles.styledButton}>{button}</button> : null}
         </div>
       </div>
-      <CustomImg
-        height={400}
-        width={400}
-        image={image}
-      />
+      <div style={styles.imgContainer}>
+        <CustomImg
+          height={400}
+          width={400}
+          image={image}
+        />
+      </div>
     </div>
   )
 };
@@ -34,7 +38,7 @@ const styles = {
   bannerText: {
     textAlign: 'center',
     color: "#206620",
-    fontSize: '2.5vh',
+    fontSize: '4.5vh',
     fontWeight: 'bold'
   },
   mainContent: {
@@ -89,6 +93,12 @@ const styles = {
   buttonAlign: {
     display: 'flex',
     flexDirection: 'column',
+  },
+  imgContainer: {
+    marginRight: '3vw'
+  },
+  content: {
+    marginLeft: '3vw'
   }
 };
 

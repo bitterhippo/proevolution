@@ -196,7 +196,7 @@ const styles = {
     maxWidth: 280
   },
   practionersWrapper: {
-    margin: '10vh 0 5vh 0'
+    margin: '5vh 0 5vh 0'
   },
   practionerList: {
     display: 'flex',
