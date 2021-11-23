@@ -59,7 +59,7 @@ const styles = {
     position: 'absolute',
     zIndex: 5,
     left: '50%',
-    top: '20%',
+    top: '27%',
     textAlign: 'center',
     transform: 'translate(-50%, -50%)',
   },

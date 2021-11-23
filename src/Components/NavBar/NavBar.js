@@ -59,19 +59,17 @@ const styles = {
   },
   selectedNavBarItem: {
     color: 'white',
-    fontWeight: 'bold',
     marginTop: 'auto',
     marginBottom: 'auto',
-    fontSize: 14,
+    fontSize: 16,
     textDecoration: 'none',
     borderBottom: '2px solid white',
   },
   navBarItem: {
     color: 'white',
-    fontWeight: 'bold',
     marginTop: 'auto',
     marginBottom: 'auto',
-    fontSize: 14,
+    fontSize: 16,
     textDecoration: 'none'
   },
   navBarButton: {

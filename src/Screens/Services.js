@@ -59,7 +59,7 @@ const Services = () => {
             <div style={styles.accentuatedText}>
               {selectedService}
             </div>
-            <button style={{ ...styles.styledButton, marginRight: '18vw' }}>Book an Appointment</button>
+            <button style={{ ...styles.styledButton, marginRight: '15vw' }}>Book an Appointment</button>
           </div>
           <div style={styles.tabSelectors}>
             {
@@ -84,7 +84,7 @@ const Services = () => {
           }
         </div>
         <div style={styles.serviceDataWrapper}>
-          <div>
+          <div style={styles.defaultDataWrapper}>
             {DummyData[selectedService.split(' ').join('')][selectedTab.split(' ').join('')].text}
           </div>
         </div>
@@ -124,23 +124,24 @@ const styles = {
     backgroundColor: '#206620',
     color: 'white',
     borderRadius: 5,
-    paddingLeft: 25,
-    paddingRight: 25,
-    paddingTop: 6,
-    paddingBottom: 6,
+    paddingLeft: 40,
+    paddingRight: 40,
+    paddingTop: 8,
+    paddingBottom: 8,
     fontWeight: 'bold',
+    fontSize: 16
   },
   currentServiceWrapper: {
     marginTop: 20,
     display: 'flex',
     flexDirection: 'inline-row',
-    marginLeft: '2vw',
+    marginLeft: '5.5vw',
     gap: 20
   },
   currentServiceWrapper1: {
     display: 'flex',
     flexDirection: 'inline-row',
-    marginLeft: '2vw',
+    marginLeft: '5.5vw',
     gap: 20
   },
   mainContent: {
@@ -149,12 +150,12 @@ const styles = {
     gap: 5
   },
   accentuatedText: {
-    fontSize: 22,
-    fontWeight: 'bold'
+    fontSize: 28,
+    fontWeight: 'bold',
   },
   tabSelectors: {
     marginTop: '2vh',
-    marginLeft: '2vw',
+    marginLeft: '5.5vw',
     display: 'flex',
     flexDirection: 'inline',
     gap: 20
@@ -192,10 +193,10 @@ const styles = {
     flexDirection: 'column',
     marginLeft: '5vw',
     gap: 5,
-    maxWidth: 210
+    maxWidth: 280
   },
   practionersWrapper: {
-    margin: '10vh 0 10vh 0'
+    margin: '10vh 0 5vh 0'
   },
   practionerList: {
     display: 'flex',
@@ -214,6 +215,9 @@ const styles = {
   },
   serviceDataWrapper: {
     width: '60%'
+  },
+  defaultDataWrapper: {
+    minHeight: '25vw'
   }
 };
 
