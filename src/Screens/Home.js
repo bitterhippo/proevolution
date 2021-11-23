@@ -30,17 +30,19 @@ const Home = () => {
       />
       <div style={styles.contentBlock}>
         <ContentBlock
-          header='WHO ARE WE'
-          content="An Informed Examination will take place on your first visit, so that we can make or confirm a diagnosis, and understand the state and stage of your injury. We'll check your medical history, find out about your level of physical activity and any relevant lifestyle factors."
-          button="Our Process"
-          image={'Home1'}
+          header='Initial Assessment'
+          content="Pro Evolution Wellness is a clinic created by two ambitious practioners that wanted to provide quality chiropractic services to their local community. Wnating to give back to the community that they grw up in, our goal is to give each member of the community a special, individualized service to promote active healthy lifestyles. We help a variety of patients from nutional consulting to functional rehab to theraputic ultrasound. With years of collective experience, our team provides quality advice and teratments to the Vaughn region."
+          button="See More"
+          image={'Home2'}
         />
-        <ClipBackground >
+        <ClipBackground>
           <ContentBlock
-            header='Initial Assessment'
-            content="Pro Evolution Wellness is a clinic created by two ambitious practioners that wanted to provide quality chiropractic services to their local community. Wnating to give back to the community that they grw up in, our goal is to give each member of the community a special, individualized service to promote active healthy lifestyles. We help a variety of patients from nutional consulting to functional rehab to theraputic ultrasound. With years of collective experience, our team provides quality advice and teratments to the Vaughn region."
-            button="See More"
-            image={'Home2'}
+            header='WHO ARE WE'
+            content={` An Informed Examination will take place on your first visit, so that we can make or confirm a diagnosis, and understand the state and stage of your injury. We'll check your medical history, find out about your level of physical activity and any relevant lifestyle factors.
+            ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+             Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.`}
+            button={"Our Process"}
+            image={'Home1'}
           />
         </ClipBackground>
         {/* Clip path item */}

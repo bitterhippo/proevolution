@@ -217,7 +217,7 @@ const styles = {
     width: '60%'
   },
   defaultDataWrapper: {
-    minHeight: '25vw'
+    minHeight: '28vw'
   }
 };
 
