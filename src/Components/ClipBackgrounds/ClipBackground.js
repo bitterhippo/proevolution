@@ -16,8 +16,9 @@ const styles = {
   clipPathItem1: {
     marginTop: "-130px",
     position: 'absolute',
-    backgroundColor: '#bcf5a6',
-    zIndex: -1,
+    backgroundColor: 'gray',
+    zIndex: -2,
+    opacity: 0.3,
     height: '600px',
     width: '100%',
     clipPath: "polygon(0 41%, 100% 9%, 100% 69%, 0 100%)",
@@ -26,9 +27,8 @@ const styles = {
   clipPathItem2: {
     marginTop: "-130px",
     position: 'absolute',
-    opacity: 0.3,
-    backgroundColor: 'gray',
-    zIndex: -2,
+    backgroundColor: '#bcf5a6',
+    zIndex: -1,
     height: '600px',
     width: '100%',
     clipPath: "polygon(0 13%, 100% 37%, 100% 100%, 0 79%)",
