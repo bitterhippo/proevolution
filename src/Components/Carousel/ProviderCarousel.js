@@ -6,9 +6,9 @@ const ProviderCarousel = () => {
   const [carouselCounter, setCarouselCounter] = useState(0);
 
   let carouselData = [
-    { name: 'Guardian', img: 'Guardian' },
-    { name: 'Allstate', img: 'Allstate' },
-    { name: 'HSBC', img: 'HSBC' }
+    { name: 'Guardian', img: 'Guardian', key: 1 },
+    { name: 'Allstate', img: 'Allstate', key: 2 },
+    { name: 'HSBC', img: 'HSBC', key: 3 }
   ];
 
   return (
@@ -20,7 +20,9 @@ const ProviderCarousel = () => {
           <div style={styles.innerCarousel}>
             {
               carouselData.map(currentItem =>
-                <div>
+                <div
+                key={currentItem.key}
+                >
                   <CustomImg 
                     height={50}
                     width={150}

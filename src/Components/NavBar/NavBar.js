@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import { Link, useParams } from 'react-router-dom';
 import CustomImg from '../ImgContainer/CustomImg';
+import CustomSVG from '../ImgContainer/CustomSVG';
 
 const NavBar = () => {
 
@@ -13,10 +14,7 @@ const NavBar = () => {
         <Link 
         style={styles.navBarItem}
         to={"/"}>
-          <CustomImg 
-            height={125}
-            width={125}
-            image={"Logo"}
+          <CustomSVG
           />
         </Link>
       </div>

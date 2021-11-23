@@ -6,6 +6,7 @@ const ProfileList = ({ listData }) => {
     <div style={styles.mainWrapper}>
       {
         listData.map(currentItem => <Profile 
+          ley={currentItem.name}
           name={currentItem.name}
           image={currentItem.img}
         />)
