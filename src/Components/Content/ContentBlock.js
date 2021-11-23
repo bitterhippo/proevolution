@@ -4,8 +4,6 @@ import CustomImg from '../ImgContainer/CustomImg';
 const ContentBlock = ({ header, content, button, background, image }) => {
   return (
     <div style={styles.contentBlockWrapper}>
-      { background && <div style={styles.clipPathItem1 }></div> } 
-      { background && <div style={styles.clipPathItem2 }></div> } 
       <div>
         <div style={styles.mainContent}>
           <span style={styles.bannerText}>{header}</span>
@@ -18,8 +16,8 @@ const ContentBlock = ({ header, content, button, background, image }) => {
         </div>
       </div>
       <CustomImg 
-        height={200}
-        width={200}
+        height={400}
+        width={400}
         image={image}
       />  
     </div>

@@ -30,17 +30,17 @@ const Home = () => {
       />
       <div style={styles.contentBlock}>
         <ContentBlock
-          header='Initial Assessment'
-          content="Pro Evolution Wellness is a clinic created by two ambitious practioners that wanted to provide quality chiropractic services to their local community. Wnating to give back to the community that they grw up in, our goal is to give each member of the community a special, individualized service to promote active healthy lifestyles. We help a variety of patients from nutional consulting to functional rehab to theraputic ultrasound. With years of collective experience, our team provides quality advice and teratments to the Vaughn region."
-          button="See More"
-          image={'Home2'}
+          header='WHO ARE WE'
+          content="An Informed Examination will take place on your first visit, so that we can make or confirm a diagnosis, and understand the state and stage of your injury. We'll check your medical history, find out about your level of physical activity and any relevant lifestyle factors."
+          button="Our Process"
+          image={'Home1'}
         />
-        <ClipBackground>
+        <ClipBackground >
           <ContentBlock
-            header='WHO ARE WE'
-            content="An Informed Examination will take place on your first visit, so that we can make or confirm a diagnosis, and understand the state and stage of your injury. We'll check your medical history, find out about your level of physical activity and any relevant lifestyle factors."
-            button="Our Process"
-            image={'Home1'}
+            header='Initial Assessment'
+            content="Pro Evolution Wellness is a clinic created by two ambitious practioners that wanted to provide quality chiropractic services to their local community. Wnating to give back to the community that they grw up in, our goal is to give each member of the community a special, individualized service to promote active healthy lifestyles. We help a variety of patients from nutional consulting to functional rehab to theraputic ultrasound. With years of collective experience, our team provides quality advice and teratments to the Vaughn region."
+            button="See More"
+            image={'Home2'}
           />
         </ClipBackground>
         {/* Clip path item */}
@@ -60,12 +60,12 @@ const Home = () => {
               style={styles.rowItem}
             >
               <CustomImg
-                height={125}
-                width={125}
+                height={250}
+                width={250}
                 image={`${currentItem.img}`}
               />
               <div>
-                {currentItem.title}
+                <span style={styles.servicesText}>{currentItem.title}</span>
               </div>
             </div>
           })
@@ -94,7 +94,7 @@ const styles = {
     marginTop: 30,
   },
   bannerText: {
-    marginTop: '15vh',
+    marginTop: '10vh',
     fontSize: 32,
     textAlign: 'center',
     color: '#206620'
@@ -104,6 +104,10 @@ const styles = {
     flexDirection: 'column',
     marginTop: '5vh',
     gap: '7.5vh'
+  },
+  servicesText: {
+    fontSize: 22,
+    fontWeight: 'bold'
   }
 }
 
