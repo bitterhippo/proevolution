@@ -6,8 +6,8 @@ const Profile = ({ image, name, link }) => {
     <div style={styles.profileWrapper}>
       {/* Place holder box for images */}
       <CustomImg 
-        height={200}
-        width={200}
+        height={250}
+        width={250}
         image={image}
       />
       <div style={styles.text}>

@@ -50,7 +50,7 @@ const Services = () => {
         <div style={styles.whiteSpaceSpacer}>
         </div>
         <div style={styles.whiteSpaceContent}>
-          <div style={styles.currentServiceWrapper}>
+          <div style={styles.currentServiceWrapper1}>
             <div>
               <span style={styles.fancyText}>Services</span> > <span style={styles.fancyText}>{selectedService}</span>
             </div>
@@ -59,7 +59,7 @@ const Services = () => {
             <div style={styles.accentuatedText}>
               {selectedService}
             </div>
-            <button style={styles.styledButton}>Book an Appointment</button>
+            <button style={{ ...styles.styledButton, marginRight: '18vw' }}>Book an Appointment</button>
           </div>
           <div style={styles.tabSelectors}>
             {
@@ -102,17 +102,17 @@ const styles = {
     marginTop: '-5px',
     display: 'flex',
     flexDirection: 'inline-row',
-    minHeight: '12vh',
+    minHeight: '16vh',
     backgroundColor: 'rgba(32, 102, 32, 0.2)',
     gap: "5vw"
   },
   whiteSpaceSpacer: {
-    minWidth: "10vw",
+    minWidth: "15vw",
     marginLeft: 50,
     minWidth: 210
   },
   whiteSpaceContent: {
-    marginTop: 25,
+    marginTop: '5vh',
     width: '100%',
   },
   fancyText: {
@@ -131,10 +131,16 @@ const styles = {
     fontWeight: 'bold',
   },
   currentServiceWrapper: {
+    marginTop: 20,
     display: 'flex',
     flexDirection: 'inline-row',
-    marginTop: 10,
-    width: '80%',
+    marginLeft: '2vw',
+    gap: 20
+  },
+  currentServiceWrapper1: {
+    display: 'flex',
+    flexDirection: 'inline-row',
+    marginLeft: '2vw',
     gap: 20
   },
   mainContent: {
@@ -147,7 +153,8 @@ const styles = {
     fontWeight: 'bold'
   },
   tabSelectors: {
-    marginTop: 20,
+    marginTop: '2vh',
+    marginLeft: '2vw',
     display: 'flex',
     flexDirection: 'inline',
     gap: 20
@@ -183,15 +190,12 @@ const styles = {
   buttonList: {
     display: 'flex',
     flexDirection: 'column',
-    marginLeft: 50,
+    marginLeft: '5vw',
     gap: 5,
     maxWidth: 210
   },
   practionersWrapper: {
-    marginTop: '10vh',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    marginBottom: '10vh',
+    margin: '10vh 0 10vh 0'
   },
   practionerList: {
     display: 'flex',
@@ -206,7 +210,7 @@ const styles = {
     textAlign: 'center',
     minHeight: 40,
     marginTop: 10,
-    marginLeft: '10vw'
+    marginLeft: '15vw'
   },
   serviceDataWrapper: {
     width: '60%'
