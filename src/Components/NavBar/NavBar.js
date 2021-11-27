@@ -1,7 +1,6 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import CustomImg from '../ImgContainer/CustomImg';
-import CustomSVG from '../ImgContainer/CustomSVG';
+
 
 const NavBar = () => {
 
@@ -11,11 +10,9 @@ const NavBar = () => {
   return (
     <div style={styles.navBarWrapper}>
       <div style={{ ...styles.navBarItem, marginLeft: '5vw' }}>
-        <Link 
-        style={styles.navBarItem}
-        to={"/"}>
-          <CustomSVG
-          />
+        <Link
+          style={styles.navBarItem}
+          to={"/"}>
         </Link>
       </div>
       <div style={styles.navLinks}>
