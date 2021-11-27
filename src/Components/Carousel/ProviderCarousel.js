@@ -41,8 +41,9 @@ const ProviderCarousel = () => {
 
 const styles = {
   carouselWrapper: {
-    height: '20vh',
+    minHeight: '20vh',
     marginTop: '15vh',
+    marginBottom: '15vh',
   },
   carouselMainWrapper: {
     display: 'flex',

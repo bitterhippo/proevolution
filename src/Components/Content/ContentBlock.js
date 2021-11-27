@@ -63,9 +63,8 @@ const styles = {
     paddingLeft: 25,
     paddingRight: 25,
     height: '4vh',
-    width: '8vw',
-    fontWeight: 'bold',
-    fontSize: 16,
+    width: '12vw',
+    fontSize: '1.2vw',
     borderRadius: 5,
     marginRight: '7vw'
   },
