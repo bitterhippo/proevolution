@@ -12,7 +12,8 @@ const styles = {
   mainWrapper: {
     backgroundColor: 'red',
     minHeight: '20vh',
-    minWidth: '100%'
+    minWidth: '100%',
+    marginTop: 30
   }
 };
 

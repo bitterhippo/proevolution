@@ -63,9 +63,7 @@ const About = () => {
       <div style={styles.practionerWrapper}>
         <ProfileList listData={staffList} />
       </div>
-      <div>
-        A carousel should go here.
-      </div>
+      <ImgCarousel />
     </div>
   )
 };
