@@ -2,6 +2,7 @@ import React from 'react';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import ProfileList from '../Components/Profiles/ProfileList';
 import CustomImg from '../Components/ImgContainer/CustomImg';
+import ImgCarousel from '../Components/Carousel/ImgCarousel';
 
 const About = () => {
 
