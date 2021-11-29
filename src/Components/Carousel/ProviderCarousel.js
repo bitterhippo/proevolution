@@ -8,7 +8,7 @@ const ProviderCarousel = () => {
   let carouselData = [
     { name: 'Guardian', img: 'Guardian', key: 1 },
     { name: 'Allstate', img: 'Allstate', key: 2 },
-    { name: 'HSBC', img: 'HSBC', key: 3 }
+    { name: 'Logo', img: 'Logo', key: 3 }
   ];
 
   return (

@@ -47,10 +47,11 @@ const imgConnector = {
 }
 
 const CustomImg = ({ height, width, image }) => {
+
   return (
-    <img 
-    src={imgConnector[image]}
-    style={{...styles.imgWrapper, height: height, width: width }}>
+    <img
+      src={imgConnector[image]}
+      style={{ ...styles.imgWrapper, height: height, width: width }}>
     </img>
   )
 };
