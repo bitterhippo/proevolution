@@ -4,7 +4,7 @@ import CustomImg from '../ImgContainer/CustomImg';
 const ImgCarousel = () => {
 
   const [selectedImg, setSelectedImg] = useState();
-  const [currentImg, setCurrentImg] = useState(0);
+  const [counter, setCounter] = useState(0);
 
   //onClick Handlers
 
@@ -35,7 +35,7 @@ const ImgCarousel = () => {
           <CustomImg 
             height={'40vh'}
             width={'60vw'}
-            image={imgDefaults[currentImg]}
+            image={imgDefaults[counter]}
           />
         }
       </div>
@@ -45,7 +45,9 @@ const ImgCarousel = () => {
         </div>
         <div style={styles.bottomRowImages}>
           {
-            imgDefaults.map(currentImg => <div>
+            imgDefaults
+            .filter(currentImg => currentImg != imgDefaults[counter])
+            .map(currentImg => <div>
               <CustomImg
                 height={100}
                 width={100}
