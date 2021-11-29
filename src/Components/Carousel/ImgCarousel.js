@@ -6,26 +6,53 @@ const ImgCarousel = () => {
   const [selectedImg, setSelectedImg] = useState();
   const [currentImg, setCurrentImg] = useState(0);
 
+  //onClick Handlers
+
   const onClickImg = (e) => {
     setSelectedImg(e.target.value);
   };
 
   const onArrowclick = (i) => {
     setCurrentImg(currentImg + i);
-  }
+  };
+
+  //Defaults
+
+  const imgDefaults = [
+    'AboutUs1',
+    'Allstate',
+    'Chiro',
+    'Home1',
+    'Home2',
+    'PT'
+  ];
 
 
   return (
     <div style={styles.mainWrapper}>
       <div style={styles.topRow}>
-        BIG IMG
+        {
+          <CustomImg 
+            height={'20vh'}
+            width={'20vw'}
+            image={imgDefaults[currentImg]}
+          />
+        }
       </div>
       <div style={styles.bottomRow}>
         <div style={styles.arrows}>
           {`<`}
         </div>
         <div style={styles.bottomRowImages}>
-          Imgs
+          {
+            imgDefaults.map(currentImg => <div>
+              <CustomImg
+                height={100}
+                width={100}
+                image={currentImg}
+              />
+            </div>)
+          }
         </div>
         <div style={styles.arrows}>
           {`>`}
@@ -46,11 +73,14 @@ const styles = {
     justifyContent: 'space-between',
     marginTop: 20,
     backgroundColor: 'green',
-    
+
   },
   bottomRowImages: {
+    display: 'flex',
+    flexDirection: 'inline-row',
     marginTop: 'auto',
-    marginBottom: 'auto'
+    marginBottom: 'auto',
+    gap: 20
   },
   mainWrapper: {
     backgroundColor: 'red',
