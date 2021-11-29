@@ -24,7 +24,7 @@ const ImgCarousel = () => {
         <div style={styles.arrows}>
           {`<`}
         </div>
-        <div>
+        <div style={styles.bottomRowImages}>
           Imgs
         </div>
         <div style={styles.arrows}>
@@ -45,7 +45,12 @@ const styles = {
     flexDirection: 'inline-row',
     justifyContent: 'space-between',
     marginTop: 20,
-    gap: 20
+    backgroundColor: 'green',
+    
+  },
+  bottomRowImages: {
+    marginTop: 'auto',
+    marginBottom: 'auto'
   },
   mainWrapper: {
     backgroundColor: 'red',
