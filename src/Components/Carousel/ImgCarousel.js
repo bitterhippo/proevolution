@@ -33,14 +33,14 @@ const ImgCarousel = () => {
       <div style={styles.topRow}>
         {
           <CustomImg 
-            height={'20vh'}
-            width={'20vw'}
+            height={'40vh'}
+            width={'60vw'}
             image={imgDefaults[currentImg]}
           />
         }
       </div>
       <div style={styles.bottomRow}>
-        <div style={styles.arrows}>
+        <div style={{...styles.arrows, marginLeft: '5vw'}}>
           {`<`}
         </div>
         <div style={styles.bottomRowImages}>
@@ -54,7 +54,7 @@ const ImgCarousel = () => {
             </div>)
           }
         </div>
-        <div style={styles.arrows}>
+        <div style={{...styles.arrows, marginRight: '5vw'}}>
           {`>`}
         </div>
       </div>
@@ -72,7 +72,6 @@ const styles = {
     flexDirection: 'inline-row',
     justifyContent: 'space-between',
     marginTop: 20,
-    backgroundColor: 'green',
 
   },
   bottomRowImages: {
@@ -83,14 +82,16 @@ const styles = {
     gap: 20
   },
   mainWrapper: {
-    backgroundColor: 'red',
     minHeight: '20vh',
     minWidth: '100%',
     marginTop: 30
   },
   arrows: {
     color: 'gray',
-    fontSize: '3rem'
+    fontSize: '3rem',
+    marginTop: 'auto',
+    marginBottom: 'auto',
+    fontWeight: 'bold'
   }
 };
 
