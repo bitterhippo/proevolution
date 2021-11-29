@@ -59,7 +59,7 @@ const Services = () => {
             <div style={styles.accentuatedText}>
               {selectedService}
             </div>
-            <button style={{ ...styles.styledButton, marginRight: '15vw' }}>Book an Appointment</button>
+            <button style={{ ...styles.styledButton, marginRight: '15vw' }}>Book an Initial Assessment</button>
           </div>
           <div style={styles.tabSelectors}>
             {
