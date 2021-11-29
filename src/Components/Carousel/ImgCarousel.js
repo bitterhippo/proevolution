@@ -13,7 +13,7 @@ const ImgCarousel = () => {
   };
 
   const onArrowclick = (i) => {
-    setCurrentImg(currentImg + i);
+    setCounter(counter + i);
   };
 
   //Defaults
@@ -32,7 +32,7 @@ const ImgCarousel = () => {
     <div style={styles.mainWrapper}>
       <div style={styles.topRow}>
         {
-          <CustomImg 
+          <CustomImg
             height={'40vh'}
             width={'60vw'}
             image={imgDefaults[counter]}
@@ -40,24 +40,36 @@ const ImgCarousel = () => {
         }
       </div>
       <div style={styles.bottomRow}>
-        <div style={{...styles.arrows, marginLeft: '5vw'}}>
+        <div
+          style={{ ...styles.arrows, marginLeft: '5vw' }}
+          onClick={() => console.log('clicked')}
+        >
           {`<`}
         </div>
         <div style={styles.bottomRowImages}>
           {
             imgDefaults
-            .filter(currentImg => currentImg != imgDefaults[counter])
-            .map(currentImg => <div>
-              <CustomImg
-                height={100}
-                width={100}
-                image={currentImg}
-              />
-            </div>)
+              .filter(currentImg => currentImg != imgDefaults[counter])
+              .map(currentImg => <div
+                key={currentImg}
+              >
+                <CustomImg
+                  height={100}
+                  width={100}
+                  image={currentImg}
+                />
+              </div>)
           }
         </div>
-        <div style={{...styles.arrows, marginRight: '5vw'}}>
-          {`>`}
+        <div
+          style={{ ...styles.arrows, marginRight: '5vw' }}
+        >
+          <button
+            style={styles.arrowButton}
+            onClick={() => onArrowclick(1)}
+          >
+            {`>`}
+          </button>
         </div>
       </div>
     </div>
@@ -89,6 +101,15 @@ const styles = {
     marginTop: 30
   },
   arrows: {
+    color: 'gray',
+    fontSize: '3rem',
+    marginTop: 'auto',
+    marginBottom: 'auto',
+    fontWeight: 'bold'
+  },
+  arrowButton: {
+    border: 'none',
+    backgroundColor: 'white',
     color: 'gray',
     fontSize: '3rem',
     marginTop: 'auto',
