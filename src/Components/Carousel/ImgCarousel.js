@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CustomImg from '../ImgContainer/CustomImg';
 
 const ImgCarousel = () => {
 
