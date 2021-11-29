@@ -37,16 +37,16 @@ const About = () => {
           <div style={{ marginBottom: 30 }}>
             <span style={styles.bigText}>Our Process</span>
           </div>
-          <div>
+          <div style={styles.content}>
             <span style={styles.boldText}>An Informed Examination: </span>This will take place on your first visit, so that we can make or confirm a diagnosis, and udnerstand the state and stage of your injury. We'll check your medical history, find out about your level of physical activity and any relevant lifestyle factors.
           </div>
-          <div>
+          <div style={styles.content}>
             <span style={styles.boldText}>A Professional Diagnosis: </span>We'll diagnose the source of your injury, and establish whether it has caused any knock-on effects within your body. Your physical therapist will also help you understand your condition.
           </div>
-          <div>
+          <div style={styles.content}>
             <span style={styles.boldText}>A Unique Treatman Plan: </span>We've learned in our practice that no two patients are exactly alike, which is why your unique history, condition and hgoals will be reflected in the personalized treatment plan we plut together for you. This plan includes: skilled "hands on" treatments such as soft tissue-mobilization, acrupressure and manipulation, laser, ultrasound, electrical currents, acupuncture, and heat or ice to relieve, individuality, prescribed exercise programs.
           </div>
-          <div>
+          <div style={styles.content}>
             <span style={styles.boldText}>Home Improvement Assignements: </span>As part of your treatment plan, we are also likely to assign you home exercises to help you heal faster, strengthen your system and achieve your goals.
           </div>
           <button style={styles.button}>Book an Initial Assessment</button>
@@ -80,7 +80,7 @@ const styles = {
     color: 'white',
   },
   bigText: {
-    fontSize: "32px",
+    fontSize: "2rem",
     fontWeight: "bold",
     color: "green"
   },
@@ -118,6 +118,9 @@ const styles = {
   practionerWrapper: {
     marginTop: 100,
     width: '100%',
+  },
+  content: {
+    fontSize: '1rem'
   }
 };
 
