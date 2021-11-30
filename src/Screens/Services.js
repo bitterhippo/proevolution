@@ -196,7 +196,8 @@ const styles = {
     maxWidth: 280
   },
   practionersWrapper: {
-    margin: '5vh 0 5vh 0'
+    marginLeft: '15vw',
+    marginRight: '15vw'
   },
   practionerList: {
     display: 'flex',
@@ -206,12 +207,9 @@ const styles = {
     justifyContent: 'space-between',
   },
   practionerText: {
-    color: 'green',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    minHeight: 40,
-    marginTop: 10,
-    marginLeft: '15vw'
+    fontSize: "2rem",
+    fontWeight: "bold",
+    color: "green"
   },
   serviceDataWrapper: {
     width: '60%'

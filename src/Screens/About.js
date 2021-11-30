@@ -60,6 +60,9 @@ const About = () => {
           />
         </div>
       </div>
+      <div style={{ marginTop: '10vh', marginLeft: '15vw', marginRight: '15vw' }}>
+        <span style={styles.bigText}>Our Process</span>
+      </div>
       <div style={styles.practionerWrapper}>
         <ProfileList listData={staffList} />
       </div>
