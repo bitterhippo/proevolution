@@ -58,9 +58,6 @@ const CustomImg = ({ height, width, image }) => {
 
 const styles = {
   imgWrapper: {
-    height: 125,
-    width: 125,
-    zIndex: 1,
     marginLeft: 'auto',
     marginRight: 'auto'
   }
