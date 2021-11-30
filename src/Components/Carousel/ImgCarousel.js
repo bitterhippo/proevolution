@@ -27,7 +27,8 @@ const ImgCarousel = () => {
     'Chiro',
     'Home1',
     'Home2',
-    'PT'
+    'PT',
+    'PractList1',
   ];
 
 
@@ -118,8 +119,9 @@ const styles = {
     fontWeight: 'bold'
   },
   arrowButton: {
+    position: 'absolute',
+    backgroundColor: 'rgba(32, 102, 32, 0.009)',
     border: 'none',
-    backgroundColor: 'rgba(32, 102, 32, 0.2)',
     color: 'gray',
     fontSize: '3rem',
     marginTop: 'auto',
