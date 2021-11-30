@@ -13,7 +13,10 @@ const ImgCarousel = () => {
   };
 
   const onArrowclick = (i) => {
-    setCounter(counter + i);
+    if (counter + i >= 0 && counter + i < imgDefaults.length)
+    {
+      setCounter(counter + i);
+    }
   };
 
   //Defaults
@@ -42,9 +45,13 @@ const ImgCarousel = () => {
       <div style={styles.bottomRow}>
         <div
           style={{ ...styles.arrows, marginLeft: '5vw' }}
-          onClick={() => console.log('clicked')}
         >
-          {`<`}
+          <button
+            style={styles.arrowButton}
+            onClick={() => onArrowclick(-1)}
+          >
+            {`<`}
+          </button>
         </div>
         <div style={styles.bottomRowImages}>
           {
@@ -98,7 +105,10 @@ const styles = {
   mainWrapper: {
     minHeight: '20vh',
     minWidth: '100%',
-    marginTop: 30
+    marginTop: 30,
+    paddingTop: 30,
+    paddingBottom: 30,
+    backgroundColor: 'rgba(32, 102, 32, 0.2)'
   },
   arrows: {
     color: 'gray',
@@ -109,12 +119,12 @@ const styles = {
   },
   arrowButton: {
     border: 'none',
-    backgroundColor: 'white',
+    backgroundColor: 'rgba(32, 102, 32, 0.2)',
     color: 'gray',
     fontSize: '3rem',
     marginTop: 'auto',
     marginBottom: 'auto',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   }
 };
 
