@@ -22,13 +22,13 @@ const ImgCarousel = () => {
   //Defaults
 
   const imgDefaults = [
-    'AboutUs1',
-    'Allstate',
-    'Chiro',
-    'Home1',
-    'Home2',
-    'PT',
-    'PractList1',
+    'Facility1',
+    'Facility2',
+    'Facility3',
+    'Facility4',
+    'Facility5',
+    'Facility6',
+    'Facility7',
   ];
 
 
@@ -37,8 +37,8 @@ const ImgCarousel = () => {
       <div style={styles.topRow}>
         {
           <CustomImg
-            height={'40vh'}
-            width={'60vw'}
+            height={'60vh'}
+            width={'80vw'}
             image={imgDefaults[counter]}
           />
         }

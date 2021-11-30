@@ -21,6 +21,13 @@ import Chiro from "../../Images/Chiro.jpg";
 import Allstate from "../../Images/Allstate.jpg";
 import Guardian from "../../Images/Guardian.jpg";
 import HSBC from "../../Images/Guardian.jpg";
+import Facility1 from "../../Images/Facility1.jpg";
+import Facility2 from "../../Images/Facility2.jpg";
+import Facility3 from "../../Images/Facility3.jpg";
+import Facility4 from "../../Images/Facility4.jpg";
+import Facility5 from "../../Images/Facility5.jpg";
+import Facility6 from "../../Images/Facility6.jpg";
+import Facility7 from "../../Images/Facility7.jpg";
 
 const imgConnector = {
   CeaserTeam: CeaserTeam,
@@ -44,6 +51,13 @@ const imgConnector = {
   Allstate: Allstate,
   Guardian: Guardian,
   HSBC: HSBC,
+  Facility1: Facility1,
+  Facility2: Facility2,
+  Facility3: Facility3,
+  Facility4: Facility4,
+  Facility5: Facility5,
+  Facility6: Facility6,
+  Facility7: Facility7
 }
 
 const CustomImg = ({ height, width, image }) => {
@@ -59,7 +73,9 @@ const CustomImg = ({ height, width, image }) => {
 const styles = {
   imgWrapper: {
     marginLeft: 'auto',
-    marginRight: 'auto'
+    marginRight: 'auto',
+    objectFit: 'cover',
+    overflow: 'hidden'
   }
 };
 
