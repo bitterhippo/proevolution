@@ -53,7 +53,7 @@ const About = () => {
         </div>
         {/* Second Screen */}
         <div style={styles.imgHolder}>
-          <CustomImg 
+          <CustomImg
             height={300}
             width={300}
             image={'Massage'}
@@ -100,7 +100,8 @@ const styles = {
     flexDirection: 'inline-row',
     marginTop: '40px',
     gap: '20px',
-    justifyContent: 'center'
+    marginLeft: '15vw',
+    marginRight: '15vw'
   },
   screen: {
     width: '50%',
@@ -117,7 +118,8 @@ const styles = {
   },
   practionerWrapper: {
     marginTop: 100,
-    width: '100%',
+    marginLeft: '15vw',
+    marginRight: '15vw'
   },
   content: {
     fontSize: '1rem'

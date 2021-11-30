@@ -21,8 +21,6 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 25,
-    marginLeft: '15vw',
-    marginRight: '15vw',
   }
 };
 

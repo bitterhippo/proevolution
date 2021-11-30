@@ -62,8 +62,8 @@ const ImgCarousel = () => {
                 key={currentImg}
               >
                 <CustomImg
-                  height={100}
-                  width={100}
+                  height={200}
+                  width={200}
                   image={currentImg}
                 />
               </div>)
@@ -101,7 +101,7 @@ const styles = {
     flexDirection: 'inline-row',
     marginTop: 'auto',
     marginBottom: 'auto',
-    gap: 20
+    gap: 20,
   },
   mainWrapper: {
     minHeight: '20vh',
@@ -119,7 +119,6 @@ const styles = {
     fontWeight: 'bold'
   },
   arrowButton: {
-    position: 'absolute',
     backgroundColor: 'rgba(32, 102, 32, 0.009)',
     border: 'none',
     color: 'gray',

@@ -75,7 +75,6 @@ const styles = {
     marginLeft: 'auto',
     marginRight: 'auto',
     objectFit: 'cover',
-    overflow: 'hidden'
   }
 };
 

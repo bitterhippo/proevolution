@@ -24,7 +24,7 @@ const ProviderCarousel = () => {
                 key={currentItem.key}
                 >
                   <CustomImg 
-                    height={50}
+                    height={150}
                     width={150}
                     image={currentItem.img}
                   />
@@ -42,8 +42,6 @@ const ProviderCarousel = () => {
 const styles = {
   carouselWrapper: {
     minHeight: '20vh',
-    marginTop: '15vh',
-    marginBottom: '15vh',
   },
   carouselMainWrapper: {
     display: 'flex',
