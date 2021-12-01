@@ -47,7 +47,7 @@ const About = () => {
             <span style={styles.boldText}>A Unique Treatman Plan: </span>We've learned in our practice that no two patients are exactly alike, which is why your unique history, condition and hgoals will be reflected in the personalized treatment plan we plut together for you. This plan includes: skilled "hands on" treatments such as soft tissue-mobilization, acrupressure and manipulation, laser, ultrasound, electrical currents, acupuncture, and heat or ice to relieve, individuality, prescribed exercise programs.
           </div>
           <div style={styles.content}>
-            <span style={styles.boldText}>Home Improvement Assignements: </span>As part of your treatment plan, we are also likely to assign you home exercises to help you heal faster, strengthen your system and achieve your goals.
+            <span style={{...styles.boldText, marginBottom: '0px'}}>Home Improvement Assignements: </span>As part of your treatment plan, we are also likely to assign you home exercises to help you heal faster, strengthen your system and achieve your goals.
           </div>
           <button style={styles.button}>Book an Initial Assessment</button>
         </div>
@@ -86,7 +86,7 @@ const styles = {
     color: 'white',
   },
   bigText: {
-    fontSize: "3rem",
+    fontSize: "30px",
     fontWeight: "bold",
     color: "green"
   },
@@ -108,8 +108,7 @@ const styles = {
     flexDirection: 'inline-row',
     marginTop: '40px',
     gap: '20px',
-    marginLeft: '10vw',
-    marginRight: '10vw'
+    margin: '0 10vw 0 10vw'
   },
   screen: {
     flex: 3,
@@ -129,7 +128,8 @@ const styles = {
     marginRight: '10vw'
   },
   content: {
-    fontSize: '1rem'
+    fontSize: '1rem',
+    marginBottom: '10px'
   }
 };
 

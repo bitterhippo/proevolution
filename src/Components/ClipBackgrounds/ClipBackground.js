@@ -27,7 +27,7 @@ const styles = {
   clipPathItem2: {
     marginTop: "-130px",
     position: 'absolute',
-    backgroundColor: '#bcf5a6',
+    backgroundColor: '#BEECBE',
     zIndex: -1,
     height: '600px',
     width: '100%',

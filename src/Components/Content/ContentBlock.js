@@ -38,7 +38,7 @@ const styles = {
   bannerText: {
     textAlign: 'center',
     color: "#206620",
-    fontSize: '4.5vh',
+    fontSize: '30px',
     fontWeight: 'bold'
   },
   mainContent: {
@@ -60,34 +60,12 @@ const styles = {
   styledButton: {
     backgroundColor: '#206620',
     color: 'white',
-    paddingLeft: 25,
-    paddingRight: 25,
+    padding: '0 30px 0 30px',
     height: '4vh',
-    width: '12vw',
-    fontSize: '1.2vw',
+    fontSize: '18px',
     borderRadius: 5,
-    marginRight: '7vw'
-  },
-  clipPathItem1: {
-    marginTop: "-100px",
-    opacity: 0.3,
-    position: 'absolute',
-    backgroundColor: 'gray',
-    zIndex: -2,
-    height: '400px',
-    width: '100%',
-    clipPath: "polygon(0 41%, 100% 9%, 100% 69%, 0 100%)",
-    minHeight: '300px',
-  },
-  clipPathItem2: {
-    marginTop: "-100px",
-    position: 'absolute',
-    backgroundColor: '#bcf5a6',
-    zIndex: -1,
-    height: '400px',
-    width: '100%',
-    clipPath: "polygon(0 13%, 100% 37%, 100% 100%, 0 79%)",
-    minHeight: '300px',
+    marginRight: '7vw',
+    fontWeight: 'bold'
   },
   buttonAlign: {
     display: 'flex',
