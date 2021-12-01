@@ -46,6 +46,7 @@ const styles = {
     borderRadius: 5,
     padding: '0.5rem 1.5rem 0.5rem 1.5rem',
     fontWeight: 'bold',
+    filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
   }
 };
 

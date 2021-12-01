@@ -101,6 +101,7 @@ const styles = {
     fontSize: '1rem',
     fontWeight: 'bold',
     padding: '0.5rem 3rem 0.5rem 3rem',
+    filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
   },
   splitView: {
     display: 'flex',
