@@ -60,11 +60,14 @@ const About = () => {
           />
         </div>
       </div>
-      <div style={{ marginTop: '10vh', marginLeft: '15vw', marginRight: '15vw' }}>
-        <span style={styles.bigText}>Our Process</span>
+      <div style={{ marginTop: '10vh', marginLeft: '10vw', marginRight: '15vw' }}>
+        <span style={styles.bigText}>Our Staff</span>
       </div>
       <div style={styles.practionerWrapper}>
         <ProfileList listData={staffList} />
+      </div>
+      <div style={{ marginTop: '10vh', marginLeft: '10vw', marginRight: '15vw' }}>
+        <span style={styles.bigText}>Our Facility</span>
       </div>
       <ImgCarousel />
     </div>
@@ -83,7 +86,7 @@ const styles = {
     color: 'white',
   },
   bigText: {
-    fontSize: "2rem",
+    fontSize: "3rem",
     fontWeight: "bold",
     color: "green"
   },
@@ -95,21 +98,21 @@ const styles = {
     backgroundColor: '#206620',
     color: 'white',
     borderRadius: '5px',
-    padding: '5px 20px 5px 20px',
+    fontSize: '1rem',
+    fontWeight: 'bold',
+    padding: '0.5rem 3rem 0.5rem 3rem',
   },
   splitView: {
-    width: '100%',
     display: 'flex',
     flexDirection: 'inline-row',
     marginTop: '40px',
     gap: '20px',
-    marginLeft: '15vw',
-    marginRight: '15vw'
+    marginLeft: '10vw',
+    marginRight: '10vw'
   },
   screen: {
-    width: '50%',
+    flex: 3,
     marginTop: '30px',
-    marginLeft: '20px',
   },
   imgHolder: {
     marginTop: '100px',
@@ -121,8 +124,8 @@ const styles = {
   },
   practionerWrapper: {
     marginTop: 100,
-    marginLeft: '15vw',
-    marginRight: '15vw'
+    marginLeft: '10vw',
+    marginRight: '10vw'
   },
   content: {
     fontSize: '1rem'

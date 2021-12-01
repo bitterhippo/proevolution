@@ -6,8 +6,8 @@ const Profile = ({ image, name, link }) => {
     <div style={styles.profileWrapper}>
       {/* Place holder box for images */}
       <CustomImg 
-        height={'20vh'}
-        width={'20vh'}
+        height={'12vw'}
+        width={'12vw'}
         image={image}
       />
       <div style={styles.text}>
@@ -32,7 +32,7 @@ const styles = {
   },
   text: {
     textAlign: 'center',
-    fontSize: 16,
+    fontSize: '1.3em',
     color: 'green',
     fontWeight: 'bold',
   },
@@ -44,10 +44,7 @@ const styles = {
     backgroundColor: '#206620',
     color: 'white',
     borderRadius: 5,
-    paddingLeft: 15,
-    paddingRight: 15,
-    paddingTop: 3,
-    paddingBottom: 3,
+    padding: '0.5rem 1.5rem 0.5rem 1.5rem',
     fontWeight: 'bold',
   }
 };
