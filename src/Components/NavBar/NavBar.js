@@ -51,7 +51,7 @@ const styles = {
     display: "flex",
     flexDirection: "inline-flex",
     height: '100%',
-    marginLeft: '25%',
+    marginLeft: '30%',
     gap: '5vw'
   },
   selectedNavBarItem: {

@@ -129,7 +129,8 @@ const styles = {
   },
   content: {
     fontSize: '1rem',
-    marginBottom: '10px'
+    marginBottom: '10px',
+    marginRight: '7vw'
   }
 };
 
