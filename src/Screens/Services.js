@@ -52,7 +52,7 @@ const Services = () => {
         <div style={styles.whiteSpaceContent}>
           <div style={styles.currentServiceWrapper1}>
             <div>
-              <span style={styles.fancyText}>Services</span> > <span style={styles.fancyText}>{selectedService}</span>
+              <span style={styles.fancyText}>Services</span> {">"} <span style={styles.fancyText}>{selectedService}</span>
             </div>
           </div>
           <div style={{ ...styles.currentServiceWrapper, justifyContent: 'space-between' }}>
