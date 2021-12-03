@@ -41,7 +41,7 @@ const Services = () => {
   return (
     <div>
       <BannerImg
-        image={'CeaserTeam'}
+        image={'Hero'}
         message={'Pro Evolution Wellness'}
         brightness={'dark'}
       />
