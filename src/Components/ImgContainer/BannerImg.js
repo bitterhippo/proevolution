@@ -18,6 +18,7 @@ import PT from "../../Images/PT.jpg";
 import ShockwaveTherapy from "../../Images/ShockwaveTherapy.jpg";
 import TherapueticUltrasound from "../../Images/TherapueticUltrasound.jpg";
 import Hero from "../../Images/Hero.jpg";
+import FAQ2 from "../../Images/FAQ2.jpg";
 
 const BannerImg = ({ image, message, brightness }) => {
 
@@ -40,6 +41,7 @@ const BannerImg = ({ image, message, brightness }) => {
     ShockwaveTherapy: ShockwaveTherapy,
     TherapueticUltrasound: TherapueticUltrasound,
     Hero: Hero,
+    FAQ2: FAQ2,
   }
 
   return (

@@ -35,7 +35,7 @@ const FAQ = () => {
   return (
     <div style={styles.contentWrapper}>
       <BannerImg 
-        image={'TherapueticUltrasound'}
+        image={'FAQ2'}
         message={'Frequently Asked Questions'}
       />
       <div style={styles.primaryContent}>
