@@ -70,7 +70,6 @@ const styles = {
   img: {
     width: '100%',
     height: '40vh',
-    objectFit: 'cover',
     overflow: 'hidden',
   }
 };

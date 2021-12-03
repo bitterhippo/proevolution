@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <div style={styles.screen}>
       <BannerImg
-        image={'CeaserTeam'}
+        image={'Hero'}
         message={'Pro Evolution Wellness'}
         brightness={"dark"}
       />
