@@ -20,6 +20,7 @@ import {
 } from "react-router-dom";
 
 const Landing = () => {
+
   return (
     <div style={styles.wrapper}>
       <Router>
