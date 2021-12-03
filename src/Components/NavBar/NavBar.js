@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import CustomImg from '../ImgContainer/CustomImg';
 
 
 const NavBar = () => {
@@ -10,6 +11,11 @@ const NavBar = () => {
   return (
     <div style={styles.navBarWrapper}>
       <div style={{ ...styles.navBarItem, marginLeft: '5vw' }}>
+        <CustomImg 
+          height={50}
+          width={170}
+          image={"Logo"}
+        />
         <Link
           style={styles.navBarItem}
           to={"/"}>
@@ -47,12 +53,13 @@ const styles = {
     flexDirection: 'inline-row'
   },
   navLinks: {
-    width: "50%",
+    width: "30%",
     display: "flex",
     flexDirection: "inline-flex",
     height: '100%',
-    marginLeft: '30%',
-    gap: '5vw'
+    marginLeft: '15vw',
+    marginRight: '10vw',
+    gap: '5vw',
   },
   selectedNavBarItem: {
     color: 'white',
@@ -73,12 +80,8 @@ const styles = {
     fontSize: 16,
     border: '2px solid white',
     backgroundColor: 'green',
-    marginTop: 'auto',
-    marginBottom: 'auto',
-    paddingTop: '6px',
-    paddingBottom: '6px',
-    paddingLeft: '35px',
-    paddingRight: '35px',
+    margin: 'auto 0 auto 15vw',
+    padding: '8px 25px',
     color: 'white',
     borderRadius: 5,
   }
