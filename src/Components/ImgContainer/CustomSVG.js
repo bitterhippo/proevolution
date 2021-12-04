@@ -6,7 +6,7 @@ import HSBC from '../../Images/HSBC.svg';
 import Guardian from "../../Images/Guardian.svg";
 
 
-const CustomSVG = () => {
+const CustomSVG = ({ height, width }) => {
 
   const imgConnections = {
     Allstate: Allstate,
@@ -16,7 +16,11 @@ const CustomSVG = () => {
 
   return (
     <img
-      style={styles.CustomSVGWrapper}
+      style={{
+        ...styles.CustomSVGWrapper,
+        height: height,
+        width: width,
+      }}
       src={imgConnections[Chiro]}>
     </img>
   )
