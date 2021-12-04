@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import CustomImg from '../ImgContainer/CustomImg';
+import CustomSVG from '../ImgContainer/CustomSVG';
+
 
 const ProviderCarousel = () => {
 
@@ -23,9 +24,9 @@ const ProviderCarousel = () => {
                 <div
                   key={currentItem.key}
                 >
-                  <CustomImg
-                    height={50}
-                    width={180}
+                  <CustomSVG
+                    height={62}
+                    width={322}
                     image={currentItem.img}
                   />
                 </div>
