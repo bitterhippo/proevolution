@@ -17,7 +17,9 @@ const ProviderCarousel = () => {
       <h2 style={styles.bannerText}>Our Providers</h2>
       <div style={styles.carouselMainWrapper}>
         <div style={styles.carouselSlider}>
-          <div style={{ ...styles.arrowBar, marginLeft: '5vw' }}>{"<"}</div>
+          <div style={{ ...styles.arrowBar, marginLeft: '5vw' }}>
+            <button style={styles.arrowButton}> {"<"} </button>
+          </div>
           <div style={styles.innerCarousel}>
             {
               carouselData.map(currentItem =>
@@ -25,15 +27,17 @@ const ProviderCarousel = () => {
                   key={currentItem.key}
                 >
                   <CustomSVG
-                    height={62}
-                    width={322}
+                    height={160}
+                    width={161}
                     image={currentItem.img}
                   />
                 </div>
               )
             }
           </div>
-          <div style={{ ...styles.arrowBar, textAlign: 'right', marginRight: '5vw' }}>{">"}</div>
+          <div style={{ ...styles.arrowBar, textAlign: 'right', marginRight: '5vw' }}>
+            <button style={styles.arrowButton}> {">"} </button>
+          </div>
         </div>
       </div>
     </div>
@@ -54,7 +58,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'inline-row',
     justifyContent: 'space-around',
-    marginTop: '6vh',
     width: '100%'
   },
   innerCarousel: {
@@ -67,12 +70,21 @@ const styles = {
     flex: 1,
     color: "silver",
     fontSize: 30,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    verticalAlign: '50%',
   },
   bannerText: {
     fontSize: 32,
     textAlign: 'center',
     color: '#206620'
+  },
+  arrowButton: {
+    backgroundColor: 'rgba(32, 102, 32, 0.009)',
+    border: 'none',
+    color: 'gray',
+    fontSize: '3rem',
+    margin: '23%',
+    fontWeight: 'bold',
   }
 };
 
