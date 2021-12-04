@@ -8,7 +8,7 @@ const ProviderCarousel = () => {
   let carouselData = [
     { name: 'Guardian', img: 'Guardian', key: 1 },
     { name: 'Allstate', img: 'Allstate', key: 2 },
-    { name: 'Logo', img: 'Logo', key: 3 }
+    { name: 'HSBC', img: 'HSBC', key: 3 }
   ];
 
   return (
@@ -24,8 +24,8 @@ const ProviderCarousel = () => {
                 key={currentItem.key}
                 >
                   <CustomImg 
-                    height={150}
-                    width={150}
+                    height={70}
+                    width={300}
                     image={currentItem.img}
                   />
                 </div>

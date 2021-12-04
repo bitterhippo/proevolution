@@ -20,7 +20,7 @@ import TherapueticUltrasound from "../../Images/TherapueticUltrasound.jpg";
 import Chiro from "../../Images/Chiro.jpg";
 import Allstate from "../../Images/Allstate.svg";
 import Guardian from "../../Images/Guardian.svg";
-import HSBC from "../../Images/Guardian.svg";
+import HSBC from "../../Images/HSBC.svg";
 import Facility1 from "../../Images/Facility1.jpg";
 import Facility2 from "../../Images/Facility2.jpg";
 import Facility3 from "../../Images/Facility3.jpg";
