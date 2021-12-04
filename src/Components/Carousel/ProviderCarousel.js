@@ -6,14 +6,14 @@ const ProviderCarousel = () => {
   const [carouselCounter, setCarouselCounter] = useState(0);
 
   let carouselData = [
-    { name: 'Guardian', img: 'Guardian', key: 1 },
-    { name: 'Allstate', img: 'Allstate', key: 2 },
-    { name: 'HSBC', img: 'HSBC', key: 3 }
+    { img: 'Guardian', key: 1 },
+    { img: 'Allstate', key: 2 },
+    { img: 'HSBC', key: 3 }
   ];
 
   return (
     <div style={styles.carouselWrapper}>
-      <h2 style={styles.bannerText}>Our Services</h2>
+      <h2 style={styles.bannerText}>Our Providers</h2>
       <div style={styles.carouselMainWrapper}>
         <div style={styles.carouselSlider}>
           <div style={{ ...styles.arrowBar, marginLeft: '5vw' }}>{"<"}</div>
@@ -21,11 +21,11 @@ const ProviderCarousel = () => {
             {
               carouselData.map(currentItem =>
                 <div
-                key={currentItem.key}
+                  key={currentItem.key}
                 >
-                  <CustomImg 
-                    height={70}
-                    width={300}
+                  <CustomImg
+                    height={50}
+                    width={180}
                     image={currentItem.img}
                   />
                 </div>
@@ -42,6 +42,7 @@ const ProviderCarousel = () => {
 const styles = {
   carouselWrapper: {
     minHeight: '20vh',
+    marginTop: '5vh'
   },
   carouselMainWrapper: {
     display: 'flex',
@@ -57,7 +58,7 @@ const styles = {
   },
   innerCarousel: {
     display: 'flex',
-    flex: 4,
+    flex: 6,
     flexDirection: 'inline-row',
     justifyContent: 'space-between',
   },

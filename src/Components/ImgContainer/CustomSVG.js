@@ -2,13 +2,16 @@ import React from 'react';
 //IMG FILES
 import Logo from '../../Images/Logo.svg';
 import Allstate from '../../Images/Allstate.svg';
+import HSBC from '../../Images/HSBC.svg';
+import Guardian from "../../Images/Guardian.svg";
 
 
 const CustomSVG = () => {
 
   const imgConnections = {
-    Logo: Logo,
     Allstate: Allstate,
+    HSBC: HSBC,
+    Guardian: Guardian
   }
 
   return (
