@@ -1,12 +1,18 @@
 import React from 'react';
-
+//Components
+import CustomSVG from '../ImgContainer/CustomSVG';
 
 const FooterNav = () => {
 
 
   const footNavLinks = [
     {
-      name: 'About', Links: [
+      name: '', Links: [
+        <CustomSVG
+        height={50}
+        width={150}
+        image={"Logo"}
+      />,
         `Services`,
         `FAQ`,
         `About`

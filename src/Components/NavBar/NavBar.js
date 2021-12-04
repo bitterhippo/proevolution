@@ -11,14 +11,14 @@ const NavBar = () => {
   return (
     <div style={styles.navBarWrapper}>
       <div style={{ ...styles.navBarItem, marginLeft: '5vw' }}>
-        <CustomImg 
-          height={50}
-          width={170}
-          image={"Logo"}
-        />
         <Link
           style={styles.navBarItem}
           to={"/"}>
+          <CustomImg
+            height={50}
+            width={170}
+            image={"Logo"}
+          />
         </Link>
       </div>
       <div style={styles.navLinks}>

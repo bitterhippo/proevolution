@@ -9,6 +9,7 @@ import Guardian from "../../Images/Guardian.svg";
 const CustomSVG = ({ image, height, width }) => {
 
   const imgConnections = {
+    Logo: Logo,
     Allstate: Allstate,
     HSBC: HSBC,
     Guardian: Guardian
