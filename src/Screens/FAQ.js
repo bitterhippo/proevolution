@@ -62,17 +62,17 @@ const styles = {
     width: '65%',
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: '10%',
+    marginTop: '5%',
   },
   input: {
     borderRadius: '10px',
     border: '2px solid green',
     width: '100%',
-    height: '30px',
+    height: '40px',
     boxShadow: '0 5px 10px rgb(0 0 0 / 0.2)'
   },
   faqHeader: {
-    marginTop: '10%',
+    marginTop: '7%',
     fontSize: 28,
     fontWeight: 'bold',
     textDecoration: 'underline',

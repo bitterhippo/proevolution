@@ -79,9 +79,9 @@ const styles = {
   navBarButton: {
     fontSize: 16,
     border: '2px solid white',
-    backgroundColor: 'green',
+    backgroundColor: '#206620',
     margin: 'auto 0 auto 15vw',
-    padding: '8px 25px',
+    padding: '6px 22px',
     color: 'white',
     borderRadius: 5,
   }

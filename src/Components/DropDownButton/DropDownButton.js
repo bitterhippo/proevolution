@@ -14,7 +14,7 @@ const DropDownButton = ({ title, content }) => {
         onClick={() => toggleDrawer(!drawer)}
       >
         <div style={styles.titleText}>
-          <div style={{ marginLeft: 30, fontWeight: 'bold'}}>
+          <div style={styles.dropDownTab}>
             {title} {drawer ? "Up Arrow" : "Down Arrow"}
           </div>
         </div>
@@ -56,6 +56,11 @@ const styles = {
   },
   spacer: {
     marginLeft: 30
+  },
+  dropDownTab: {
+    marginLeft: 20,
+    fontWeight: 'bold',
+    padding: "10px 0px 10px 0px"
   }
 };
 
