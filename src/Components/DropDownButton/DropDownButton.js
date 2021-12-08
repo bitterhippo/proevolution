@@ -21,7 +21,7 @@ const DropDownButton = ({ title, content }) => {
       </div>
       {drawer &&
         <div style={styles.hiddenContent}>
-          <div style={{ marginLeft: 30 }}>
+          <div style={styles.dropDownText}>
             {content}
             </div>
         </div>}
@@ -60,7 +60,11 @@ const styles = {
   dropDownTab: {
     marginLeft: 20,
     fontWeight: 'bold',
-    padding: "10px 0px 10px 0px"
+    padding: '10px 0px'
+  },
+  dropDownText: {
+    marginLeft: 20,
+    padding: '10px 0px'
   }
 };
 
