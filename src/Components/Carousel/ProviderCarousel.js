@@ -40,14 +40,20 @@ const ProviderCarousel = () => {
           </div>
         </div>
       </div>
+      <div style={styles.circleRow}>
+        <div style={{...styles.circle, backgroundColor: '#434343'}}></div>
+        <div style={styles.circle}></div>
+        <div style={styles.circle}></div>
+        <div style={styles.circle}></div>
+      </div>
     </div>
   )
 };
 
 const styles = {
   carouselWrapper: {
-    minHeight: '20vh',
-    marginTop: '5vh'
+    minHeight: '35vh',
+    marginTop: '15vh'
   },
   carouselMainWrapper: {
     display: 'flex',
@@ -76,7 +82,8 @@ const styles = {
   bannerText: {
     fontSize: 32,
     textAlign: 'center',
-    color: '#206620'
+    color: '#206620',
+    paddingTop: '5vh'
   },
   arrowButton: {
     backgroundColor: 'rgba(32, 102, 32, 0.009)',
@@ -85,6 +92,18 @@ const styles = {
     fontSize: '3rem',
     margin: '23%',
     fontWeight: 'bold',
+  },
+  circle: {
+    height: 15,
+    width: 15,
+    backgroundColor: 'white',
+    borderRadius: '50%',
+  },
+  circleRow: {
+    display: 'flex',
+    flexDirection: 'inline-row',
+    gap: 10,
+    justifyContent: 'center'
   }
 };
 
