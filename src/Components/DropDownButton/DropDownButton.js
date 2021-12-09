@@ -33,7 +33,7 @@ const styles = {
   dropDownWrapper: {
     borderLeft: '1px solid black',
     borderRight: '1px solid black',
-    borderRadius: 5,
+    borderRadius: 10,
   },
   dropDownTitle: {
     borderBottom: '1px solid black',
