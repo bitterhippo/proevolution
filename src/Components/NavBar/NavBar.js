@@ -67,7 +67,7 @@ const styles = {
     marginBottom: 'auto',
     fontSize: 16,
     textDecoration: 'none',
-    borderBottom: '2px solid white',
+    borderBottom: '3px solid white',
   },
   navBarItem: {
     color: 'white',

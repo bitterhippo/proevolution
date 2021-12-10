@@ -9,10 +9,10 @@ const FooterNav = () => {
     {
       name: '', Links: [
         <CustomSVG
-        height={50}
-        width={150}
-        image={"Logo"}
-      />,
+          height={50}
+          width={150}
+          image={"Logo"}
+        />,
         `Services`,
         `FAQ`,
         `About`
@@ -20,13 +20,34 @@ const FooterNav = () => {
     },
     {
       name: 'Operating Hours', Links: [
-        `Mon:     7 AM - 5 PM`,
-        'Tues: 7 AM - 5 PM',
-        'Weds: 7 AM - 5 PM',
-        'Thurs: 7 AM - 5 PM',
-        'Fri: 7 AM - 5 PM',
-        'Sat: 7 AM - 5 PM',
-        `Sunday:     Closed`,
+        <div style={{...styles.timeItem, marginTop: 5}}>
+          <span>Mon:</span>
+          <span>7 AM - 5 PM</span>
+        </div>,
+        <div style={styles.timeItem}>
+          <span>Tue:</span>
+          <span>7 AM - 5 PM</span>
+        </div>,
+        <div style={styles.timeItem}>
+          <span>Wed:</span>
+          <span>7 AM - 5 PM</span>
+        </div>,
+        <div style={styles.timeItem}>
+          <span>Thur:</span>
+          <span>7 AM - 5 PM</span>
+        </div>,
+        <div style={styles.timeItem}>
+          <span>Fri:</span>
+          <span>7 AM - 5 PM</span>
+        </div>,
+        <div style={styles.timeItem}>
+          <span>Sat:</span>
+          <span>7 AM - 5 PM</span>
+        </div>,
+        <div style={styles.timeItem}>
+          <span>Sun:</span>
+          <span>7 AM - 5 PM</span>
+        </div>
       ]
     },
     {
@@ -107,6 +128,10 @@ const styles = {
     backgroundColor: '#206620',
     fontSize: 12,
     padding: ''
+  },
+  timeItem: {
+    display: 'flex',
+    justifyContent: 'space-between'
   }
 };
 
