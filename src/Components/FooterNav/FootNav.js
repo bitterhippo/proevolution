@@ -46,7 +46,7 @@ const FooterNav = () => {
         </div>,
         <div style={styles.timeItem}>
           <span>Sun:</span>
-          <span>7 AM - 5 PM</span>
+          <span>Closed</span>
         </div>
       ]
     },
