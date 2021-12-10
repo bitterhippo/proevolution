@@ -33,11 +33,11 @@ const styles = {
   dropDownWrapper: {
     borderLeft: '1px solid black',
     borderRight: '1px solid black',
+    borderTop: '1px solid black',
+    borderBottom: '1px solid black',
     borderRadius: 10,
   },
   dropDownTitle: {
-    borderBottom: '1px solid black',
-    borderTop: '1px solid black',
     height: '100%',
     width: '100%',
     paddingTop: 5,
@@ -46,7 +46,8 @@ const styles = {
   dropDownTitleOpen: {
     background: 'rgba(32, 102, 32, 0.2)',
     borderBottom: '1px solid black',
-    borderTop: '1px solid black',
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
     borderBottomLeftRadius: 0,
     borderBottomRightRadius: 0,
     height: '100%',
