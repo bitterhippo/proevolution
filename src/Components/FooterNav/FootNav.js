@@ -71,8 +71,8 @@ const FooterNav = () => {
         >
           <span style={{ fontWeight: 'bold' }}>{currentFootNavLink.name}</span>
           {
-            currentFootNavLink.Links.map(currentLink => <div
-              key={currentLink}
+            currentFootNavLink.Links.map((currentLink, index) => <div
+              key={index}
               style={styles.footerNavItem}
             >
               <span style={styles.footerText}>{currentLink}</span>

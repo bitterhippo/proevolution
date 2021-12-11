@@ -58,7 +58,7 @@ const Home = () => {
         {
           servicesData.map(currentItem => {
             return <div
-              key={currentItem}
+              key={currentItem.title}
               style={styles.rowItem}
             >
               <CustomImg
