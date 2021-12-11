@@ -44,6 +44,7 @@ const NavBar = () => {
       </div>
       <button style={styles.navBarButton}>
         <Link
+        style={styles.styledNav}
         to={'Appointment'}
         >
           Book Appointment
@@ -92,6 +93,10 @@ const styles = {
     padding: '6px 22px',
     color: 'white',
     borderRadius: 5,
+  },
+  styledNav: {
+    textDecoration: 'none',
+    color: 'white'
   }
 }
 
