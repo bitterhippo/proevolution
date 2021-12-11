@@ -43,7 +43,11 @@ const NavBar = () => {
         }
       </div>
       <button style={styles.navBarButton}>
-        Book Appointment
+        <Link
+        to={'Appointment'}
+        >
+          Book Appointment
+        </Link>
       </button>
     </div>
   )

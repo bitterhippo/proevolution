@@ -7,6 +7,7 @@ import FooterNav from "./Components/FooterNav/FootNav";
 import Home from "./Screens/Home";
 import About from "./Screens/About";
 import FAQ from './Screens/FAQ';
+import Appointment from './Screens/Appointment';
 
 //Components
 import NavBar from "./Components/NavBar/NavBar";
@@ -31,6 +32,7 @@ const Landing = () => {
           <Route exact path="/FAQ" component={FAQ} />
           <Route exact path="/about" component={About} />
           <Route exact path="/staffview" component={StaffView} />
+          <Route exact path="/appointment" component={Appointment} />
         </Switch>
         <div style={styles.navWrapper}>
           <FooterNav />
