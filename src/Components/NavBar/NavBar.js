@@ -45,7 +45,7 @@ const NavBar = () => {
       <button style={styles.navBarButton}>
         <Link
         style={styles.styledNav}
-        to={'Appointment'}
+        to={'appointment'}
         >
           Book Appointment
         </Link>
