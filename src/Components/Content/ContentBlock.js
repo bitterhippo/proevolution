@@ -65,7 +65,8 @@ const styles = {
     fontSize: '18px',
     borderRadius: 5,
     marginRight: '7vw',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
   },
   buttonAlign: {
     display: 'flex',

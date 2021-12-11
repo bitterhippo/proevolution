@@ -40,7 +40,8 @@ const styles = {
     color: 'white',
     fontWeight: 'bold',
     borderRadius: 5,
-    padding: '5px 90px'
+    padding: '5px 90px',
+    filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
   }
 };
 
