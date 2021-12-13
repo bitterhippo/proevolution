@@ -108,7 +108,7 @@ let DummyData = {
           <CustomImg
             height={'35vh'}
             width={'60vw'}
-            image={'Thera1'}
+            image={'Home1'}
           />
         </div>
       </div>
