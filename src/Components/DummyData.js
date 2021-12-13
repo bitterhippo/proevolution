@@ -13,7 +13,7 @@ let DummyData = {
         <div style={{ marginTop: 30 }}>
           <CustomImg
             height={'35vh'}
-            width={'60vw'}
+            width={'40vw'}
             image={'Chiro'}
           />
         </div>
@@ -58,7 +58,7 @@ let DummyData = {
           <CustomImg
             height={'40vh'}
             width={'40vw'}
-            image={'Physio1'}
+            image={'Thera1'}
           />
         </div>
       </div>
@@ -94,12 +94,18 @@ let DummyData = {
   TherapueticUltrasound: {
     Howitworks: {
       text: <div>
-        Massage therapy involves the manipulation of both superficial and deep soft tissues including muscles, tendons, ligaments, and connective tissue.
+        Ultrasound uses high frequency sound waes to create bibration and friction between particles within the tissues. 
+        <br></br>
+        <br></br>
+        Pulsed ultrasound does not increase temperature, it allows for non-thermal effects suc as promoting soft tissue and bone repair by increasing cell permeability. this promotes general healing for all conditions.
+        <br></br>
+        <br></br>
+        Ultrasound is useful for treating: acute tendon tears, sprains, capral tunnel syndrome,, chronic low back pain, muscle tightness, frozen shoulders, bursitilis, cysts and more.
         <div style={{ marginTop: 30 }}>
           <CustomImg
             height={'40vh'}
             width={'40vw'}
-            image={'Thera1'}
+            image={'Physio1'}
           />
         </div>
       </div>
