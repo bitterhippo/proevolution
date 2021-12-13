@@ -10,12 +10,12 @@ let DummyData = {
     Howitworks: {
       text: <div>
         Chiropractic care uses a manual approach that focuses on reducing pain, and getting patients back to their optimal health and functionining. By performing a focused assessment, the doctor will diagnose the patient and create a tailored treatment plan.
-        <div style={{marginTop: 30}}>
-        <CustomImg 
-        height={'35vh'}
-        width={'60vw'}
-        image={'Chiro'}
-        />
+        <div style={{ marginTop: 30 }}>
+          <CustomImg
+            height={'35vh'}
+            width={'60vw'}
+            image={'Chiro'}
+          />
         </div>
       </div>
     },
@@ -54,6 +54,13 @@ let DummyData = {
     Howitworks: {
       text: <div>
         Physiotherapy rehabilitation focuses on restoring proper body function using movements and exercises to retain balance, coordination, gait, posture and strength.
+        <div style={{ marginTop: 30 }}>
+          <CustomImg
+            height={'40vh'}
+            width={'40vw'}
+            image={'Physio1'}
+          />
+        </div>
       </div>
     },
     Howithelps: {
@@ -97,6 +104,13 @@ let DummyData = {
           <li>The effects of stress and improper physical functioning can be relieved while restoring the body to optimal health and well being.
           </li>
         </ul>
+        <div style={{ marginTop: 30 }}>
+          <CustomImg
+            height={'35vh'}
+            width={'60vw'}
+            image={'Thera1'}
+          />
+        </div>
       </div>
     },
     Whatittreats: {

@@ -28,6 +28,8 @@ import Facility4 from "../../Images/Facility4.jpg";
 import Facility5 from "../../Images/Facility5.jpg";
 import Facility6 from "../../Images/Facility6.jpg";
 import Facility7 from "../../Images/Facility7.jpg";
+import Physio1 from "../../Images/Physio1.jpg";
+import Thera1 from "../../Images/Thera1.jpg";
 
 const imgConnector = {
   CeaserTeam: CeaserTeam,
@@ -57,7 +59,9 @@ const imgConnector = {
   Facility4: Facility4,
   Facility5: Facility5,
   Facility6: Facility6,
-  Facility7: Facility7
+  Facility7: Facility7,
+  Physio1: Physio1,
+  Thera1: Thera1
 }
 
 const CustomImg = ({ height, width, image }) => {
