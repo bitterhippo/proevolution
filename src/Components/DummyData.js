@@ -95,6 +95,13 @@ let DummyData = {
     Howitworks: {
       text: <div>
         Massage therapy involves the manipulation of both superficial and deep soft tissues including muscles, tendons, ligaments, and connective tissue.
+        <div style={{ marginTop: 30 }}>
+          <CustomImg
+            height={'40vh'}
+            width={'40vw'}
+            image={'Thera1'}
+          />
+        </div>
       </div>
     },
     Howithelps: {
@@ -104,13 +111,6 @@ let DummyData = {
           <li>The effects of stress and improper physical functioning can be relieved while restoring the body to optimal health and well being.
           </li>
         </ul>
-        <div style={{ marginTop: 30 }}>
-          <CustomImg
-            height={'35vh'}
-            width={'60vw'}
-            image={'Home1'}
-          />
-        </div>
       </div>
     },
     Whatittreats: {
