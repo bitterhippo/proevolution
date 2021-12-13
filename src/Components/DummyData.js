@@ -32,14 +32,14 @@ let DummyData = {
         </ul>
         Chiropractors focs on all regions of the body including:
         <ul>
-          <li>spine</li>
-          <li>hips</li>
-          <li>knees</li>
-          <li>ankes</li>
-          <li>shoulders</li>
-          <li>elbows</li>
-          <li>jaw</li>
-          <li>treating headaches</li>
+          <li>Spine</li>
+          <li>Hips</li>
+          <li>Knees</li>
+          <li>Ankes</li>
+          <li>Shoulders</li>
+          <li>Elbows</li>
+          <li>Jaw</li>
+          <li>Treating headaches</li>
         </ul>
       </div>
     },

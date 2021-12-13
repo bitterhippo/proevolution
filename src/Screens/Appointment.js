@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Appointment = () => {
   return (
@@ -12,7 +13,11 @@ const Appointment = () => {
       <div>
         <button
           style={styles.button}>
-          Continue
+          <Link
+          style={styles.styledLink}
+          to={'/'}
+          >Continue
+          </Link>
         </button>
       </div>
     </div>
@@ -42,6 +47,10 @@ const styles = {
     borderRadius: 5,
     padding: '5px 90px',
     filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
+  },
+  styledLink: {
+    color: 'white',
+    textDecoration: 'none'
   }
 };
 
