@@ -43,20 +43,13 @@ const styles = {
   dropDownTitle: {
     height: '100%',
     width: '100%',
-    paddingTop: 5,
-    paddingBottom: 5
   },
   dropDownTitleOpen: {
     background: 'rgba(32, 102, 32, 0.2)',
     borderBottom: '1px solid black',
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
-    borderBottomLeftRadius: 0,
-    borderBottomRightRadius: 0,
+    borderRadius: '10px 10px 0px 0px',
     height: '100%',
     width: '100%',
-    paddingTop: 5,
-    paddingBottom: 5
   },
   spacer: {
     marginLeft: 30

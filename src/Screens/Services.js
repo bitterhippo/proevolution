@@ -124,10 +124,7 @@ const styles = {
     backgroundColor: '#206620',
     color: 'white',
     borderRadius: 5,
-    paddingLeft: 40,
-    paddingRight: 40,
-    paddingTop: 8,
-    paddingBottom: 8,
+    padding: '8px 40px',
     fontWeight: 'bold',
     fontSize: 16,
     filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
