@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FiChevronsDown } from "react-icons/fi";
+import { FiChevronsUp } from "react-icons/fi";
 
 
 const DropDownButton = ({ title, content }) => {
@@ -17,7 +18,7 @@ const DropDownButton = ({ title, content }) => {
       >
         <div style={styles.titleText}>
           <div style={styles.dropDownTab}>
-            {title} {drawer ? "Up Arrow" : "Down Arrow"}
+            {title} {drawer ? <FiChevronsUp /> : <FiChevronsDown />}
           </div>
         </div>
       </div>
@@ -25,7 +26,7 @@ const DropDownButton = ({ title, content }) => {
         <div style={styles.hiddenContent}>
           <div style={styles.dropDownText}>
             {content}
-            </div>
+          </div>
         </div>}
     </div>
   )
