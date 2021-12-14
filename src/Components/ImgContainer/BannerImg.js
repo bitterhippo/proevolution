@@ -63,7 +63,7 @@ const styles = {
     position: 'absolute',
     zIndex: 5,
     left: '50%',
-    top: '27%',
+    top: '35%',
     textAlign: 'center',
     transform: 'translate(-50%, -50%)',
     letterSpacing: 5,
