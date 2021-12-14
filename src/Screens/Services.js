@@ -153,7 +153,7 @@ const styles = {
   },
   tabSelectors: {
     marginTop: '2vh',
-    marginLeft: '5.5vw',
+    marginLeft: '5vw',
     display: 'flex',
     flexDirection: 'inline',
     gap: 20
@@ -164,9 +164,7 @@ const styles = {
     textDecorationThickness: 2,
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
-    paddingTop: 15,
-    paddingLeft: 15,
-    paddingRight: 15,
+    padding: '15px 15px 0px 15px',
     fontSize: 20,
     backgroundColor: 'white'
   },
@@ -174,9 +172,7 @@ const styles = {
     fontWeight: 'bold',
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
-    paddingTop: 15,
-    paddingLeft: 15,
-    paddingRight: 15,
+    padding: '15px 15px 0px 15px',
     fontSize: 20,
   },
   mainContentSplit: {
