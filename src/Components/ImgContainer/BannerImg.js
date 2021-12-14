@@ -71,8 +71,8 @@ const styles = {
   },
   img: {
     width: '100%',
-    height: '40vh',
-    overflow: 'hidden',
+    height: 'auto',
+    maxHeight: '50vh'
   }
 };
 
