@@ -96,7 +96,7 @@ const styles = {
     marginTop: 30,
   },
   bannerText: {
-    marginTop: '10vh',
+    marginTop: '8vh',
     fontSize: 32,
     textAlign: 'center',
     color: '#206620'
@@ -105,7 +105,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     marginTop: '5vh',
-    gap: '10vh'
+    gap: '15vh'
   },
   servicesText: {
     fontSize: 22,

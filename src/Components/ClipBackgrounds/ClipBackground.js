@@ -25,7 +25,7 @@ const styles = {
     minHeight: '300px',
   },
   clipPathItem2: {
-    marginTop: "-130px",
+    marginTop: "-220px",
     position: 'absolute',
     backgroundColor: '#BEECBE',
     zIndex: -1,

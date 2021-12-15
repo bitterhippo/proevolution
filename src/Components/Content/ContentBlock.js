@@ -19,8 +19,8 @@ const ContentBlock = ({ header, content, button, background, image }) => {
       </div>
       <div style={styles.imgContainer}>
         <CustomImg
-          height={'40vh'}
-          width={'35w'}
+          height={'35vh'}
+          width={'30w'}
           image={image}
         />
       </div>
