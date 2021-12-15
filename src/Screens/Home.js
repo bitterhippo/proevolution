@@ -62,8 +62,8 @@ const Home = () => {
               style={styles.rowItem}
             >
               <CustomImg
-                height={250}
-                width={250}
+                height={215}
+                width={215}
                 image={`${currentItem.img}`}
               />
               <div>
@@ -73,9 +73,11 @@ const Home = () => {
           })
         }
       </div>
+      <div style={styles.providerCarousel}>
       <ClipBackground>
         <ProviderCarousel />
       </ClipBackground>
+      </div>
     </div>
   )
 };
@@ -104,13 +106,16 @@ const styles = {
   contentBlock: {
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '5vh',
+    marginTop: '10vh',
     gap: '15vh'
   },
   servicesText: {
     fontSize: 22,
     fontWeight: 'bold'
-  }
+  },
+  providerCarousel: {
+    marginTop: '25vh'
+  },
 }
 
 export default Home;
