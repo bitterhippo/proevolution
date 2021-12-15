@@ -3,6 +3,7 @@ import React from 'react';
 //Components
 import DropDownButtonList from '../Components/DropDownButton/DropDownButtonList';
 import BannerImg from '../Components/ImgContainer/BannerImg';
+import { FiSerach } from "react-icons/fi";
 
 const FAQ = () => {
 
