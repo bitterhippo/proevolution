@@ -30,6 +30,7 @@ import Facility6 from "../../Images/Facility6.jpg";
 import Facility7 from "../../Images/Facility7.jpg";
 import Physio1 from "../../Images/Physio1.jpg";
 import Thera1 from "../../Images/Thera1.jpg";
+import SB from "../../Images/SB.jpg";
 
 const imgConnector = {
   CeaserTeam: CeaserTeam,
@@ -61,7 +62,8 @@ const imgConnector = {
   Facility6: Facility6,
   Facility7: Facility7,
   Physio1: Physio1,
-  Thera1: Thera1
+  Thera1: Thera1,
+  SB: SB
 }
 
 const CustomImg = ({ height, width, image }) => {

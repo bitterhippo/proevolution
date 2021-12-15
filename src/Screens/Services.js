@@ -42,7 +42,7 @@ const Services = () => {
     <div>
       <BannerImg
         image={'Hero'}
-        message={'Pro Evolution Wellness'}
+        message={'Services'}
         brightness={'dark'}
       />
       {/*  White Space Screen with selectors  */}
