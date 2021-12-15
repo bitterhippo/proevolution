@@ -66,7 +66,7 @@ const styles = {
   },
   input: {
     borderRadius: '10px',
-    border: '2px solid green',
+    border: '2px solid #206620',
     width: '100%',
     height: '40px',
     boxShadow: '0 5px 10px rgb(0 0 0 / 0.2)'

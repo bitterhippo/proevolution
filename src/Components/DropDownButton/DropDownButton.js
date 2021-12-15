@@ -10,7 +10,7 @@ const DropDownButton = ({ title, content }) => {
   return (
     <div style={!drawer
       ? styles.dropDownWrapper
-      : { ...styles.dropDownWrapper, borderBottom: '1px solid black' }
+      : { ...styles.dropDownWrapper, borderBottom: '1px solid #C4C4C4' }
     }>
       <div
         style={drawer ? styles.dropDownTitleOpen : styles.dropDownTitle}
@@ -34,10 +34,10 @@ const DropDownButton = ({ title, content }) => {
 
 const styles = {
   dropDownWrapper: {
-    borderLeft: '1px solid black',
-    borderRight: '1px solid black',
-    borderTop: '1px solid black',
-    borderBottom: '1px solid black',
+    borderLeft: '1px solid #C4C4C4',
+    borderRight: '1px solid #C4C4C4',
+    borderTop: '1px solid #C4C4C4',
+    borderBottom: '1px solid #C4C4C4',
     borderRadius: 10,
   },
   dropDownTitle: {
@@ -46,7 +46,7 @@ const styles = {
   },
   dropDownTitleOpen: {
     background: 'rgba(32, 102, 32, 0.2)',
-    borderBottom: '1px solid black',
+    borderBottom: '1px solid #C4C4C4',
     borderRadius: '10px 10px 0px 0px',
     height: '100%',
     width: '100%',
