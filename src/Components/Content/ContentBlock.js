@@ -45,7 +45,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     width: '90%',
-    flex: 9
   },
   secondaryContent: {
     minWidth: '30%',
@@ -53,7 +52,7 @@ const styles = {
     backgroundColor: 'gray',
   },
   buttonWrapper: {
-    marginTop: 25,
+    marginTop: 40,
     textAlign: 'center',
     flex: 1
   },
