@@ -8,11 +8,11 @@ const FAQ = () => {
 
   const questions = [
     {
-      title: 'Do you Offer Virtual Sessions?', 
+      title: 'Do you Offer Virtual Sessions?',
       content: 'Although virtual sessions are possible for some services, certain kinds of direct rehabilitation will require in-house visits.'
     },
     {
-      title: 'As a first-time patient, what should I expect at physiotherapy?', 
+      title: 'As a first-time patient, what should I expect at physiotherapy?',
       content: 'Slight pain and discomfort after the session is very possible for many first time patients. Because of this, it is often advised the patients refrain from any kind of strenious activity following a therapy session.'
     },
     {
@@ -29,23 +29,21 @@ const FAQ = () => {
     }
   ];
 
-
-
-
   return (
     <div style={styles.contentWrapper}>
-      <BannerImg 
+      <BannerImg
         image={'FAQ2'}
         message={'Frequently Asked Questions'}
       />
       <div style={styles.primaryContent}>
-        <input
-          style={styles.input}
-          placeholder="Search Frequently Asked Questions"></input>
+        <input 
+        placeholder={`Frequently Asked Questions`}
+        style={styles.input}>
+        </input>
         <div style={styles.faqHeader}>
           Frequently Asked Questions
         </div>
-        <DropDownButtonList 
+        <DropDownButtonList
           listData={questions}
         />
       </div>
