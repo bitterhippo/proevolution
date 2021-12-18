@@ -4,6 +4,7 @@ import ProfileList from '../Components/Profiles/ProfileList';
 import CustomImg from '../Components/ImgContainer/CustomImg';
 import ImgCarousel from '../Components/Carousel/ImgCarousel';
 import CustomButton from '../Components/CustomButton/CustomButton';
+import CustomHeader from '../Components/CustomText/CustomHeader';
 
 const About = () => {
 
@@ -51,7 +52,7 @@ const About = () => {
         {/* First Screen */}
         <div style={styles.screen}>
           <div style={{ marginBottom: 30 }}>
-            <span style={styles.bigText}>Our Process</span>
+            <CustomHeader>Our Process</CustomHeader>
           </div>
           {
             defaultContent.map((currentItem, i) => {
@@ -67,8 +68,8 @@ const About = () => {
             )
           }
           <CustomButton
-              margin = "40px 0 0 0"
-              padding = "0.5rem 3rem 0.5rem 3rem">
+            margin="40px 0 0 0"
+            padding="0.5rem 3rem 0.5rem 3rem">
             Book an Initial Assessment
           </CustomButton>
         </div>
@@ -82,13 +83,13 @@ const About = () => {
         </div>
       </div>
       <div style={{ marginTop: '10vh', marginLeft: '10vw', marginRight: '15vw' }}>
-        <span style={styles.bigText}>Our Staff</span>
+        <CustomHeader>Our Staff</CustomHeader>
       </div>
       <div style={styles.practionerWrapper}>
         <ProfileList listData={staffList} />
       </div>
       <div style={{ marginTop: '10vh', marginLeft: '10vw', marginRight: '15vw' }}>
-        <span style={styles.bigText}>Our Facility</span>
+        <CustomHeader>Our Facility</CustomHeader>
       </div>
       <ImgCarousel />
     </div>
@@ -105,11 +106,6 @@ const styles = {
   staffListButton: {
     backgroundColor: '#206620',
     color: 'white',
-  },
-  bigText: {
-    fontSize: "30px",
-    fontWeight: "bold",
-    color: "green"
   },
   boldText: {
     fontWeight: "bold",
