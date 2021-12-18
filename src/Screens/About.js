@@ -67,10 +67,8 @@ const About = () => {
             )
           }
           <CustomButton
-            stylez={
-              margin = "40px 0 0 0",
-              padding = "0.5rem 3rem 0.5rem 3rem"
-            }>
+              margin = "40px 0 0 0"
+              padding = "0.5rem 3rem 0.5rem 3rem">
             Book an Initial Assessment
           </CustomButton>
         </div>
