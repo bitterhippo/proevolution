@@ -1,13 +1,13 @@
 import React from 'react';
 import Colors from '../../Components/Colors';
 
-const CustomButton = ({ padding, margin, buttonName }) => {
+const CustomButton = ( props ) => {
 
-  console.log(Colors);
+  console.log(props);
 
   return (
-    <button style={{...styles.button, padding: padding, margin: margin}}>
-      {buttonName}
+    <button style={{...styles.button, ...props.stylez}}>
+      {props.children}
     </button>
   )
 };

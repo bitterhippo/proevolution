@@ -67,10 +67,12 @@ const About = () => {
             )
           }
           <CustomButton
-            buttonName="Book an Initial Assessment"
-            margin="40px 0 0 0"
-            padding="0.5rem 3rem 0.5rem 3rem"
-          />
+            stylez={
+              margin = "40px 0 0 0",
+              padding = "0.5rem 3rem 0.5rem 3rem"
+            }>
+            Book an Initial Assessment
+          </CustomButton>
         </div>
         {/* Second Screen */}
         <div style={styles.imgHolder}>
