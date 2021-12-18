@@ -1,6 +1,4 @@
 
 export default {
-  Colors: {
-    Primary: '#206620'
-  }
+  Primary: '#206620'
 };

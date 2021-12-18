@@ -13,7 +13,7 @@ const styles = {
   headerText: {
     fontSize: "30px",
     fontWeight: "bold",
-    color: Colors.Colors.Primary
+    color: Colors.Primary
   }
 };
 

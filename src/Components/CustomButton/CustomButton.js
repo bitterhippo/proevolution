@@ -20,7 +20,7 @@ const CustomButton = (props) => {
 
 const styles = {
   button: {
-    backgroundColor: Colors.Colors.Primary,
+    backgroundColor: Colors.Primary,
     color: 'white',
     borderRadius: '5px',
     fontSize: '1rem',
