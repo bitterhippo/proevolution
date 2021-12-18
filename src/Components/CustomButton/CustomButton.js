@@ -1,18 +1,20 @@
 import React from 'react';
-import { ProgressPlugin } from 'webpack';
 import Colors from '../../Components/Colors';
 
-const CustomButton = ({ buttonName, padding, margin, props }) => {
+const CustomButton = ({ padding, margin, buttonName }) => {
+
+  console.log(Colors);
+
   return (
-    <button style={styles.button}>
-      {props.children}
+    <button style={{...styles.button, padding: padding, margin: margin}}>
+      {buttonName}
     </button>
   )
 };
 
 const styles = {
   button: {
-    backgroundColor: Colors.Primary,
+    backgroundColor: Colors.Colors.Primary,
     color: 'white',
     borderRadius: '5px',
     fontSize: '1rem',

@@ -1,4 +1,6 @@
 
-export default Colors = {
-  Primary: '#206620'
+export default {
+  Colors: {
+    Primary: '#206620'
+  }
 };
