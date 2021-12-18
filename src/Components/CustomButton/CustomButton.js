@@ -1,10 +1,11 @@
 import React from 'react';
+import { ProgressPlugin } from 'webpack';
 import Colors from '../../Components/Colors';
 
-const CustomButton = ({ buttonName, padding, margin }) => {
+const CustomButton = ({ buttonName, padding, margin, props }) => {
   return (
     <button style={styles.button}>
-
+      {props.children}
     </button>
   )
 };
@@ -19,3 +20,5 @@ const styles = {
     filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
   }
 };
+
+export default CustomButton;
