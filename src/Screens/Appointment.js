@@ -12,14 +12,16 @@ const Appointment = () => {
         Thank you! Please proceed with the rest of the demo
       </div>
       <div>
-        <button
-          style={styles.button}>
+        <CustomButton
+          margin="5vh 0 0 0"
+          padding="5px 90px"
+        >
           <Link
-          style={styles.styledLink}
-          to={'/'}
+            style={styles.styledLink}
+            to={'/'}
           >Continue
           </Link>
-        </button>
+        </CustomButton>
       </div>
     </div>
   )
@@ -38,16 +40,6 @@ const styles = {
     fontSize: '28px',
     fontWeight: 'bold',
     marginTop: '15vh'
-  },
-  button: {
-    marginTop: '5vh',
-    backgroundColor: '#206620',
-    fontSize: '16px',
-    color: 'white',
-    fontWeight: 'bold',
-    borderRadius: 5,
-    padding: '5px 90px',
-    filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
   },
   styledLink: {
     color: 'white',
