@@ -1,7 +1,6 @@
 import React from 'react';
 
 //Components Import
-import BannerImg from '../Components/ImgContainer/BannerImg';
 import DropDownButtonList from '../Components/DropDownButton/DropDownButtonList';
 import CustomImg from '../Components/ImgContainer/CustomImg';
 
