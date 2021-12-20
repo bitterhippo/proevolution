@@ -3,8 +3,6 @@ import Colors from '../../Components/Colors';
 
 const CustomButton = (props) => {
 
-  console.log(props)
-
   return (
     <button style={
       {

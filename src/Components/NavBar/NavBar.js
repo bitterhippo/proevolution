@@ -9,10 +9,6 @@ const NavBar = () => {
   const navHeaders = ['Services', 'FAQ', 'About'];
   const [selectedNavHeader, setNavHeader] = useState('');
 
-  const pathname = window.location.pathname;
-
-  console.log(pathname);
-
   return (
     <div style={styles.navBarWrapper}>
       <div style={{ ...styles.navBarItem, marginLeft: '5vw' }}>
