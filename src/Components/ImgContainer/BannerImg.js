@@ -19,6 +19,7 @@ import ShockwaveTherapy from "../../Images/ShockwaveTherapy.jpg";
 import TherapueticUltrasound from "../../Images/TherapueticUltrasound.jpg";
 import Hero from "../../Images/Hero.jpg";
 import FAQ2 from "../../Images/FAQ2.jpg";
+import SB from "../../Images/SB.jpg";
 
 const BannerImg = ({ image, message, brightness }) => {
 
@@ -42,6 +43,7 @@ const BannerImg = ({ image, message, brightness }) => {
     TherapueticUltrasound: TherapueticUltrasound,
     Hero: Hero,
     FAQ2: FAQ2,
+    SB: SB
   }
 
   return (
@@ -63,7 +65,7 @@ const styles = {
     position: 'absolute',
     zIndex: 5,
     left: '50%',
-    top: '35%',
+    top: '30vh',
     textAlign: 'center',
     transform: 'translate(-50%, -50%)',
     letterSpacing: 5,

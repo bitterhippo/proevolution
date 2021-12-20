@@ -68,8 +68,8 @@ const Home = () => {
               style={styles.rowItem}
             >
               <CustomImg
-                height={215}
-                width={215}
+                height={'15vw'}
+                width={'15vw'}
                 image={`${currentItem.img}`}
               />
               <div>

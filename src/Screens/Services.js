@@ -41,7 +41,7 @@ const Services = () => {
   return (
     <div>
       <BannerImg
-        image={'Hero'}
+        image={'SB'}
         message={'Services'}
         brightness={'dark'}
       />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import CustomImg from '../ImgContainer/CustomImg';
+import Colors from '../../Components/Colors';
 
 
 const NavBar = () => {
@@ -89,7 +90,7 @@ const styles = {
     fontSize: 16,
     border: '2px solid white',
     backgroundColor: '#206620',
-    margin: 'auto 0 auto 15vw',
+    margin: 'auto 0 auto 10vw',
     padding: '6px 22px',
     color: 'white',
     borderRadius: 5,
