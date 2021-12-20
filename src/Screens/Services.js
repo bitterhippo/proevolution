@@ -179,7 +179,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'inline-flex',
     marginTop: 20,
-    marginBottom: 20,
+    marginBottom: '15vh',
     gap: '5vw',
   },
   buttonList: {
@@ -190,8 +190,7 @@ const styles = {
     maxWidth: 280
   },
   practionersWrapper: {
-    marginLeft: '15vw',
-    marginRight: '15vw'
+    margin: '0 15vw 0 15vw'
   },
   practionerList: {
     display: 'flex',
@@ -201,7 +200,8 @@ const styles = {
     justifyContent: 'space-between',
   },
   practionerText: {
-    fontSize: "2rem",
+    fontSize: "2vw",
+    maxFontSize: '32px',
     fontWeight: "bold",
     color: "green"
   },

@@ -1,20 +1,23 @@
 import React from 'react';
 import CustomImg from '../ImgContainer/CustomImg';
+import CustomButton from '../CustomButton/CustomButton';
 
 const Profile = ({ image, name, link }) => {
   return (
     <div style={styles.profileWrapper}>
       {/* Place holder box for images */}
-      <CustomImg 
-        height={'12vw'}
-        width={'12vw'}
+      <CustomImg
+        height={'14vw'}
+        width={'14vw'}
         image={image}
       />
       <div style={styles.text}>
-        { name }
+        {name}
       </div>
       <div style={styles.buttonWrapper}>
-        <button style={styles.styledButton}>Learn More</button>
+        <CustomButton 
+        padding="0.5rem 1.5rem 0.5rem 1.5rem">Learn More
+        </CustomButton>
       </div>
     </div>
   )
@@ -32,21 +35,14 @@ const styles = {
   },
   text: {
     textAlign: 'center',
-    fontSize: '1.3em',
+    fontSize: '1rem',
     color: 'green',
     fontWeight: 'bold',
+    marginTop: 10
   },
   buttonWrapper: {
     marginTop: 10,
     textAlign: 'center'
-  },
-  styledButton: {
-    backgroundColor: '#206620',
-    color: 'white',
-    borderRadius: 5,
-    padding: '0.5rem 1.5rem 0.5rem 1.5rem',
-    fontWeight: 'bold',
-    filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
   }
 };
 

@@ -3,7 +3,6 @@ import ContentBlock from '../Components/Content/ContentBlock';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import ProviderCarousel from '../Components/Carousel/ProviderCarousel';
 import CustomImg from '../Components/ImgContainer/CustomImg';
-import CustomSVG from '../Components/ImgContainer/CustomSVG';
 
 import ClipBackground from '../Components/ClipBackgrounds/ClipBackground';
 

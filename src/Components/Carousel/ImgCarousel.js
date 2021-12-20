@@ -62,8 +62,8 @@ const ImgCarousel = () => {
                 key={currentImg}
               >
                 <CustomImg
-                  height={'20vh'}
-                  width={'20vh'}
+                  height={'12vw'}
+                  width={'12vw'}
                   image={currentImg}
                 />
               </div>)
