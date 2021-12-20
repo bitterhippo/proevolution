@@ -104,7 +104,7 @@ const styles = {
     marginTop: 30,
   },
   bannerText: {
-    marginTop: '8vh',
+    marginTop: '14vh',
     fontSize: 32,
     textAlign: 'center',
     color: '#206620'
@@ -116,7 +116,7 @@ const styles = {
     gap: '15vh'
   },
   servicesText: {
-    fontSize: 22,
+    fontSize: '1.5vw',
     fontWeight: 'bold'
   },
   providerCarousel: {
