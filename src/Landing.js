@@ -8,6 +8,7 @@ import Home from "./Screens/Home";
 import About from "./Screens/About";
 import FAQ from './Screens/FAQ';
 import Appointment from './Screens/Appointment';
+import Error from './Screens/Error';
 
 //Components
 import NavBar from "./Components/NavBar/NavBar";
@@ -33,6 +34,7 @@ const Landing = () => {
           <Route exact path="/about" component={About} />
           <Route exact path="/staffview" component={StaffView} />
           <Route exact path="/appointment" component={Appointment} />
+          <Route component={Error} />
         </Switch>
         <div style={styles.navWrapper}>
           <FooterNav />
