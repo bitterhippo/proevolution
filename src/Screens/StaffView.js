@@ -41,13 +41,14 @@ const StaffView = (props) => {
           <div>
             <span style={styles.titleText}>Chiropractor</span>
             <div>
+              <br></br>
               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
               The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
             </div>
           </div>
           <CustomButton
-            marginTop={'15vh'}
+            margin={'5vh 0 0 0'}
             padding={'5px 30px 5px 30px'}
           >
             Book An Appointment
@@ -61,7 +62,7 @@ const StaffView = (props) => {
         />
       </div>
       <div style={styles.practionerList}>
-        <CustomHeader> Our Staff </CustomHeader>
+        <span style={styles.practionerText}>Our Staff</span>
         <ProfileList listData={practionerList} />
       </div>
     </div>
@@ -70,11 +71,10 @@ const StaffView = (props) => {
 
 const styles = {
   splitScreen: {
-    marginTop: '1000px',
     display: 'flex',
     flexDirection: 'row',
-    width: '90%',
-    margin: '0 auto 0 auto'
+    margin: '10vh 15vw 10vw 15vw',
+    gap: '5vw'
   },
   screenOne: {
     flex: 2,
@@ -85,9 +85,14 @@ const styles = {
     fontWeight: 'bold'
   },
   practionerList: {
-    marginTop: '25vh',
-    width: '80%',
+    width: '70%',
     margin: '0 auto 0 auto'
+  },
+  practionerText: {
+    fontSize: "1.6vw",
+    maxFontSize: '32px',
+    fontWeight: "bold",
+    color: Colors.Primary
   }
 };
 

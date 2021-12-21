@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import DummyData from '../Components/DummyData';
 import ProfileList from '../Components/Profiles/ProfileList';
+import Colors from '../Components/Colors';
 
 
 const Services = () => {
@@ -192,18 +193,11 @@ const styles = {
   practionersWrapper: {
     margin: '0 15vw 0 15vw'
   },
-  practionerList: {
-    display: 'flex',
-    gap: '4vw',
-    marginTop: 20,
-    flexDirection: 'inline-row',
-    justifyContent: 'space-between',
-  },
   practionerText: {
     fontSize: "1.6vw",
     maxFontSize: '32px',
     fontWeight: "bold",
-    color: "green"
+    color: Colors.Primary
   },
   serviceDataWrapper: {
     width: '60%'
