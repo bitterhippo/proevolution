@@ -36,7 +36,7 @@ const Services = () => {
       name: 'Lisa Andrews, PT',
       img: 'PractList3'
     }
-  ]
+  ];
 
   return (
     <div>
