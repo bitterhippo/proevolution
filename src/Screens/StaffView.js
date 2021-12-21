@@ -11,13 +11,15 @@ const StaffView = ( props ) => {
   return (
     <div style={styles.screen}>
       <BannerImg
-        message={doctorName}
+        message={doctorName.split(',')[0]}
         image={doctorImage}
       />
       <div>
         {props.location.state.doctorName}
       </div>
-      <CustomButton>
+      <CustomButton
+       padding={'5px 30px 5px 30px'}
+      >
         Book An Appointment
       </CustomButton>
     </div>

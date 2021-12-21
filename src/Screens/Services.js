@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import DummyData from '../Components/DummyData';
 import ProfileList from '../Components/Profiles/ProfileList';
@@ -30,7 +29,7 @@ const Services = () => {
       img: 'PractList1'
     },
     {
-      name: 'VanessaHuges, RMT',
+      name: 'Vanessa Huges, RMT',
       img: 'PractList2'
     },
     {
