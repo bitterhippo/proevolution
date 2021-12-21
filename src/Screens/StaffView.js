@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import CustomButton from '../Components/CustomButton/CustomButton';
 
 const StaffView = ( props ) => {
 
-  console.log(props.match.params);
+  console.log(props.location.state);
+
+  let { doctorImage, doctorName } = props.location.state
 
   return (
     <div style={styles.screen}>
       <BannerImg
-        message={'Some idiots name'}
-        img={'blank'}
+        message={doctorName}
+        image={doctorImage}
       />
+      <div>
+        {props.location.state.doctorName}
+      </div>
       <CustomButton>
         Book An Appointment
       </CustomButton>
