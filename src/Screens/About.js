@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import ProfileList from '../Components/Profiles/ProfileList';
 import CustomImg from '../Components/ImgContainer/CustomImg';
@@ -82,15 +83,15 @@ const About = () => {
           />
         </div>
       </div>
-      <div style={{ marginTop: '10vh', marginLeft: '10vw', marginRight: '15vw' }}>
+      <div style={styles.contentSpacer}>
         <CustomHeader>Our Staff</CustomHeader>
       </div>
       <div style={styles.practionerWrapper}>
         <ProfileList listData={staffList} />
       </div>
-      <div style={{ marginTop: '10vh', marginLeft: '10vw', marginRight: '15vw' }}>
+      <div style={styles.contentSpacer}>
         <CustomHeader>Our Facility</CustomHeader>
-      </div>d
+      </div>
       <ImgCarousel />
     </div>
   )
@@ -138,6 +139,9 @@ const styles = {
     fontSize: '1rem',
     marginBottom: '10px',
     marginRight: '7vw'
+  }, 
+  contentSpacer: {
+    margin: "15vh 10vw 0 15vw"
   }
 };
 

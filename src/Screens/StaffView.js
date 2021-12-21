@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import CustomButton from '../Components/CustomButton/CustomButton';
 import CustomHeader from '../Components/CustomText/CustomHeader';
@@ -51,7 +52,12 @@ const StaffView = (props) => {
             margin={'5vh 0 0 0'}
             padding={'5px 30px 5px 30px'}
           >
-            Book An Appointment
+            <Link
+            style={styles.styledLink}
+            to={'Appointment'}
+            >
+            Book Appointment
+            </Link>
           </CustomButton>
         </div>
         {/* Screen Right */}
@@ -93,6 +99,10 @@ const styles = {
     maxFontSize: '32px',
     fontWeight: "bold",
     color: Colors.Primary
+  },
+  styledLink: {
+    color: 'white',
+    textDecoration: 'none'
   }
 };
 

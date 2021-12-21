@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import DummyData from '../Components/DummyData';
 import ProfileList from '../Components/Profiles/ProfileList';
 import Colors from '../Components/Colors';
+import CustomButton from '../Components/CustomButton/CustomButton';
 
 
 const Services = () => {
@@ -60,7 +62,17 @@ const Services = () => {
             <div style={styles.accentuatedText}>
               {selectedService}
             </div>
-            <button style={{ ...styles.styledButton, marginRight: '15vw' }}>Book an Initial Assessment</button>
+            <CustomButton
+              margin="0 10vw 0 0"
+              padding="5px 40px"
+            >
+              <Link
+                style={styles.styledLink}
+                to={'Appointment'}
+              >
+                Book Appointment
+              </Link>
+            </CustomButton>
           </div>
           <div style={styles.tabSelectors}>
             {
@@ -204,6 +216,10 @@ const styles = {
   },
   defaultDataWrapper: {
     minHeight: '28vw'
+  },
+  styledLink: {
+    color: 'white',
+    textDecoration: 'none'
   }
 };
 
