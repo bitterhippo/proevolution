@@ -141,7 +141,14 @@ let DummyData = {
   FunctionalRehab: {
     Howitworks: {
       text: <div>
-        Work with a practioner who has created a rehab program tailored to your specific goals in order to achieve optimal functioning.
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        <div style={{ marginTop: 30 }}>
+          <CustomImg
+            height={'20rem'}
+            width={'20rem'}
+            image={'FunctionalRehab'}
+          />
+        </div>
       </div>
     },
     Howithelps: {
@@ -162,12 +169,20 @@ let DummyData = {
   NutritionalConsulting: {
     Howitworks: {
       text: <div>
+        Here are some of the benefits of this:
         <ul>
           <li>A session with our Holistic Nutritionalist involves an in-depth assessment in order to identify imbalances that contribute to health issues.</li>
           <li>A customized health plan will be creatd to help you reach your goals.</li>
           <li>You will be educated about healthy eating habits, supplements, lifestyles changes, exercises, and how to take care of your body.
           </li>
         </ul>
+        <div style={{ marginTop: 30 }}>
+          <CustomImg
+            height={'20rem'}
+            width={'20rem'}
+            image={'NutritionalCounselling'}
+          />
+        </div>
       </div>
     },
     Howithelps: {
