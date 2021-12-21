@@ -61,17 +61,19 @@ const About = () => {
                 style={styles.content}
                 key={i}
               >
-                {
-                  currentItem
-                }
+                {currentItem}
               </div>
-            }
-            )
+            })
           }
           <CustomButton
             margin="40px 0 0 0"
             padding="0.5rem 3rem 0.5rem 3rem">
+            <Link
+            to={'Appointment'}
+            style={styles.styledLink}
+            >
             Book an Initial Assessment
+            </Link>
           </CustomButton>
         </div>
         {/* Second Screen */}
@@ -142,6 +144,10 @@ const styles = {
   }, 
   contentSpacer: {
     margin: "15vh 10vw 0 15vw"
+  },
+  styledLink: {
+    color: 'white',
+    textDecoration: 'none'
   }
 };
 
