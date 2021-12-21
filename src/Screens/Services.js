@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import DummyData from '../Components/DummyData';
 import ProfileList from '../Components/Profiles/ProfileList';
@@ -200,7 +201,7 @@ const styles = {
     justifyContent: 'space-between',
   },
   practionerText: {
-    fontSize: "2vw",
+    fontSize: "1.6vw",
     maxFontSize: '32px',
     fontWeight: "bold",
     color: "green"

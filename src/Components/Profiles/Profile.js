@@ -1,6 +1,7 @@
 import React from 'react';
 import CustomImg from '../ImgContainer/CustomImg';
 import CustomButton from '../CustomButton/CustomButton';
+import { Link } from 'react-router-dom';
 
 const Profile = ({ image, name, link }) => {
   return (
@@ -15,8 +16,20 @@ const Profile = ({ image, name, link }) => {
         {name}
       </div>
       <div style={styles.buttonWrapper}>
-        <CustomButton 
-        padding="0.5rem 1.5rem 0.5rem 1.5rem">Learn More
+        <CustomButton
+          padding="0.5rem 1.5rem 0.5rem 1.5rem">
+          <Link
+            to={{
+              pathname: 'StaffView',
+              state: {
+                doctorName: name,
+                doctorImage: image
+              }
+          }}
+            style={styles.styledLink}
+          >
+            Learn More
+          </Link>
         </CustomButton>
       </div>
     </div>
@@ -43,6 +56,10 @@ const styles = {
   buttonWrapper: {
     marginTop: 10,
     textAlign: 'center'
+  },
+  styledLink: {
+    color: 'white',
+    textDecoration: 'none'
   }
 };
 

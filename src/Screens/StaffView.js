@@ -2,9 +2,12 @@ import React from 'react';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import CustomButton from '../Components/CustomButton/CustomButton';
 
-const StaffView = ({ data }) => {
+const StaffView = ( props ) => {
+
+  console.log(props.match.params);
+
   return (
-    <div>
+    <div style={styles.screen}>
       <BannerImg
         message={'Some idiots name'}
         img={'blank'}
@@ -18,7 +21,9 @@ const StaffView = ({ data }) => {
 
 const styles = {
   staffViewWrapper: {
-
+    screen: {
+      minHeight: '60vh'
+    }
   },
 };
 
