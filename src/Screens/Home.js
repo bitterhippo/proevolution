@@ -111,8 +111,8 @@ const styles = {
   contentBlock: {
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '10vh',
-    gap: '15vh'
+    marginTop: '15vh',
+    gap: '30vh'
   },
   servicesText: {
     fontSize: '1.5vw',

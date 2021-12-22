@@ -143,7 +143,7 @@ const styles = {
     marginRight: '7vw'
   }, 
   contentSpacer: {
-    margin: "15vh 10vw 0 15vw"
+    margin: "15vh 10vw 0 10vw"
   },
   styledLink: {
     color: 'white',
