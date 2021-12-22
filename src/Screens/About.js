@@ -23,7 +23,7 @@ const About = () => {
       img: 'PractList3'
     },
     {
-      name: 'Dr. List Andrews',
+      name: 'Dr. Lisa Andrews',
       img: 'Home1'
     }
   ];

@@ -1,6 +1,7 @@
 import React from 'react';
 //Components
 import CustomSVG from '../ImgContainer/CustomSVG';
+import Mailto from '../CustomText/Mailto';
 
 const FooterNav = () => {
 
@@ -9,8 +10,8 @@ const FooterNav = () => {
     {
       name: '', Links: [
         <CustomSVG
-          height={50}
-          width={150}
+          height={'1vw'}
+          width={'3vw'}
           image={"Logo"}
         />,
         `Services`,
@@ -20,7 +21,7 @@ const FooterNav = () => {
     },
     {
       name: 'Operating Hours', Links: [
-        <div style={{...styles.timeItem, marginTop: 5}}>
+        <div style={{ ...styles.timeItem, marginTop: 5 }}>
           <span>Mon:</span>
           <span>7 AM - 5 PM</span>
         </div>,
@@ -82,7 +83,7 @@ const FooterNav = () => {
       }
       <div style={styles.footerNavList}>
         <br></br>
-        <span style={styles.footerText}>email: info@proevolutionwellness.ca</span>
+        <Mailto style={styles.customLink}>email: info@proevolutionwellness.ca</Mailto>
         <span style={styles.footerText}>phone: 905-303-0337</span>
         <span style={styles.footerText}>West, Unit 116</span>
         <span style={styles.footerText}>Vaughan, ON L4H 4J9</span>
@@ -132,7 +133,7 @@ const styles = {
   timeItem: {
     display: 'flex',
     justifyContent: 'space-between'
-  }
+  },
 };
 
 export default FooterNav;

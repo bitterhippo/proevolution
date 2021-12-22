@@ -29,7 +29,7 @@ const StaffView = (props) => {
   return (
     <div>
       <BannerImg
-        message={doctorName.split(',')[0]}
+        message={'AboutUsBanner'}
         image={doctorImage}
         brightness={'dark'}
       />

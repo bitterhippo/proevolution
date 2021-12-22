@@ -29,8 +29,6 @@ const CustomSVG = ({ image, height, width }) => {
 
 const styles = {
   CustomSVGWrapper: {
-    height: 100,
-    width: 100,
   }
 };
 
