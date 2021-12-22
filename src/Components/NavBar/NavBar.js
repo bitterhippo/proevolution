@@ -83,7 +83,7 @@ const styles = {
     textDecoration: 'none'
   },
   navBarButton: {
-    fontSize: '1vw',
+    fontSize: '1em',
     border: '2px solid white',
     backgroundColor: '#206620',
     margin: 'auto 0 auto 10vw',

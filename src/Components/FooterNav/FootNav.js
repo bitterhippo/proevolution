@@ -58,7 +58,7 @@ const FooterNav = () => {
         'West, Unit 116',
         'Vaughan, Ontario',
         'L4H 4J9',
-        <button style={styles.footButton}>Get Directions</button>
+        <button style={styles.footButton}><a>Get Directions</a></button>
       ]
     },
   ];
