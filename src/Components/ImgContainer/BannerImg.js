@@ -47,7 +47,8 @@ const BannerImg = ({ image, message, brightness }) => {
   }
 
   return (
-    <div style={{...styles.bannerImgWrapper, backgroundImage: imgConnector[image]}}>
+    <div style={{
+      ...styles.bannerImgWrapper }}>
       <div style={styles.bannerText}>
         {message}
       </div>
@@ -65,17 +66,16 @@ const styles = {
     position: 'absolute',
     zIndex: 5,
     left: '50%',
-    top: '30vh',
+    top: '33vh',
     textAlign: 'center',
     transform: 'translate(-50%, -50%)',
     letterSpacing: 5,
-
   },
   img: {
     width: '100%',
-    height: 'auto',
-    maxHeight: '50vh'
-  }
+    height: '100%',
+    maxHeight: '55vh',
+  },
 };
 
 export default BannerImg;
