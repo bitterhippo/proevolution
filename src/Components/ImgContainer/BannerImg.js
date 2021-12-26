@@ -48,13 +48,14 @@ const BannerImg = ({ image, message, brightness }) => {
 
   return (
     <div style={{
-      ...styles.bannerImgWrapper }}>
+      ...styles.bannerImgWrapper
+    }}>
+      <img
+        style={{ ...styles.img, filter: brightness === "dark" ? "brightness(50%)" : "brightness(80%)" }}
+        src={imgConnector[image]} />
       <div style={styles.bannerText}>
         {message}
       </div>
-      <img
-        style={{...styles.img, filter: brightness === "dark" ? "brightness(50%)" : "brightness(80%)"}}
-        src={imgConnector[image]} />
     </div>
   )
 };
@@ -62,11 +63,11 @@ const BannerImg = ({ image, message, brightness }) => {
 const styles = {
   bannerText: {
     color: 'white',
-    fontSize: '3rem',
     position: 'absolute',
-    zIndex: 5,
+    fontSize: '3rem',
+    top: '7em',
     left: '50%',
-    top: '20rem',
+    zIndex: 1,
     textAlign: 'center',
     transform: 'translate(-50%, -50%)',
     letterSpacing: 5,
