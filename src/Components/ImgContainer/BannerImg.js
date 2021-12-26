@@ -51,7 +51,12 @@ const BannerImg = ({ image, message, brightness }) => {
       ...styles.bannerImgWrapper
     }}>
       <img
-        style={{ ...styles.img, filter: brightness === "dark" ? "brightness(50%)" : "brightness(80%)" }}
+        style={{ 
+          ...styles.img, 
+          filter: brightness === "dark" 
+          ? "brightness(50%)" 
+          : "brightness(80%)" 
+        }}
         src={imgConnector[image]} />
       <div style={styles.bannerText}>
         {message}

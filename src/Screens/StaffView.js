@@ -29,8 +29,8 @@ const StaffView = (props) => {
   return (
     <div>
       <BannerImg
-        message={'AboutUsBanner'}
-        image={doctorImage}
+        message={doctorName}
+        image={"AboutUsBanner"}
         brightness={'dark'}
       />
       <div style={styles.splitScreen}>

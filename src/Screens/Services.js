@@ -140,7 +140,7 @@ const styles = {
     padding: '8px 40px',
     fontWeight: 'bold',
     fontSize: 16,
-    filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))'
+    filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15))'
   },
   currentServiceWrapper: {
     marginTop: 20,
@@ -199,7 +199,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     marginLeft: '5vw',
-    gap: 5,
+    gap: 10,
     maxWidth: 280
   },
   practionersWrapper: {
