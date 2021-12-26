@@ -9,6 +9,10 @@ const NavBar = () => {
   const navHeaders = ['Services', 'FAQ', 'About'];
   const [selectedNavHeader, setNavHeader] = useState('');
 
+  const currentPath = window.location.pathname.substring(1, window.location.pathname.length);
+
+  console.log(currentPath);
+
   return (
     <div style={styles.navBarWrapper}>
       <div style={{ ...styles.navBarItem, marginLeft: '5vw' }}>
@@ -31,7 +35,7 @@ const NavBar = () => {
             style={styles.navBarItem}
           >
             <Link
-              style={selectedNavHeader === currentNavHeader
+              style={currentNavHeader === currentPath
                 ? styles.selectedNavBarItem
                 : styles.navBarItem}
               to={currentNavHeader}>{currentNavHeader}
