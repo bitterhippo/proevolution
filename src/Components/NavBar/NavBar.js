@@ -18,6 +18,7 @@ const NavBar = () => {
       <div style={{ ...styles.navBarItem, marginLeft: '5vw' }}>
         <Link
           style={styles.navBarItem}
+          onClick={() => setNavHeader("")}
           to={"/"}>
           <CustomImg
             height={50}
@@ -29,8 +30,7 @@ const NavBar = () => {
       <div style={styles.navLinks}>
         {
           navHeaders.map(currentNavHeader => <div
-            onMouseEnter={() => setNavHeader(currentNavHeader)}
-            onMouseLeave={() => setNavHeader("")}
+            onClick={() => setNavHeader(currentNavHeader)}
             key={currentNavHeader}
             style={styles.navBarItem}
           >
@@ -47,6 +47,7 @@ const NavBar = () => {
         <Link
         style={styles.styledNav}
         to={'appointment'}
+        onClick={() => setNavHeader("")}
         >
           Book Appointment
         </Link>
