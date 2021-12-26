@@ -68,13 +68,10 @@ const BannerImg = ({ image, message, brightness }) => {
 const styles = {
   bannerText: {
     color: 'white',
-    position: 'absolute',
     fontSize: '3rem',
-    top: '7em',
-    left: '50%',
     zIndex: 1,
     textAlign: 'center',
-    transform: 'translate(-50%, -50%)',
+    transform: 'translate(0%, -450%)',
     letterSpacing: 5,
   },
   img: {
