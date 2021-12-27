@@ -21,8 +21,8 @@ const NavBar = () => {
           onClick={() => setNavHeader("")}
           to={"/"}>
           <CustomImg
-            height={50}
-            width={170}
+            height={45}
+            width={154}
             image={"Logo"}
           />
         </Link>

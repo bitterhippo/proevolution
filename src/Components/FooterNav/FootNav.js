@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //Components
 import CustomSVG from '../ImgContainer/CustomSVG';
 import Mailto from '../CustomText/Mailto';
@@ -10,13 +11,25 @@ const FooterNav = () => {
     {
       name: '', Links: [
         <CustomSVG
-          height={'1vw'}
-          width={'3vw'}
+          height={45}
+          width={154}
           image={"Logo"}
         />,
-        `Services`,
-        `FAQ`,
-        `About`
+        <Link
+        to={'Services'}
+        style={styles.styledLink}
+        >Services
+        </Link>,
+        <Link
+        to={'FAQ'}
+        style={styles.styledLink}
+        >FAQ
+        </Link>,
+        <Link
+        to={'About'}
+        style={styles.styledLink}
+        >About
+        </Link>
       ]
     },
     {
@@ -134,6 +147,11 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between'
   },
+  styledLink: {
+    color: 'white',
+    textDecoration: 'none',
+    cursor: 'arrow'
+  }
 };
 
 export default FooterNav;
