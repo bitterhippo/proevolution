@@ -71,7 +71,7 @@ const FooterNav = () => {
         'West, Unit 116',
         'Vaughan, Ontario',
         'L4H 4J9',
-        <button style={styles.footButton}><a>Get Directions</a></button>
+        <button style={styles.footButton}><a style={styles.styledLink} href="https://www.google.com/maps/place/Pro+Evolution+Wellness/@43.843501,-79.5656789,15z/data=!4m2!3m1!1s0x0:0xbb1dcdb52405cb2b?sa=X&ved=2ahUKEwiL5emEmYr1AhUShZQKHf6lDsAQ_BJ6BAgrEAU">Get Directions</a></button>
       ]
     },
   ];

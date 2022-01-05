@@ -70,7 +70,7 @@ const styles = {
     color: 'white',
     position: 'absolute',
     fontSize: '3rem',
-    top: '7em',
+    top: '42%',
     left: '50%',
     zIndex: 1,
     textAlign: 'center',
@@ -80,7 +80,7 @@ const styles = {
   img: {
     width: '100%',
     height: '100%',
-    maxHeight: '55vh',
+    maxHeight: '70vh',
   },
 };
 
