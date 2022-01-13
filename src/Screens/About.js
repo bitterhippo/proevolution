@@ -59,7 +59,6 @@ const About = () => {
             defaultContent.map((currentItem, i) => {
               return <div
                 style={styles.content}
-                key={i}
               >
                 {currentItem}
               </div>

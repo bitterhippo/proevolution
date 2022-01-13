@@ -66,11 +66,15 @@ const BannerImg = ({ image, message, brightness }) => {
 };
 
 const styles = {
+  bannerImgWrapper: {
+    position: 'relative',
+    textAlign: 'center',
+  },
   bannerText: {
     color: 'white',
     position: 'absolute',
-    fontSize: '3rem',
-    top: '42%',
+    fontSize: '3em',
+    top: '50%',
     left: '50%',
     zIndex: 1,
     textAlign: 'center',

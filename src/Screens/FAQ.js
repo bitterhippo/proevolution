@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //Components
 import DropDownButtonList from '../Components/DropDownButton/DropDownButtonList';
@@ -7,6 +7,11 @@ import { FiSerach } from "react-icons/fi";
 
 const FAQ = () => {
 
+  const [filterValue, setFilterValue] = useState('');
+
+  console.log(filterValue);
+
+  //Default Data for lists.
   const questions = [
     {
       title: 'Do you Offer Virtual Sessions?',
@@ -29,6 +34,9 @@ const FAQ = () => {
       content: 'Highly unlikely because they are fiendish bloodsucking chislers, however if by the grace of some heavenly diety you do manage to get it; we will not use it.'
     }
   ];
+
+  //onChange handler for state changes.
+  const handleChange = (e) => filterValue.setState(e.target.value);
 
   return (
     <div style={styles.contentWrapper}>
