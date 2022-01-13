@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 //Components
 import DropDownButtonList from '../Components/DropDownButton/DropDownButtonList';
 import BannerImg from '../Components/ImgContainer/BannerImg';
-import { FiSerach } from "react-icons/fi";
+import { FiSearch } from "react-icons/fi";
 
 const FAQ = () => {
 
@@ -45,16 +45,21 @@ const FAQ = () => {
         message={'Frequently Asked Questions'}
       />
       <div style={styles.primaryContent}>
-        <input 
-        onChange={handleChange}
-        placeholder={`Frequently Asked Questions`}
-        style={styles.input}>
-        </input>
+        <div style={styles.inputContainer}>
+          <FiSearch 
+          size={24}
+          style={styles.styledIcon}/>
+          <input
+            onChange={handleChange}
+            placeholder={`Enter your question here`}
+            style={styles.input}>
+          </input>
+        </div>
         <div style={styles.faqHeader}>
           Frequently Asked Questions
         </div>
         <DropDownButtonList
-          listData={questions}
+          listData={questions.filter(q => q.content.includes(filterValue))}
         />
       </div>
     </div>
@@ -86,6 +91,14 @@ const styles = {
     textDecoration: 'underline',
     marginBottom: 20
   },
+  inputContainer: {
+    position: 'relative'
+  },
+  styledIcon: {
+    position: 'absolute',
+    top: '26%',
+    left: '95%'
+  }
 };
 
 export default FAQ;
