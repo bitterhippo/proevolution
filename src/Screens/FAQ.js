@@ -36,7 +36,7 @@ const FAQ = () => {
   ];
 
   //onChange handler for state changes.
-  const handleChange = (e) => filterValue.setState(e.target.value);
+  const handleChange = (e) => setFilterValue(e.target.value);
 
   return (
     <div style={styles.contentWrapper}>
@@ -46,6 +46,7 @@ const FAQ = () => {
       />
       <div style={styles.primaryContent}>
         <input 
+        onChange={handleChange}
         placeholder={`Frequently Asked Questions`}
         style={styles.input}>
         </input>
