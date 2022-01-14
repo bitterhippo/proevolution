@@ -18,7 +18,10 @@ const ProviderCarousel = () => {
       <div style={styles.carouselMainWrapper}>
         <div style={styles.carouselSlider}>
           <div style={{ ...styles.arrowBar, marginLeft: '5vw' }}>
-            <button style={styles.arrowButton}> {"<"} </button>
+            <button
+             style={styles.arrowButton}
+             onClick={() => carouselCounter >= 1 ? setCarouselCounter((previousState) => previousState -=1) : null}
+            > {"<"} </button>
           </div>
           <div style={styles.innerCarousel}>
             {
@@ -36,15 +39,18 @@ const ProviderCarousel = () => {
             }
           </div>
           <div style={{ ...styles.arrowBar, textAlign: 'right', marginRight: '5vw' }}>
-            <button style={styles.arrowButton}> {">"} </button>
+            <button 
+            style={styles.arrowButton}
+            onClick={() => carouselCounter <= carouselData.length - 1 ?setCarouselCounter((previousState) => previousState +=1) : null}
+            > {">"} </button>
           </div>
         </div>
       </div>
       <div style={styles.circleRow}>
-        <div style={carouselCounter < 3 ? styles.circle : { ...styles.circle, backgroundColor: '#434343' }} />
-        <div style={carouselCounter < 6 && carouselCounter > 2 ? styles.circle : { ...styles.circle, backgroundColor: '#434343' }}/>
-        <div style={styles.circle}/>
-        <div style={styles.circle}/>
+        <div style={carouselCounter === 0 ? { ...styles.circle, backgroundColor: '#434343' } : styles.circle} />
+        <div style={carouselCounter === 1 ? { ...styles.circle, backgroundColor: '#434343' } : styles.circle}/>
+        <div style={carouselCounter === 2 ? { ...styles.circle, backgroundColor: '#434343' } : styles.circle}/>
+        <div style={carouselCounter === 3 ? { ...styles.circle, backgroundColor: '#434343' } : styles.circle}/>
       </div>
     </div>
   )
