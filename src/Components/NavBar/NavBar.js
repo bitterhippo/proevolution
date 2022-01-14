@@ -11,8 +11,6 @@ const NavBar = () => {
 
   const currentPath = window.location.pathname.substring(1, window.location.pathname.length);
 
-  console.log(currentPath);
-
   return (
     <div style={styles.navBarWrapper}>
       <div style={{ ...styles.navBarItem, marginLeft: '5vw' }}>
