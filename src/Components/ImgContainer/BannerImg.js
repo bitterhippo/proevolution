@@ -73,7 +73,7 @@ const styles = {
   bannerText: {
     color: 'white',
     position: 'absolute',
-    fontSize: '3em',
+    fontSize: '3.5vw',
     top: '50%',
     left: '50%',
     zIndex: 1,

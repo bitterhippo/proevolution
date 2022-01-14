@@ -88,10 +88,10 @@ const styles = {
     textDecoration: 'none'
   },
   navBarButton: {
-    fontSize: '1em',
+    fontSize: '1vw',
     border: '2px solid white',
     backgroundColor: '#206620',
-    margin: 'auto 0 auto 10vw',
+    margin: 'auto 0 auto 5vw',
     padding: '6px 22px',
     color: 'white',
     borderRadius: 5,
