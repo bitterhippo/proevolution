@@ -46,14 +46,16 @@ const FAQ = () => {
       />
       <div style={styles.primaryContent}>
         <div style={styles.inputContainer}>
-          <FiSearch 
-          size={24}
-          style={styles.styledIcon}/>
-          <input
-            onChange={handleChange}
-            placeholder={`Enter your question here`}
-            style={styles.input}>
-          </input>
+          <FiSearch
+            size={24}
+            style={styles.styledIcon} />
+          <div style={styles.input}>
+            <input
+              onChange={handleChange}
+              placeholder={`Enter your question here`}
+              style={styles.inputBox}>
+            </input>
+          </div>
         </div>
         <div style={styles.faqHeader}>
           Frequently Asked Questions
@@ -78,11 +80,20 @@ const styles = {
     marginTop: '5%',
   },
   input: {
+    position: 'relative',
     borderRadius: '10px',
     border: '2px solid #206620',
     width: '100%',
     height: '40px',
     boxShadow: '0 5px 10px rgb(0 0 0 / 0.2)'
+  },
+  inputBox: {
+    position: 'absolute',
+    top:'28%',
+    left: '2%',
+    border: 'none',
+    outline: 'none',
+    boxShadow: 'none'
   },
   faqHeader: {
     marginTop: '7%',
