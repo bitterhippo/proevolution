@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import CustomSVG from '../ImgContainer/CustomSVG';
-
+import Colors from '../../Components/Colors';
 
 const ProviderCarousel = () => {
 
@@ -41,10 +41,10 @@ const ProviderCarousel = () => {
         </div>
       </div>
       <div style={styles.circleRow}>
-        <div style={{...styles.circle, backgroundColor: '#434343'}}></div>
-        <div style={styles.circle}></div>
-        <div style={styles.circle}></div>
-        <div style={styles.circle}></div>
+        <div style={carouselCounter < 3 ? styles.circle : { ...styles.circle, backgroundColor: '#434343' }} />
+        <div style={carouselCounter < 6 && carouselCounter > 2 ? styles.circle : { ...styles.circle, backgroundColor: '#434343' }}/>
+        <div style={styles.circle}/>
+        <div style={styles.circle}/>
       </div>
     </div>
   )

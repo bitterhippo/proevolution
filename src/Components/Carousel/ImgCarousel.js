@@ -22,13 +22,13 @@ const ImgCarousel = () => {
   //Defaults
 
   const imgDefaults = [
-    'Facility1',
-    'Facility2',
-    'Facility3',
-    'Facility4',
-    'Facility5',
-    'Facility6',
-    'Facility7',
+    {name: 'Facility1', key: 1},
+    {name: 'Facility2', key: 2},
+    {name: 'Facility3', key: 3},
+    {name: 'Facility4', key: 4},
+    {name: 'Facility5', key: 5},
+    {name: 'Facility6', key: 6},
+    {name: 'Facility7', key: 7},
   ];
 
 
@@ -59,12 +59,12 @@ const ImgCarousel = () => {
             imgDefaults
               .filter(currentImg => currentImg != imgDefaults[counter])
               .map(currentImg => <div
-                key={currentImg}
+                key={currentImg.key}
               >
                 <CustomImg
                   height={'12vw'}
                   width={'12vw'}
-                  image={currentImg}
+                  image={currentImg.name}
                 />
               </div>)
           }
