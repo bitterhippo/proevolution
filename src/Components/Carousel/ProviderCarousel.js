@@ -17,9 +17,9 @@ const ProviderCarousel = () => {
       <h2 style={styles.bannerText}>Our Providers</h2>
       <div style={styles.carouselMainWrapper}>
         <div style={styles.carouselSlider}>
-          <div style={{ ...styles.arrowBar, marginLeft: '5vw' }}>
+          <div style={styles.arrowBar}>
             <button
-             style={styles.arrowButton}
+             style={{...styles.arrowButton, left: '7%'}}
              onClick={() => carouselCounter >= 1 ? setCarouselCounter((previousState) => previousState -=1) : null}
             > {"<"} </button>
           </div>
@@ -38,9 +38,9 @@ const ProviderCarousel = () => {
               )
             }
           </div>
-          <div style={{ ...styles.arrowBar, textAlign: 'right', marginRight: '5vw' }}>
+          <div style={styles.arrowBar}>
             <button 
-            style={styles.arrowButton}
+            style={{...styles.arrowButton, right: '2%'}}
             onClick={() => carouselCounter <= carouselData.length - 1 ?setCarouselCounter((previousState) => previousState +=1) : null}
             > {">"} </button>
           </div>
@@ -62,6 +62,7 @@ const styles = {
     marginTop: '15vh'
   },
   carouselMainWrapper: {
+    position: 'relative',
     display: 'flex',
     flexDirection: 'inline-row',
     justifyContent: 'space-evenly',
@@ -70,7 +71,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'inline-row',
     justifyContent: 'space-around',
-    width: '100%'
+    width: '100%',
   },
   innerCarousel: {
     display: 'flex',
@@ -79,11 +80,12 @@ const styles = {
     justifyContent: 'space-between',
   },
   arrowBar: {
+    postion: 'relative',
     flex: 1,
     color: "silver",
     fontSize: 30,
     fontWeight: 'bold',
-    verticalAlign: '50%',
+    verticalAlign: 'center',
   },
   bannerText: {
     fontSize: 32,
@@ -92,12 +94,14 @@ const styles = {
     paddingTop: '5vh'
   },
   arrowButton: {
+    position: 'absolute',
     backgroundColor: 'rgba(32, 102, 32, 0.009)',
     border: 'none',
     color: 'gray',
     fontSize: '3rem',
-    margin: '23%',
     fontWeight: 'bold',
+    top: '45%',
+    transform: 'translate(-50%, -50%)',
   },
   circle: {
     height: 15,
