@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 const Profile = ({ image, name, link }) => {
   return (
     <div style={styles.profileWrapper}>
-      {/* Place holder box for images */}
       <CustomImg
         height={'14vw'}
         width={'14vw'}

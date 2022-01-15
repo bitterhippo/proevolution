@@ -39,7 +39,7 @@ const ImgCarousel = () => {
           <CustomImg
             height={'60vh'}
             width={'80vw'}
-            image={imgDefaults[counter]}
+            image={imgDefaults[counter].name}
           />
         }
       </div>
