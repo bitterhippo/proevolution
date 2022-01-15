@@ -96,7 +96,7 @@ const FooterNav = () => {
       }
       <div style={styles.footerNavList}>
         <br></br>
-        <Mailto style={styles.customLink}>email: info@proevolutionwellness.ca</Mailto>
+        <Mailto style={styles.styledLink}>email: info@proevolutionwellness.ca</Mailto>
         <span style={styles.footerText}>phone: 905-303-0337</span>
         <span style={styles.footerText}>West, Unit 116</span>
         <span style={styles.footerText}>Vaughan, ON L4H 4J9</span>
