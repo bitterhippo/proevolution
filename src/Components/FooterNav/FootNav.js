@@ -17,17 +17,17 @@ const FooterNav = () => {
         />,
         <Link
         to={'Services'}
-        style={styles.styledLink}
+        style={styles.styledServicesLink}
         >Services
         </Link>,
         <Link
         to={'FAQ'}
-        style={styles.styledLink}
+        style={styles.styledServicesLink}
         >FAQ
         </Link>,
         <Link
         to={'About'}
-        style={styles.styledLink}
+        style={styles.styledServicesLink}
         >About
         </Link>
       ]
@@ -141,13 +141,19 @@ const styles = {
     color: 'white',
     backgroundColor: '#206620',
     fontSize: 12,
-    padding: ''
+    padding: '5px 10px'
   },
   timeItem: {
     display: 'flex',
     justifyContent: 'space-between'
   },
   styledLink: {
+    color: 'white',
+    textDecoration: 'none',
+    cursor: 'arrow'
+  }, 
+  styledServicesLink: {
+    marginLeft: 13,
     color: 'white',
     textDecoration: 'none',
     cursor: 'arrow'

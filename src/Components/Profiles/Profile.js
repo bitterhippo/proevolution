@@ -17,7 +17,7 @@ const Profile = ({ image, name, link }) => {
       </div>
       <div style={styles.buttonWrapper}>
         <CustomButton
-          padding="0.5rem 1.5rem 0.5rem 1.5rem">
+          padding="0.2vw 1.5vw 0.2vw 1.5vw">
           <Link
             to={{
               pathname: 'StaffView',
@@ -48,7 +48,7 @@ const styles = {
   },
   text: {
     textAlign: 'center',
-    fontSize: '1rem',
+    fontSize: '1.5vw',
     color: 'green',
     fontWeight: 'bold',
     marginTop: 10
@@ -59,7 +59,8 @@ const styles = {
   },
   styledLink: {
     color: 'white',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    fontSize: '1vw'
   }
 };
 
