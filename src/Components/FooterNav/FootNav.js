@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 //Components
 import CustomSVG from '../ImgContainer/CustomSVG';
 import Mailto from '../CustomText/Mailto';
+import { FiInstagram, FiFacebook } from 'react-icons/fi';
 
 const FooterNav = () => {
 
@@ -74,6 +75,15 @@ const FooterNav = () => {
         <button style={styles.footButton}><a style={styles.styledLink} href="https://www.google.com/maps/place/Pro+Evolution+Wellness/@43.843501,-79.5656789,15z/data=!4m2!3m1!1s0x0:0xbb1dcdb52405cb2b?sa=X&ved=2ahUKEwiL5emEmYr1AhUShZQKHf6lDsAQ_BJ6BAgrEAU">Get Directions</a></button>
       ]
     },
+    {
+      name: '', Links: [
+        <br></br>,
+        <Mailto style={styles.styledLink}>email: info@proevolutionwellness.ca</Mailto>,
+        <span style={styles.footerText}>phone: 905-303-3337 </span>,
+        <span style={styles.footerText}><FiInstagram size={20}/>pro-evolution_wellness_inc</span>,
+        <span style={styles.footerText}><FiFacebook size={20}/>@proevolutionwelnessinc</span>,
+      ]
+    }
   ];
 
   return (
@@ -94,13 +104,6 @@ const FooterNav = () => {
           }
         </div>)
       }
-      <div style={styles.footerNavList}>
-        <br></br>
-        <Mailto style={styles.styledLink}>email: info@proevolutionwellness.ca</Mailto>
-        <span style={styles.footerText}>phone: 905-303-0337</span>
-        <span style={styles.footerText}>West, Unit 116</span>
-        <span style={styles.footerText}>Vaughan, ON L4H 4J9</span>
-      </div>
     </div>
   )
 };
@@ -132,7 +135,8 @@ const styles = {
     flexDirection: 'column',
   },
   footerText: {
-    fontSize: 12
+    fontSize: 12,
+    backgroundColor: 'red'
   },
   footButton: {
     marginTop: 10,
