@@ -80,8 +80,8 @@ const FooterNav = () => {
         <br></br>,
         <Mailto style={styles.styledLink}>email: info@proevolutionwellness.ca</Mailto>,
         <span style={styles.footerText}>phone: 905-303-3337 </span>,
-        <div style={styles.footerwIcon}><FiInstagram size={20} /><span>pro-evolution_wellness_inc</span></div>,
-        <div style={styles.footerwIcon}><FiFacebook size={20} /><span>@proevolutionwelnessinc</span></div>,
+        <div style={styles.footerwIcon}><FiInstagram size={20} /><div style={styles.iconText}>pro-evolution_wellness_inc</div></div>,
+        <div style={styles.footerwIcon}><FiFacebook size={20} />@proevolutionwelnessinc</div>,
       ]
     }
   ];
@@ -138,12 +138,11 @@ const styles = {
     fontSize: 12,
   },
   footerwIcon: {
-    display: 'inline-block',
-    verticalAlign: 'center',
-    lineHeight: 'normal',
+    display: 'flex',
+    justifyContent: 'row',
     fontSize: 12,
     height: 20,
-    backgroundColor: 'red'
+    gap: 5
   },
   footButton: {
     marginTop: 10,
