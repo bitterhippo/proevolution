@@ -17,18 +17,18 @@ const FooterNav = () => {
           image={"Logo"}
         />,
         <Link
-        to={'Services'}
-        style={styles.styledServicesLink}
+          to={'Services'}
+          style={styles.styledServicesLink}
         >Services
         </Link>,
         <Link
-        to={'FAQ'}
-        style={styles.styledServicesLink}
+          to={'FAQ'}
+          style={styles.styledServicesLink}
         >FAQ
         </Link>,
         <Link
-        to={'About'}
-        style={styles.styledServicesLink}
+          to={'About'}
+          style={styles.styledServicesLink}
         >About
         </Link>
       ]
@@ -80,8 +80,8 @@ const FooterNav = () => {
         <br></br>,
         <Mailto style={styles.styledLink}>email: info@proevolutionwellness.ca</Mailto>,
         <span style={styles.footerText}>phone: 905-303-3337 </span>,
-        <span style={styles.footerText}><FiInstagram size={20}/>pro-evolution_wellness_inc</span>,
-        <span style={styles.footerText}><FiFacebook size={20}/>@proevolutionwelnessinc</span>,
+        <div style={styles.footerwIcon}><FiInstagram size={20} /><span>pro-evolution_wellness_inc</span></div>,
+        <div style={styles.footerwIcon}><FiFacebook size={20} /><span>@proevolutionwelnessinc</span></div>,
       ]
     }
   ];
@@ -136,6 +136,13 @@ const styles = {
   },
   footerText: {
     fontSize: 12,
+  },
+  footerwIcon: {
+    display: 'inline-block',
+    verticalAlign: 'center',
+    lineHeight: 'normal',
+    fontSize: 12,
+    height: 20,
     backgroundColor: 'red'
   },
   footButton: {
@@ -155,7 +162,7 @@ const styles = {
     color: 'white',
     textDecoration: 'none',
     cursor: 'arrow'
-  }, 
+  },
   styledServicesLink: {
     marginLeft: 13,
     color: 'white',
