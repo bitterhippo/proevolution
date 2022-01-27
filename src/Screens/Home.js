@@ -32,8 +32,10 @@ const Home = () => {
     },
     {
       header: 'WHO WE ARE',
-      content: `An Informed Examination will take place on your first visit, so that we can make or confirm a diagnosis, and understand the state and stage of your injury. We'll check your medical history, find out about your level of physical activity and any relevant lifestyle factors. 
-      In addition to clinical practice, other aspects of physical therapist practice include research, education, consultation, and health administration. Physical therapy is provided as a primary care treatment or alongside, or in conjunction with, other medical services. Physical therapy addresses the illnesses or injuries that limit a person's abilities to move and perform functional activities in their daily lives.[6] Our PTs use an individual's history and physical examination to arrive at a diagnosis and establish a management plan and, when necessary, incorporate the results of laboratory and imaging studies like X-rays, CT-scan, or MRI findings. In addition, our  PTs work with individuals to prevent the loss of mobility before it occurs by developing fitness and wellness-oriented programs for healthier and more active lifestyles, providing services to individuals and populations to develop, maintain and restore maximum movement and functional ability throughout the lifespan. This includes providing treatment in circumstances where movement and function are threatened by aging, injury, disease, or environmental factors. Functional movement is central to what it means to be healthy.`,
+      content: <>An Informed Examination will take place on your first visit, so that we can make or confirm a diagnosis, and understand the state and stage of your injury. We'll check your medical history, find out about your level of physical activity and any relevant lifestyle factors. 
+      <br></br>
+      <br></br>
+      In addition to clinical practice, other aspects of physical therapist practice include research, education, consultation, and health administration. Physical therapy is provided as a primary care treatment or alongside, or in conjunction with, other medical services. Physical therapy addresses the illnesses or injuries that limit a person's abilities to move and perform functional activities in their daily lives.[6] Our PTs use an individual's history and physical examination to arrive at a diagnosis and establish a management plan and, when necessary, incorporate the results of laboratory and imaging studies like X-rays, CT-scan, or MRI findings. In addition, our  PTs work with individuals to prevent the loss of mobility before it occurs by developing fitness and wellness-oriented programs for healthier and more active lifestyles, providing services to individuals and populations to develop, maintain and restore maximum movement and functional ability throughout the lifespan. This includes providing treatment in circumstances where movement and function are threatened by aging, injury, disease, or environmental factors. Functional movement is central to what it means to be healthy.</>,
       button: 'Our Process',
       image: 'Home1'
     }
@@ -54,7 +56,7 @@ const Home = () => {
           button="See More"
           image={'Home2'}
           link={<CustomButton
-            margin="5vh 10vh 0 0"
+            margin="5vh 8vw 0 0"
             padding="5px 20px"
           >
             <Link
@@ -71,7 +73,7 @@ const Home = () => {
             button={"Our Process"}
             image={'Home1'}
             link={<CustomButton
-              margin="5vh 10vh 0 0"
+              margin="5vh 8vw 0 0"
               padding="5px 20px"
             >
               <Link
