@@ -1,10 +1,13 @@
 import React from 'react';
 import ContentBlock from '../Components/Content/ContentBlock';
+import CustomButton from '../Components/CustomButton/CustomButton';
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import ProviderCarousel from '../Components/Carousel/ProviderCarousel';
 import CustomImg from '../Components/ImgContainer/CustomImg';
+import { Link } from 'react-router-dom';
 
 import ClipBackground from '../Components/ClipBackgrounds/ClipBackground';
+import Services from './Services';
 
 const Home = () => {
 
@@ -24,7 +27,8 @@ const Home = () => {
       header: 'Initial Assessment',
       content: 'Pro Evolution Wellness is a clinic created by two ambitious practioners that wanted to provide quality chiropractic services to their local community. Wanting to give back to the community that they grew up in, our goal is to give each member of the community a special, individualized service to promote active healthy lifestyles. We help a variety of patients from nutritional consulting to functional rehab to therapeutic ultrasound. With years of collective experience, our team provides quality advice and treatments to the Vaughan region.',
       button: 'See More',
-      image: 'Home2'
+      image: 'Home2',
+      link: <Link to={Services}> See More </Link>
     },
     {
       header: 'WHO WE ARE',
@@ -49,6 +53,13 @@ const Home = () => {
           content={contentDefaults[0].content}
           button="See More"
           image={'Home2'}
+          link={<CustomButton>
+            <Link
+              to={'Services'}
+              style={styles.styledLink}>
+              See More
+            </Link>
+          </CustomButton>}
         />
         <ClipBackground>
           <ContentBlock
@@ -122,6 +133,10 @@ const styles = {
   providerCarousel: {
     marginTop: '25vh'
   },
+  styledLink: {
+    color: 'white',
+    textDecoration: 'none'
+  }
 }
 
 export default Home;

@@ -2,7 +2,7 @@ import React from 'react';
 import CustomImg from '../ImgContainer/CustomImg';
 import CustomButton from '../CustomButton/CustomButton';
 
-const ContentBlock = ({ header, content, button, background, image }) => {
+const ContentBlock = ({ header, content, button, link, image }) => {
   return (
     <div style={styles.contentBlockWrapper}>
       <div style={styles.buttonAlign}>
@@ -14,11 +14,9 @@ const ContentBlock = ({ header, content, button, background, image }) => {
           </div>
         </div>
         <div style={styles.buttonWrapper}>
-          {button !== "" ?
-            <CustomButton 
-            padding='5px 30px 5px 30px'
-            margin='0 7vw 0 0'
-            >{button}</CustomButton> : null}
+          {
+            link
+          }
         </div>
       </div>
       <div style={styles.imgContainer}>
