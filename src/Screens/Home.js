@@ -15,7 +15,7 @@ const Home = () => {
     { title: 'Physiotherapy', img: 'Physiotherapy' },
     { title: 'Functional Rehab', img: 'FunctionalRehab' },
     { title: 'Nutritional Consulting', img: 'NutritionalCounselling' },
-    { title: 'Theraputic Ultrasound', img: 'TherapueticUltrasound' },
+    { title: 'Therapeutic Ultrasound', img: 'TherapueticUltrasound' },
     { title: 'Low Level Laser Therapy (LLLT)', img: 'Lazer' },
     { title: 'Personal Training', img: "PT" },
     { title: 'Registered Massage Therapy', img: 'Massage' },
@@ -53,7 +53,10 @@ const Home = () => {
           content={contentDefaults[0].content}
           button="See More"
           image={'Home2'}
-          link={<CustomButton>
+          link={<CustomButton
+            margin="5vh 10vh 0 0"
+            padding="5px 20px"
+          >
             <Link
               to={'Services'}
               style={styles.styledLink}>
@@ -67,6 +70,16 @@ const Home = () => {
             content={contentDefaults[1].content}
             button={"Our Process"}
             image={'Home1'}
+            link={<CustomButton
+              margin="5vh 10vh 0 0"
+              padding="5px 20px"
+            >
+              <Link
+                to={'About'}
+                style={styles.styledLink}>
+                See More
+              </Link>
+            </CustomButton>}
           />
         </ClipBackground>
       </div>
