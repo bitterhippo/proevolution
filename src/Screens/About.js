@@ -58,6 +58,7 @@ const About = () => {
           {
             defaultContent.map((currentItem, i) => {
               return <div
+                key={currentItem.split('')[3]}
                 style={styles.content}
               >
                 {currentItem}
