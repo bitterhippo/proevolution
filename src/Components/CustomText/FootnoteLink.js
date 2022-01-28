@@ -1,20 +1,21 @@
 import React from 'react';
 
-const FootnoteLink = (link, props) => {
+const FootnoteLink = (props) => {
 
   console.log(props);
 
   return (
-      <src style={style.FootnoteText}>
-        {props.children}
-      </src>
+    <span style={styles.footnoteText}>
+      <a href={props.url}>{props.children}</a>
+    </span>
   )
 };
 
 const styles = {
-  FootnoteText: {
+  footnoteText: {
     color: 'red',
-    fontSize: 8
+    fontSize: 12,
+    verticalAlign: 'top'
   }
 };
 
