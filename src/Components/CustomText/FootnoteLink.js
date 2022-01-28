@@ -1,7 +1,6 @@
 import React from 'react';
-import { ProgressPlugin } from 'webpack';
 
-const FootnoteText = (link, props) => {
+const FootnoteLink = (link, props) => {
 
   console.log(props);
 
@@ -19,4 +18,4 @@ const styles = {
   }
 };
 
-export default FootnoteText;
+export default FootnoteLink;

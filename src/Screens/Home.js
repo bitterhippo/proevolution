@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 import ClipBackground from '../Components/ClipBackgrounds/ClipBackground';
 import Services from './Services';
-import FootnoteText from '../Components/CustomText/FootnotesLink';
+import FootnoteLink from '../Components/CustomText/FootnoteLink';
 
 const Home = () => {
 
@@ -26,7 +26,7 @@ const Home = () => {
   let contentDefaults = [
     {
       header: 'Initial Assessment',
-      content: 'Pro Evolution Wellness is a clinic created by two ambitious practioners that wanted to provide quality chiropractic services to their local community. Wanting to give back to the community that they grew up in, our goal is to give each member of the community a special, individualized service to promote active healthy lifestyles. We help a variety of patients from nutritional consulting to functional rehab to therapeutic ultrasound. With years of collective experience, our team provides quality advice and treatments to the Vaughan region.',
+      content: <>Pro Evolution Wellness is a clinic created by two ambitious practioners that wanted to provide quality chiropractic services to their local community. Wanting to give back to the community that they grew up in, our goal is to give each member of the community a special, individualized service to promote active healthy lifestyles. We help a variety of patients from nutritional consulting to functional rehab to therapeutic ultrasound. With years of collective experience, our team provides quality advice and treatments to the Vaughan region.</>,
       button: 'See More',
       image: 'Home2',
       link: <Link to={Services}> See More </Link>
@@ -36,7 +36,7 @@ const Home = () => {
       content: <>An Informed Examination will take place on your first visit, so that we can make or confirm a diagnosis, and understand the state and stage of your injury. We'll check your medical history, find out about your level of physical activity and any relevant lifestyle factors. 
       <br></br>
       <br></br>
-      In addition to clinical practice, other aspects of physical therapist practice include research, education, consultation, and health administration. Physical therapy is provided as a primary care treatment or alongside, or in conjunction with, other medical services. Physical therapy addresses the illnesses or injuries that limit a person's abilities to move and perform functional activities in their daily lives.[6] Our PTs use an individual's history and physical examination to arrive at a diagnosis and establish a management plan and, when necessary, incorporate the results of laboratory and imaging studies like X-rays, CT-scan, or MRI findings. In addition, our  PTs work with individuals to prevent the loss of mobility before it occurs by developing fitness and wellness-oriented programs for healthier and more active lifestyles, providing services to individuals and populations to develop, maintain and restore maximum movement and functional ability throughout the lifespan. This includes providing treatment in circumstances where movement and function are threatened by aging, injury, disease, or environmental factors. Functional movement is central to what it means to be healthy.</>,
+      In addition to clinical practice, other aspects of physical therapist practice include research, education, consultation, and <FootnoteLink></FootnoteLink> administration. Physical therapy is provided as a primary care treatment or alongside, or in conjunction with, other medical services. Physical therapy addresses the illnesses or injuries that limit a person's abilities to move and perform functional activities in their daily lives.[6] Our PTs use an individual's history and physical examination to arrive at a diagnosis and establish a management plan and, when necessary, incorporate the results of laboratory and imaging studies like X-rays, CT-scan, or MRI findings. In addition, our  PTs work with individuals to prevent the loss of mobility before it occurs by developing fitness and wellness-oriented programs for healthier and more active lifestyles, providing services to individuals and populations to develop, maintain and restore maximum movement and functional ability throughout the lifespan. This includes providing treatment in circumstances where movement and function are threatened by aging, injury, disease, or environmental factors. Functional movement is central to what it means to be healthy.</>,
       button: 'Our Process',
       image: 'Home1'
     }
