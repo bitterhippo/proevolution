@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 
 import ClipBackground from '../Components/ClipBackgrounds/ClipBackground';
 import Services from './Services';
+import FootnoteText from '../Components/CustomText/FootnotesLink';
 
 const Home = () => {
 
