@@ -2,8 +2,6 @@ import React from 'react';
 
 const FootnoteLink = (props) => {
 
-  console.log(props);
-
   return (
     <span style={styles.footnoteText}>
       <a href={props.url}>{props.children}</a>
