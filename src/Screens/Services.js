@@ -28,15 +28,15 @@ const Services = () => {
 
   const practionerList = [
     {
-      name: 'Jeremy Johnson, RMT',
+      name: 'Jeremy',
       img: 'PractList1'
     },
     {
-      name: 'Vanessa Huges, RMT',
+      name: 'Vanessa',
       img: 'PractList2'
     },
     {
-      name: 'Lisa Andrews, PT',
+      name: 'Lisa',
       img: 'PractList3'
     }
   ];

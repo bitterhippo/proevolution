@@ -4,6 +4,7 @@ import CustomButton from '../CustomButton/CustomButton';
 import { Link } from 'react-router-dom';
 
 const Profile = ({ image, name, link }) => {
+
   return (
     <div style={styles.profileWrapper}>
       <CustomImg
@@ -21,8 +22,8 @@ const Profile = ({ image, name, link }) => {
             to={{
               pathname: 'StaffView',
               state: {
-                doctorName: name,
-                doctorImage: image
+                doctorImage: image,
+                doctorName: name
               }
           }}
             style={styles.styledLink}

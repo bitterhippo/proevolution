@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+//Subcomponents
 import BannerImg from '../Components/ImgContainer/BannerImg';
 import CustomButton from '../Components/CustomButton/CustomButton';
 import CustomHeader from '../Components/CustomText/CustomHeader';
 import CustomImg from '../Components/ImgContainer/CustomImg';
 import Colors from '../Components/Colors';
 import ProfileList from '../Components/Profiles/ProfileList';
+import DefaultPractionerData from '../Components/DefaultPractionerData';
 
 const StaffView = (props) => {
 
@@ -29,7 +32,7 @@ const StaffView = (props) => {
   return (
     <div>
       <BannerImg
-        message={doctorName}
+        message={DefaultPractionerData[doctorName]}
         image={"AboutUsBanner"}
         brightness={'dark'}
       />
@@ -37,7 +40,7 @@ const StaffView = (props) => {
         {/* Screen Left */}
         <div style={styles.screenOne}>
           <CustomHeader>
-            {doctorName}
+            {DefaultPractionerData[doctorName]}
           </CustomHeader>
           <div>
             <span style={styles.titleText}>Chiropractor</span>
@@ -53,10 +56,10 @@ const StaffView = (props) => {
             padding={'5px 30px 5px 30px'}
           >
             <Link
-            style={styles.styledLink}
-            to={'Appointment'}
+              style={styles.styledLink}
+              to={'Appointment'}
             >
-            Book Appointment
+              Book Appointment
             </Link>
           </CustomButton>
         </div>
