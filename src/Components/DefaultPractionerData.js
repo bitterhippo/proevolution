@@ -2,7 +2,7 @@ import React from 'react';
 
 const DefaultPractionerData = {
   Jeremy: {
-    title: `Jeremy, RMT`,
+    title: `Dr. Jeremy Johnson`,
     content: <>
       Jeremy has been with Pro Evolution since 2017. He specializes in massage therapy, physiotherapy as well as chiropractic care. He studied at the University of Collingwood where he received top marks in his class.
       <br></br>
@@ -12,7 +12,7 @@ const DefaultPractionerData = {
     </>
   },
   Vanessa: {
-    title: `Vanessa, RMT`,
+    title: `Dr. Vanessa Huges`,
     content: <>
       Lisa Andrews joined Pro Evolution after immigrating from Scotland where she had her own practice but was in search of better weather and nature.
       <br></br>
@@ -24,7 +24,7 @@ const DefaultPractionerData = {
     </>
   },
   Lisa: {
-    title: `Lisa, PT`,
+    title: `Dr. Mary Jaczek`,
     content: <>
       Lisa Andrews joined Pro Evolution after immigrating from Scotland where she had her own practice but was in search of better weather and nature.
       <br></br>
@@ -36,7 +36,7 @@ const DefaultPractionerData = {
     </>
   },
   Mary: {
-    title: 'Mary, PT',
+    title: 'Dr. Lisa Andrews',
     content: <>
       Lisa Andrews joined Pro Evolution after immigrating from Scotland where she had her own practice but was in search of better weather and nature.
       <br></br>

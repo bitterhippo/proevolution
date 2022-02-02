@@ -11,21 +11,17 @@ const About = () => {
 
   let staffList = [
     {
-      name: 'Dr. Jeremy Johnson',
+      name: 'Jeremy',
       img: 'PractList1'
     },
     {
-      name: 'Dr. Vanessa Huges',
+      name: 'Vanessa',
       img: 'PractList2'
     },
     {
-      name: 'Dr. Mary Jaczek',
+      name: 'Mary',
       img: 'PractList3'
     },
-    {
-      name: 'Dr. Lisa Andrews',
-      img: 'Home1'
-    }
   ];
 
   const defaultContent = [

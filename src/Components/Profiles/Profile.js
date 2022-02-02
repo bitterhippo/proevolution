@@ -2,6 +2,7 @@ import React from 'react';
 import CustomImg from '../ImgContainer/CustomImg';
 import CustomButton from '../CustomButton/CustomButton';
 import { Link } from 'react-router-dom';
+import DefaultPractionerData from '../DefaultPractionerData';
 
 const Profile = ({ image, name, link }) => {
 
@@ -13,7 +14,7 @@ const Profile = ({ image, name, link }) => {
         image={image}
       />
       <div style={styles.text}>
-        {name}
+        {DefaultPractionerData[name].title}
       </div>
       <div style={styles.buttonWrapper}>
         <CustomButton
