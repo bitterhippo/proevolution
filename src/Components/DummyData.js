@@ -100,7 +100,7 @@ let DummyData = {
         ]} />
     }
   },
-  TherapueticUltrasound: {
+  TherapeuticUltrasound: {
     Howitworks: {
       text: <div>
         Ultrasound uses high frequency sound waes to create bibration and friction between particles within the tissues.
@@ -132,10 +132,26 @@ let DummyData = {
     Whatittreats: {
       text: <DropDownButtonList
         listData={[
-          { title: "What are the benefits?", content: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.` },
-          { title: "What are the potential health benefits?", content: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.` },
-          { title: "What are the costs?", content: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.` },
-          { title: "Can I use my insurance?", content: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.` }
+          {
+            title: "Back and Neck Pain?",
+            content: `Back and neck pain are the most common impairments that manual therapists assess and treat. Active physiotherapy and chiropractic care have been shown to be among the most effective treatment modalities to address spinal problems.`
+          },
+          {
+            title: "Osteoarthritis?",
+            content: `Back and neck pain are the most common impairments that manual therapists assess and treat. Active physiotherapy and chiropractic care have been shown to be among the most effective treatment modalities to address spinal problems.`
+          },
+          {
+            title: "Osteoarthritis",
+            content: `Restore joint motion and improve muscle strength to increase the patients comfort in their daily life. Mobilization exercises and joint manipulation are all impactful therapies for treating OA.`
+          },
+          {
+            title: "Sciatica ",
+            content: `Manual therapy and stretching can help with symptoms and soreness of sciatica. In addition, sometimes manual therapy is used. Lastly pain management is a key component in dealing with ongoing stiffness and pain related to one’s sciatic nerve.`
+          },
+          {
+            title: 'Scoliosis',
+            content: `Surgery and usage of back braces are two ways to treat scoliosis. However, recent studies have also proven the efficacy of manual therapy when treating the underlying pain and discomfort caused by scoliosis.`
+          }
         ]} />
     }
   },

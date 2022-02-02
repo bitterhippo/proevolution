@@ -15,7 +15,7 @@ const Services = () => {
   const buttonValues = [
     'Chiropractic',
     'Physiotherapy',
-    'Therapuetic Ultrasound',
+    'Therapeutic Ultrasound',
     'Functional Rehab',
     'Nutritional Consulting',
   ];
