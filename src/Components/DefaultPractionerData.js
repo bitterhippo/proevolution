@@ -13,7 +13,7 @@ const DefaultPractionerData = {
   },
   Vanessa: {
     title: `Vanessa, RMT`,
-    contet: <>
+    content: <>
       Lisa Andrews joined Pro Evolution after immigrating from Scotland where she had her own practice but was in search of better weather and nature.
       <br></br>
       She is a trained physiotherapist having graduated from the University of Western Scotland with a BSC. in Physiotherapy and a MA in Patient Care. She wrote her thesis on “ Trauma Caused by Car Accidents and Lingering Effects.”
